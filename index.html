@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Mestre Reginaldo | Pai de Santo - Consultas com Búzios e Rituais</title>
+  <title>Mestre Reginaldo | Pai de Santo - Leitura de Búzios e Rituais</title>
   <meta name="description" content="Mestre Reginaldo, pai de Santo há 30 anos. Leitura com búzios, limpeza energética e rituais de candomblé. Atendimento online e presencial. Agende já!">
-  <meta name="keywords" content="pai de santo, búzios, candomblé, consulta espiritual, limpeza energética, Mestre Reginaldo">
+  <meta name="keywords" content="pai de santo, búzios, candomblé, consulta espiritual, limpeza energética, Mestre Reginaldo, axé, rituais, online, presencial">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
@@ -51,14 +51,40 @@
     </div>
   </section>
 
-  <!-- DEPOIMENTOS -->
+  <!-- DEPOIMENTOS CARROSSEL -->
   <section id="depoimentos" class="testimonials">
     <div class="container">
-      <h3>O que dizem quem já passou por mim</h3>
-      <div class="testimonial-carousel">
-        <div class="testimonial-card"><p>“Meu caminho desbloqueou depois da consulta. Hoje tenho paz e prosperidade.”</p><strong>— Ana Paula, SP</strong></div>
-        <div class="testimonial-card"><p>“Limpeza energética mudou minha vida. Recomendo de olhos fechados.”</p><strong>— Carlos, RJ</strong></div>
-        <div class="testimonial-card"><p>“Trabalho de candomblé me trouxe estabilidade e amor.”</p><strong>— Juliana, BH</strong></div>
+      <h3>O que dizem quem já recebeu o meu Axé</h3>
+      <div class="testimonial-carousel" id="carousel">
+        <div class="testimonial-card active">
+          <p>“Meu caminho desbloqueou depois da consulta. Hoje tenho paz e prosperidade.”</p>
+          <strong>— Ana Paula, SP</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“Limpeza energética mudou minha vida. Recomendo de olhos fechados.”</p>
+          <strong>— Carlos, RJ</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“Trabalho de candomblé me trouxe estabilidade e amor.”</p>
+          <strong>— Juliana, BH</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“Após a consulta, consegui emprego e paz em casa. Gratidão, Mestre!”</p>
+          <strong>— Fernanda, ES</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“Me senti leve, renovada. O axé chegou forte e transformou tudo.”</p>
+          <strong>— Roberto, MG</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>“Mestre Reginaldo é seriedade e luz. Indico para todos da família.”</p>
+          <strong>— Patrícia, DF</strong>
+        </div>
+      </div>
+      <!-- Controles do carrossel -->
+      <div class="carousel-controls">
+        <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
@@ -84,7 +110,7 @@
     </div>
   </section>
 
-  <!-- SERVIÇOS COM BOTÕES DE AÇÃO -->
+  <!-- SERVIÇOS -->
   <section id="servicos" class="services">
     <div class="container">
       <h3>Serviços</h3>
@@ -96,7 +122,6 @@
           <span class="tag">Online | Presencial</span>
           <a href="#consulta" class="btn-action">Quero esta consulta</a>
         </article>
-
         <article class="serv-card">
           <i class="fas fa-sparkles"></i>
           <h4>Limpeza Energética</h4>
@@ -104,7 +129,6 @@
           <span class="tag">Online | Presencial</span>
           <a href="#consulta" class="btn-action">Quero esta limpeza</a>
         </article>
-
         <article class="serv-card">
           <i class="fas fa-hands-praying"></i>
           <h4>Trabalho de Candomblé</h4>
@@ -147,11 +171,34 @@
     <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
   </div>
 
+  <!-- CARROSSEL JS -->
   <script>
-    // menu mobile
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let current = 0;
+
+    function showCard(index) {
+      cards.forEach((card, i) => {
+        card.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextCard() {
+      current = (current + 1) % cards.length;
+      showCard(current);
+    }
+
+    function prevCard() {
+      current = (current - 1 + cards.length) % cards.length;
+      showCard(current);
+    }
+
+    nextBtn.addEventListener('click', nextCard);
+    prevBtn.addEventListener('click', prevCard);
+
+    // Auto-rotação a cada 5s
+    setInterval(nextCard, 5000);
   </script>
 </body>
 </html>
