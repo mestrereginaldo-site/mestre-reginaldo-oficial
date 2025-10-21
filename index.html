@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <!-- NAVBAR COM LOGO -->
@@ -23,6 +25,7 @@
         <li><a href="#home">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#consulta">Consulta</a></li>
         <li><a href="#consulta">Contato</a></li>
       </ul>
       <div class="hamburger"><span></span><span></span><span></span></div>
@@ -139,7 +142,7 @@
     </div>
   </section>
 
-  <!-- CONSULTA COM CAMPO DE TEXTO -->
+  <!-- CONSULTA COM CAMPO DE TEXTO E RECAPTCHA -->
   <section id="consulta" class="consultation">
     <div class="container">
       <h3>Agende sua Consulta</h3>
@@ -154,6 +157,7 @@
           <option>Outros</option>
         </select>
         <textarea name="detalhe" rows="4" placeholder="Detalhe seu problema ou dúvida (opcional)"></textarea>
+        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
         <button type="submit">Quero agendar</button>
         <input type="hidden" name="_next" value="https://mestrereginaldo-site.github.io/mestre-reginaldo-oficial/obrigado.html">
       </form>
