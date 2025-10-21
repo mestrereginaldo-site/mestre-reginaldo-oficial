@@ -1,145 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mestre Reginaldo - Pai de Santo</title>
-    <meta name="description" content="Mestre Reginaldo, pai de santo especializado em trabalhos espirituais, consultas e orientação espiritual.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Mestre Reginaldo | Pai de Santo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <div class="nav-brand">
-            <h1>Mestre Reginaldo</h1>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#consulta">Consulta</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">Mestre Reginaldo</a>
+      <ul class="nav-menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#consulta">Consulta</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
     </div>
-</nav>
+  </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-content animate__animated animate__fadeInUp">
-        <h2>Mestre Reginaldo</h2>
-        <h3>Pai de Santo & Guia Espiritual</h3>
-        <p>Tradição, sabedoria e espiritualidade há mais de 30 anos</p>
-        <button class="cta-button" onclick="scrollToSection('#consulta')">Agendar Consulta</button>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Mestre Reginaldo</h1>
+      <h2>Pai de Santo com <span class="highlight">30 anos</span> de tradição e resultados comprovados.</h2>
+      <p>Atendimento presencial e online. Reserve sua consulta em 30 segundos.</p>
+      <div class="hero-ctas">
+        <a href="#consulta" class="btn-primary">Agendar Consulta</a>
+        <a href="#depoimentos" class="btn-secondary">Ver Depoimentos</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="number">4.9</span><span>Google</span></div>
+        <div class="trust-item"><span class="number">+3.200</span><span>Atendimentos</span></div>
+        <div class="trust-item"><span>7 dias</span><span>Horário</span></div>
+      </div>
     </div>
     <div class="hero-image">
-        <img src="images/mestre-foto.jpg" alt="Mestre Reginaldo" class="animate__animated animate__fadeInRight">
+      <img src="images/mestre-hero.jpg" alt="Mestre Reginaldo" loading="lazy">
     </div>
-</section>
+  </section>
 
-<!-- About Section -->
-<section id="sobre" class="about">
+  <section id="depoimentos" class="testimonials">
     <div class="container">
-        <h2 class="section-title animate-on-scroll">Quem é Mestre Reginaldo</h2>
-        <div class="about-content">
-            <div class="about-text animate-on-scroll">
-                <p>Com mais de 30 anos de tradição nos caminhos da espiritualidade, Mestre Reginaldo é um respeitado pai de santo, iniciado nos mistérios do candomblé e umbanda.</p>
-                <p>Sua jornada começou ainda jovem, quando recebeu o chamado espiritual. Desde então, dedica sua vida a ajudar pessoas a encontrarem seu caminho.</p>
-            </div>
-            <div class="about-image animate-on-scroll">
-                <img src="images/mestre-trabalhando.jpg" alt="Mestre em trabalho">
-            </div>
-        </div>
+      <h3>O que dizem quem já passou por mim</h3>
+      <div class="testimonial-carousel">
+        <div class="testimonial-card"><p>“Meu caminho desbloqueou depois da consulta. Hoje tenho paz e prosperidade.”</p><strong>— Ana Paula, SP</strong></div>
+        <div class="testimonial-card"><p>“Limpeza energética mudou minha vida. Recomendo de olhos fechados.”</p><strong>— Carlos, RJ</strong></div>
+        <div class="testimonial-card"><p>“Trabalho de candomblé me trouxe estabilidade e amor.”</p><strong>— Juliana, BH</strong></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Services Section -->
-<section id="servicos" class="services">
+  <section id="servicos" class="services">
     <div class="container">
-        <h2 class="section-title animate-on-scroll">Serviços Oferecidos</h2>
-        <div class="services-grid">
-            <div class="service-card animate-on-scroll">
-                <div class="service-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                <h3>Consulta Espiritual</h3>
-                <p>Leitura energética e orientação espiritual personalizada</p>
-            </div>
-            <div class="service-card animate-on-scroll">
-                <div class="service-icon"><i class="fas fa-leaf"></i></div>
-                <h3>Limpeza Energética</h3>
-                <p>Remoção de energias negativas e revitalização</p>
-            </div>
-            <div class="service-card animate-on-scroll">
-                <div class="service-icon"><i class="fas fa-candle-holder"></i></div>
-                <h3>Trabalhos de Candomblé</h3>
-                <p>Rituais tradicionais para proteção, amor, prosperidade</p>
-            </div>
-        </div>
+      <h3>Serviços</h3>
+      <div class="serv-grid">
+        <article class="serv-card">
+          <i class="fas fa-brain"></i>
+          <h4>Consulta Espiritual</h4>
+          <p>Leitura energética e orientação personalizada.</p>
+          <span class="tag">1h • Presencial ou Online</span>
+        </article>
+        <article class="serv-card">
+          <i class="fas fa-sparkles"></i>
+          <h4>Limpeza Energética</h4>
+          <p>Remoção de bloqueios e revitalização do campo aurico.</p>
+          <span class="tag">2h • Presencial</span>
+        </article>
+        <article class="serv-card">
+          <i class="fas fa-hands-praying"></i>
+          <h4>Trabalho de Candomblé</h4>
+          <p>Rituais tradicionais para proteção, amor, prosperidade.</p>
+          <span class="tag">3h • Presencial</span>
+        </article>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Consultation Form -->
-<section id="consulta" class="consultation">
+  <section id="consulta" class="consultation">
     <div class="container">
-        <h2 class="section-title animate-on-scroll">Agende sua Consulta</h2>
-        <form id="consultationForm" class="consultation-form animate-on-scroll">
-            <div class="form-group">
-                <label>Nome Completo</label>
-                <input type="text" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label>Telefone</label>
-                <input type="tel" name="telefone" required>
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label>Tipo de Serviço</label>
-                <select name="servico" required>
-                    <option value="">Selecione</option>
-                    <option>Consulta Espiritual</option>
-                    <option>Limpeza Energética</option>
-                    <option>Trabalho de Candomblé</option>
-                </select>
-            </div>
-            <button type="submit" class="submit-button">
-                <i class="fas fa-paper-plane"></i> Enviar Solicitação
-            </button>
-        </form>
+      <h3>Agende sua Consulta</h3>
+      <form class="form-modern" action="https://formsubmit.co/seu-email@dominio.com" method="POST">
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="tel" name="whatsapp" placeholder="WhatsApp (somente números)" required>
+        <select name="servico" required>
+          <option value="">Escolha o serviço</option>
+          <option>Consulta Espiritual</option>
+          <option>Limpeza Energética</option>
+          <option>Trabalho de Candomblé</option>
+        </select>
+        <button type="submit">Quero agendar</button>
+        <input type="hidden" name="_next" value="https://mestrereginaldo-site.github.io/mestre-reginaldo-oficial/obrigado.html">
+      </form>
     </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="footer">
+  <footer class="footer">
     <div class="container">
-        <p>&copy; 2024 Mestre Reginaldo. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Mestre Reginaldo. Todos os direitos reservados.</p>
     </div>
-</footer>
+  </footer>
 
-<!-- WhatsApp Float -->
-<div class="whatsapp-float">
-    <a href="https://wa.me/5511999999999" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</div>
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
 
-<!-- JS -->
-<script src="js/main.js"></script>
-<script>
-function scrollToSection(sectionId) {
-    document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
-}
-</script>
-
+  <script>
+    // menu mobile
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    hamburger.addEventListener('click', () => navMenu.classList.toggle('active'));
+  </script>
 </body>
 </html>
