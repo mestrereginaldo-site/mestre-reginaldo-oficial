@@ -67,7 +67,7 @@ img{max-width:100%;display:block;border-radius:var(--radius);}
 .about-list{list-style:none;margin-top:1rem;}
 .about-list li{margin:.5rem 0;display:flex;align-items:center;gap:.5rem;color:var(--destaque));}
 .about-image img{border-radius:var(--radius);box-shadow:var(--sombra);max-height:320px;object-fit:cover;width:100%;}
-/* FORM */
+/* FORM COM RECAPTCHA */
 .consultation{padding:80px 20px;background:var(--fundo);}
 .form-modern{max-width:500px;margin:2rem auto;display:grid;gap:1rem;}
 .form-modern input,.form-modern select,.form-modern textarea{padding:1rem;border:1px solid #cbd5e0;border-radius:var(--radius);font-size:1rem;resize:vertical;}
