@@ -1,57 +1,51 @@
-/* Reset e Variáveis */
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== VARIÁVEIS AZUIS ===== */
 :root {
-    --primary-color: #8B4513;
-    --secondary-color: #D2691E;
-    --accent-color: #FFD700;
-    --text-dark: #2C1810;
-    --text-light: #6B4423;
-    --bg-light: #FFF8DC;
-    --bg-white: #FFFFFF;
-    --shadow: 0 10px 30px rgba(0,0,0,0.1);
-    --gradient: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    --azul-escuro: #0d1b2a;
+    --azul-celestial: #48cae4;
+    --azul-medio: #0077b6;
+    --azul-claro: #caf0f8;
+    --branco: #ffffff;
+    --branco-suave: #f8f9fa;
+    --sombra: 0 10px 30px rgba(72, 202, 228, 0.2);
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--azul-escuro);
+    color: var(--branco-suave);
     line-height: 1.6;
-    color: var(--text-dark);
     overflow-x: hidden;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Navigation */
+/* ===== NAVBAR ===== */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(13, 27, 42, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: var(--shadow);
     z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-.navbar.scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    box-shadow: var(--sombra);
 }
 
 .nav-brand h1 {
-    font-family: 'Cinzel', serif;
-    color: var(--primary-color);
+    color: var(--azul-celestial);
     font-size: 1.8rem;
-    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .nav-menu {
@@ -61,30 +55,14 @@ body {
 }
 
 .nav-menu a {
+    color: var(--branco-suave);
     text-decoration: none;
-    color: var(--text-dark);
     font-weight: 500;
     transition: color 0.3s ease;
-    position: relative;
 }
 
 .nav-menu a:hover {
-    color: var(--secondary-color);
-}
-
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--gradient);
-    transition: width 0.3s ease;
-}
-
-.nav-menu a:hover::after {
-    width: 100%;
+    color: var(--azul-celestial);
 }
 
 .hamburger {
@@ -96,33 +74,32 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--primary-color);
+    background: var(--azul-celestial);
     margin: 3px 0;
-    transition: 0.3s;
 }
 
-/* Hero Section */
+/* ===== HERO ===== */
 .hero {
     min-height: 100vh;
-    background: var(--gradient);
+    background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-medio) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: var(--branco);
     padding: 120px 20px 50px;
 }
 
 .hero-content h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
+    letter-spacing: 3px;
 }
 
 .hero-content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: var(--azul-celestial);
 }
 
 .hero-content p {
@@ -131,35 +108,35 @@ body {
 }
 
 .cta-button {
-    background: white;
-    color: var(--primary-color);
+    background: var(--azul-celestial);
+    color: var(--azul-escuro);
     border: none;
     padding: 15px 40px;
     font-size: 1.1rem;
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: var(--sombra);
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    background: #90e0ef;
 }
 
-/* Sections */
+/* ===== SEÇÕES ===== */
 .section-title {
-    font-family: 'Cinzel', serif;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--primary-color);
+    color: var(--azul-celestial);
+    letter-spacing: 2px;
 }
 
-/* About Section */
+/* ===== ABOUT ===== */
 .about {
     padding: 100px 0;
-    background: var(--bg-light);
+    background: var(--azul-medio);
 }
 
 .about-content {
@@ -172,45 +149,44 @@ body {
 .about-text p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
-    color: var(--text-light);
 }
 
 .about-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: var(--shadow);
+    box-shadow: var(--sombra);
 }
 
-/* Services Section */
+/* ===== SERVICES ===== */
 .services {
     padding: 100px 0;
-    background: white;
+    background: var(--azul-claro);
+    color: var(--azul-escuro);
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
 .service-card {
-    background: white;
+    background: var(--branco);
     padding: 2rem;
     border-radius: 20px;
-    box-shadow: var(--shadow);
     text-align: center;
+    box-shadow: var(--sombra);
     transition: all 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .service-icon {
     width: 80px;
     height: 80px;
-    background: var(--gradient);
+    background: var(--azul-celestial);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -220,29 +196,28 @@ body {
 
 .service-icon i {
     font-size: 2rem;
-    color: white;
+    color: var(--azul-escuro);
 }
 
 .service-card h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 1.3rem;
+    color: var(--azul-medio);
     margin-bottom: 1rem;
-    color: var(--primary-color);
 }
 
-/* Consultation Form */
+/* ===== FORMULÁRIO ===== */
 .consultation {
     padding: 100px 0;
-    background: var(--bg-light);
+    background: var(--azul-escuro);
 }
 
 .consultation-form {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(72, 202, 228, 0.2);
 }
 
 .form-group {
@@ -252,8 +227,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
-    font-weight: 500;
+    color: var(--azul-celestial);
 }
 
 .form-group input,
@@ -261,37 +235,39 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid rgba(139, 69, 19, 0.2);
+    border: 1px solid var(--azul-celestial);
     border-radius: 10px;
+    background: transparent;
+    color: var(--branco);
     font-size: 1rem;
 }
 
 .submit-button {
     width: 100%;
-    background: var(--gradient);
-    color: white;
+    background: var(--azul-celestial);
+    color: var(--azul-escuro);
     border: none;
     padding: 1rem;
     font-size: 1.1rem;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .submit-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #90e0ef;
+    transform: translateY(-3px);
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 .footer {
-    background: var(--text-dark);
-    color: white;
+    background: #020c1b;
+    color: var(--branco-suave);
     text-align: center;
     padding: 2rem 0;
 }
 
-/* WhatsApp Float */
+/* ===== WHATSAPP FLOAT ===== */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -308,30 +284,29 @@ body {
     background: #25D366;
     color: white;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
 }
 
 .whatsapp-float a:hover {
     transform: scale(1.1);
-    background: #128C7E;
 }
 
-/* Responsive */
+/* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .hero-content h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    
+
     .nav-menu {
         display: none;
     }
-    
+
     .hamburger {
         display: flex;
     }
