@@ -8,45 +8,25 @@
     <meta name="keywords" content="Mestre Reginaldo, pai de santo, amarração amorosa, limpeza espiritual, proteção espiritual, abertura de caminhos, jogo de búzios, orixás, consulta espiritual, trabalhos espirituais, umbanda, candomblé">
     <meta name="author" content="Mestre Reginaldo">
     <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mestrereginaldo.com.br/">
     <meta property="og:title" content="Mestre Reginaldo - Pai de Santo com 35 Anos de Experiência Espiritual">
     <meta property="og:description" content="Consultor espiritual especializado em amarração amorosa, limpeza espiritual e proteção energética. Atendimento com jogo de búzios e rituais sagrados.">
-    <meta property="og:image" content="https://mestrereginaldo.com.br/images/og-image.jpg">
-    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mestrereginaldo.com.br/">
     <meta property="twitter:title" content="Mestre Reginaldo - Pai de Santo Espiritual">
     <meta property="twitter:description" content="35 anos de experiência em trabalhos espirituais. Amarração amorosa, limpeza e proteção energética.">
-    <meta property="twitter:image" content="https://mestrereginaldo.com.br/images/twitter-image.jpg">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
     
-    <!-- Schema.org markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Mestre Reginaldo",
-      "description": "Pai de Santo com 35 anos de experiência em trabalhos espirituais",
-      "url": "https://mestrereginaldo.com.br",
-      "telephone": "+55-11-99999-9999",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "São Paulo",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
-      },
-      "serviceType": "Consultoria Espiritual",
-      "areaServed": "Brasil"
-    }
-    </script>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -63,7 +43,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
@@ -168,7 +148,6 @@
             border-radius: 2px;
         }
         
-        /* Quando o menu estiver ativo */
         .nav-menu.active {
             display: flex;
             flex-direction: column;
@@ -194,17 +173,15 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(106, 76, 147, 0.8), rgba(142, 107, 191, 0.8)), url('https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(106, 76, 147, 0.85), rgba(142, 107, 191, 0.85)), url('https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             height: 100vh;
             display: flex;
             align-items: center;
             color: white;
             text-align: center;
             margin-top: 60px;
-            position: relative;
         }
         
         .hero-content {
@@ -316,7 +293,8 @@
         
         .about-img img {
             width: 100%;
-            height: auto;
+            height: 400px;
+            object-fit: cover;
             display: block;
             transition: transform 0.5s;
         }
@@ -392,74 +370,6 @@
         
         .service-content p {
             color: var(--text);
-        }
-        
-        /* Blog */
-        #blog {
-            background-color: white;
-        }
-        
-        .blog-preview {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .blog-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            transition: transform 0.3s;
-            border: 1px solid var(--medium);
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .blog-content {
-            padding: 1.8rem;
-        }
-        
-        .blog-content h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.8rem;
-            color: var(--primary);
-        }
-        
-        .blog-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--medium);
-        }
-        
-        .read-more {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            margin-top: 1rem;
-            transition: color 0.3s;
-        }
-        
-        .read-more:hover {
-            color: var(--secondary);
-        }
-        
-        .read-more::after {
-            content: '→';
-            margin-left: 5px;
-            transition: transform 0.3s;
-        }
-        
-        .read-more:hover::after {
-            transform: translateX(5px);
         }
         
         /* Depoimentos */
@@ -612,73 +522,6 @@
             padding: 4rem 0 1.5rem;
         }
         
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-        
-        .footer-about p {
-            color: #adb5bd;
-            line-height: 1.7;
-        }
-        
-        .footer-links h3, .footer-social h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent);
-        }
-        
-        .footer-links ul {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 0.7rem;
-        }
-        
-        .footer-links a {
-            color: #adb5bd;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent);
-        }
-        
-        .social-icons {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .social-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        
-        .social-icon:hover {
-            background-color: var(--accent);
-            color: var(--dark);
-            transform: translateY(-3px);
-        }
-        
         .copyright {
             text-align: center;
             padding-top: 2rem;
@@ -747,11 +590,6 @@
                 gap: 0.5rem;
                 text-align: center;
             }
-            
-            /* Ajuste extra para mobile */
-            .hero {
-                background-attachment: scroll; /* Remove parallax em mobile */
-            }
         }
     </style>
 </head>
@@ -772,7 +610,6 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#services">Serviços</a></li>
-                <li><a href="#blog">Blog</a></li>
                 <li><a href="#testimonials">Depoimentos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
@@ -808,7 +645,7 @@
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Mestre Reginaldo - Pai de Santo">
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Mestre Reginaldo - Pai de Santo">
                 </div>
                 <div class="about-text">
                     <h3>Pai de Santo com mais de 35 anos de experiência</h3>
@@ -830,7 +667,7 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1518834107812-67d4d9183d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amarração Amorosa">
+                        <img src="https://images.unsplash.com/photo-1518834107812-67d4d9183d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Amarração Amorosa">
                     </div>
                     <div class="service-content">
                         <h3>Amarração Amorosa</h3>
@@ -839,7 +676,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Limpeza Espiritual">
+                        <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Limpeza Espiritual">
                     </div>
                     <div class="service-content">
                         <h3>Limpeza Espiritual</h3>
@@ -848,7 +685,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Proteção Espiritual">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Proteção Espiritual">
                     </div>
                     <div class="service-content">
                         <h3>Proteção Espiritual</h3>
@@ -857,7 +694,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Abertura de Caminhos">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Abertura de Caminhos">
                     </div>
                     <div class="service-content">
                         <h3>Abertura de Caminhos</h3>
@@ -866,7 +703,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Jogo de Búzios">
+                        <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Jogo de Búzios">
                     </div>
                     <div class="service-content">
                         <h3>Jogo de Búzios</h3>
@@ -875,55 +712,11 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1560421683-2586345195e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Rituais de Orixás">
+                        <img src="https://images.unsplash.com/photo-1560421683-2586345195e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Rituais de Orixás">
                     </div>
                     <div class="service-content">
                         <h3>Rituais de Orixás</h3>
                         <p>Trabalhos específicos com os Orixás para diversas finalidades, sempre respeitando as tradições ancestrais.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog -->
-    <section id="blog">
-        <div class="container">
-            <div class="section-title">
-                <h2>Artigos e Conhecimento</h2>
-            </div>
-            <div class="blog-preview">
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <h3>Como a Amarração Amorosa Funciona?</h3>
-                        <div class="blog-meta">
-                            <span>15 de Maio, 2023</span>
-                            <span>Espiritualidade</span>
-                        </div>
-                        <p>Entenda os princípios energéticos por trás dos trabalhos de amarração amorosa e como eles podem influenciar relacionamentos de forma positiva e ética.</p>
-                        <a href="artigo-amarracao-amorosa.html" class="read-more">Ler mais</a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <h3>5 Sinais de que Você Precisa de uma Limpeza Espiritual</h3>
-                        <div class="blog-meta">
-                            <span>2 de Maio, 2023</span>
-                            <span>Energias</span>
-                        </div>
-                        <p>Identifique sintomas comuns que indicam acúmulo de energias negativas e quando buscar ajuda espiritual para restaurar seu equilíbrio.</p>
-                        <a href="artigo-sinais-limpeza-espiritual.html" class="read-more">Ler mais</a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <h3>O Poder do Jogo de Búzios na Tomada de Decisões</h3>
-                        <div class="blog-meta">
-                            <span>20 de Abril, 2023</span>
-                            <span>Oráculos</span>
-                        </div>
-                        <p>Descubra como o jogo de búzios pode orientar suas escolhas importantes e revelar caminhos espirituais para sua vida.</p>
-                        <a href="artigo-jogo-buzios.html" class="read-more">Ler mais</a>
                     </div>
                 </div>
             </div>
@@ -993,36 +786,28 @@
                 <div class="contact-info">
                     <h3>Informações de Contato</h3>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i>📱</i>
-                        </div>
+                        <div class="contact-icon">📱</div>
                         <div>
                             <h4>Telefone/WhatsApp</h4>
                             <p>(11) 99999-9999</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i>✉️</i>
-                        </div>
+                        <div class="contact-icon">✉️</div>
                         <div>
                             <h4>E-mail</h4>
                             <p>contato@mestrereginaldo.com.br</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i>📍</i>
-                        </div>
+                        <div class="contact-icon">📍</div>
                         <div>
                             <h4>Atendimento</h4>
                             <p>Presencial e Online</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i>⏰</i>
-                        </div>
+                        <div class="contact-icon">⏰</div>
                         <div>
                             <h4>Horário de Atendimento</h4>
                             <p>Segunda a Sábado: 9h às 18h<br>Plantão: 24h para emergências</p>
@@ -1067,34 +852,41 @@
     </section>
 
     <!-- Footer -->
-   <footer>
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">   
-                <div class="footer-social">
-                <div class="legal-links">
+            <div class="legal-links">
                 <a href="politica-privacidade.html">Política de Privacidade</a>
                 <a href="termos-uso.html">Termos de Uso</a>
-                 <a href="cookies.html">Cookies</a>
+                <a href="cookies.html">Cookies</a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 Mestre Reginaldo. Todos os direitos reservados.</p>
-                
-                </div>
             </div>
         </div>
     </footer>
+
     <script>
-        // Smooth scrolling para links de navegação
+        // Menu Hamburguer
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
@@ -1102,39 +894,12 @@
                 }
             });
         });
-        
+
         // Form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Obrigado pelo seu contato! Em breve retornarei sua mensagem.');
             this.reset();
-        });
-        
-        // Header background on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if(window.scrollY > 100) {
-                header.style.background = 'var(--primary)';
-            } else {
-                header.style.background = 'linear-gradient(135deg, var(--primary), var(--secondary))';
-            }
-        });
-
-        // Menu Hamburguer
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
         });
     </script>
 </body>
