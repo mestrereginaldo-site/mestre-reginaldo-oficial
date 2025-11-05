@@ -126,17 +126,62 @@
             color: var(--accent);
         }
         
+        /* Menu Hamburguer */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+        
+        /* Quando o menu estiver ativo */
+        .nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: var(--primary);
+            padding: 1rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .nav-menu.active li {
+            margin: 0;
+            text-align: center;
+        }
+        
+        .nav-menu.active a {
+            display: block;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(106, 76, 147, 0.85), rgba(142, 107, 191, 0.85)), url('https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(106, 76, 147, 0.7), rgba(142, 107, 191, 0.7)), url('https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             height: 100vh;
             display: flex;
             align-items: center;
             color: white;
             text-align: center;
             margin-top: 60px;
+            position: relative;
         }
         
         .hero-content {
@@ -640,12 +685,16 @@
         
         /* Responsividade */
         @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
             .nav-menu {
                 display: none;
             }
             
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .hero p {
@@ -675,6 +724,11 @@
                 gap: 0.5rem;
                 text-align: center;
             }
+            
+            /* Ajuste extra para mobile */
+            .hero {
+                background-attachment: scroll; /* Remove parallax em mobile */
+            }
         }
     </style>
 </head>
@@ -686,6 +740,11 @@
                 <div class="logo-icon">🔮</div>
                 <div class="logo">Mestre Reginaldo</div>
             </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -748,7 +807,7 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1518834107812-67d4d91824d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amarração Amorosa">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amarração Amorosa">
                     </div>
                     <div class="service-content">
                         <h3>Amarração Amorosa</h3>
@@ -757,7 +816,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Limpeza Espiritual">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Limpeza Espiritual">
                     </div>
                     <div class="service-content">
                         <h3>Limpeza Espiritual</h3>
@@ -766,7 +825,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proteção Espiritual">
+                        <img src="https://images.unsplash.com/photo-1532968961962-8a0cb457aacc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proteção Espiritual">
                     </div>
                     <div class="service-content">
                         <h3>Proteção Espiritual</h3>
@@ -775,7 +834,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Abertura de Caminhos">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Abertura de Caminhos">
                     </div>
                     <div class="service-content">
                         <h3>Abertura de Caminhos</h3>
@@ -784,7 +843,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Consultoria Espiritual">
+                        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Consultoria Espiritual">
                     </div>
                     <div class="service-content">
                         <h3>Consultoria Espiritual</h3>
@@ -793,7 +852,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1560421683-2586345195e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Rituais Personalizados">
+                        <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Rituais Personalizados">
                     </div>
                     <div class="service-content">
                         <h3>Rituais Personalizados</h3>
@@ -1037,10 +1096,23 @@
                 header.style.background = 'linear-gradient(135deg, var(--primary), var(--secondary))';
             }
         });
+
+        // Menu Hamburguer
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
-
-
-
-
