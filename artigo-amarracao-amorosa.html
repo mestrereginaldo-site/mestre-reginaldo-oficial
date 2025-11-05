@@ -46,6 +46,10 @@
             color: white;
             padding: 1rem 0;
             box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         
         .nav-container {
@@ -70,9 +74,46 @@
             color: white;
         }
         
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--accent);
+        }
+        
         /* Artigo */
         .article-header {
-            padding: 4rem 0 2rem;
+            padding: 6rem 0 2rem;
             text-align: center;
             background-color: white;
         }
@@ -147,11 +188,17 @@
         }
         
         .conclusion-box {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, #8E6BBF, #A98CD4);
             color: white;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 10px;
             margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .conclusion-box h2 {
+            color: white;
+            margin-bottom: 1rem;
         }
         
         .btn {
@@ -176,11 +223,21 @@
         }
         
         .back-link {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             color: var(--primary);
             text-decoration: none;
             margin-bottom: 2rem;
             font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--primary);
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background-color: var(--primary);
+            color: white;
         }
         
         /* Footer */
@@ -267,6 +324,14 @@
         }
         
         @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .article-header {
+                padding: 5rem 0 2rem;
+            }
+            
             .article-title {
                 font-size: 2rem;
             }
@@ -290,6 +355,14 @@
                 <div class="logo-icon">🔮</div>
                 <div class="logo">Mestre Reginaldo</div>
             </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#services">Serviços</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#testimonials">Depoimentos</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+            </ul>
         </div>
     </header>
 
@@ -305,7 +378,7 @@
                     <span>Categoria: Espiritualidade</span>
                     <span>Tempo de leitura: 8 minutos</span>
                 </div>
-                <img src="https://images.unsplash.com/photo-1518834107812-67d4d91824d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amarração Amorosa" class="article-image">
+                <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amarração Amorosa" class="article-image">
             </div>
             
             <div class="article-content">
@@ -396,7 +469,7 @@
                     <h2>Conclusão</h2>
                     <p>A amarração amorosa é um trabalho espiritual sério que funciona através de princípios energéticos bem estabelecidos. Quando realizada por um profissional experiente e com boas intenções, pode ajudar a reconquistar amores, fortalecer relacionamentos e atrair a pessoa desejada. No entanto, é fundamental abordar esse processo com respeito, paciência e compreensão de que o amor verdadeiro sempre respeita o livre-arbítrio de cada um.</p>
                     <p>Se você está considerando uma amarração amorosa, recomendo buscar orientação de um profissional sério e experiente, que possa avaliar seu caso específico e indicar a melhor abordagem para sua situação.</p>
-                    <a href="../index.html#contact" class="btn">Fale com Mestre Reginaldo</a>
+                    <a href="index.html#contact" class="btn">Fale com Mestre Reginaldo</a>
                 </div>
             </div>
         </article>
@@ -413,12 +486,12 @@
                 <div class="footer-links">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="../index.html#home">Início</a></li>
-                        <li><a href="../index.html#about">Sobre</a></li>
-                        <li><a href="../index.html#services">Serviços</a></li>
-                        <li><a href="../index.html#blog">Blog</a></li>
-                        <li><a href="../index.html#testimonials">Depoimentos</a></li>
-                        <li><a href="../index.html#contact">Contato</a></li>
+                        <li><a href="index.html#home">Início</a></li>
+                        <li><a href="index.html#about">Sobre</a></li>
+                        <li><a href="index.html#services">Serviços</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#testimonials">Depoimentos</a></li>
+                        <li><a href="index.html#contact">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -436,5 +509,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
