@@ -138,6 +138,12 @@
             object-fit: cover;
             border-radius: 10px;
             margin-bottom: 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
         }
         
         .article-content {
@@ -323,6 +329,25 @@
             color: #6c757d;
         }
         
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .legal-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        .legal-links a:hover {
+            color: var(--accent);
+        }
+        
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
@@ -343,6 +368,12 @@
             .article-meta {
                 flex-direction: column;
                 gap: 0.5rem;
+            }
+            
+            .legal-links {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
             }
         }
     </style>
@@ -378,7 +409,9 @@
                     <span>Categoria: Espiritualidade</span>
                     <span>Tempo de leitura: 8 minutos</span>
                 </div>
-                <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amarração Amorosa" class="article-image">
+                <div class="article-image">
+                    🔮 Amarração Amorosa - Trabalho Espiritual
+                </div>
             </div>
             
             <div class="article-content">
@@ -506,6 +539,11 @@
             </div>
             <div class="copyright">
                 <p>&copy; 2023 Mestre Reginaldo. Todos os direitos reservados.</p>
+                <div class="legal-links">
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                    <a href="termos-uso.html">Termos de Uso</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>
