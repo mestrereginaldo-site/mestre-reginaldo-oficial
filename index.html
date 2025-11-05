@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mestre Reginaldo - Pai de Santo Espiritual | Amarração Amorosa & Limpeza Energética</title>
     <meta name="description" content="Mestre Reginaldo - Pai de Santo com 35 anos de experiência em amarração amorosa, limpeza espiritual, proteção energética e abertura de caminhos. Consultas espirituais com jogo de búzios. Atendimento 24h.">
-    <meta name="keywords" content="Mestre Reginaldo, pai de santo, amarração amorosa, limpeza espiritual, proteção espiritual, abertura de caminhos, jogo de búzios, orixás, consulta espiritual, trabalhos espirituais, umbanda, candomblé, espiritualidade">
+    <meta name="keywords" content="Mestre Reginaldo, pai de santo, amarração amorosa, limpeza espiritual, proteção espiritual, abertura de caminhos, jogo de búzios, orixás, consulta espiritual, trabalhos espirituais, umbanda, candomblé, espiritualidade, Iemanjá, Oxum, Ogum">
     <meta name="author" content="Mestre Reginaldo">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -233,9 +233,8 @@
         .hero {
             background: 
                 linear-gradient(rgba(106, 76, 147, 0.85), rgba(142, 107, 191, 0.85)),
-                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="rgba(255,255,255,0.05)" d="M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm0 10c22.1 0 40 17.9 40 40s-17.9 40-40 40S10 72.1 10 50 27.9 10 50 10z"/><path fill="rgba(255,255,255,0.05)" d="M50 20c16.5 0 30 13.5 30 30s-13.5 30-30 30S20 66.5 20 50 33.5 20 50 20zm0 10c11 0 20 9 20 20s-9 20-20 20-20-9-20-20 9-20 20-20z"/></svg>'),
                 url('https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover, 300px, cover;
+            background-size: cover;
             background-position: center;
             background-attachment: fixed;
             height: 100vh;
@@ -247,10 +246,23 @@
             position: relative;
         }
         
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path fill="rgba(255,255,255,0.03)" d="M50,0 C22.4,0 0,22.4 0,50 C0,77.6 22.4,100 50,100 C77.6,100 100,77.6 100,50 C100,22.4 77.6,0 50,0 Z M50,10 C72.1,10 90,27.9 90,50 C90,72.1 72.1,90 50,90 C27.9,90 10,72.1 10,50 C10,27.9 27.9,10 50,10 Z M50,20 C61,20 70,29 70,40 C70,51 61,60 50,60 C39,60 30,51 30,40 C30,29 39,20 50,20 Z"/></svg>');
+            opacity: 0.5;
+        }
+        
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
+            position: relative;
+            z-index: 1;
         }
         
         .hero h1 {
@@ -407,10 +419,6 @@
         .service-img {
             height: 200px;
             overflow: hidden;
-            background-color: #f5f5f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         
         .service-img img {
@@ -465,7 +473,6 @@
         .blog-img {
             height: 180px;
             overflow: hidden;
-            background-color: #f5f5f5;
         }
         
         .blog-img img {
@@ -762,18 +769,6 @@
             color: var(--accent);
         }
         
-        /* Placeholder para imagens */
-        .img-placeholder {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            font-size: 3rem;
-            width: 100%;
-            height: 100%;
-        }
-        
         /* Responsividade */
         @media (max-width: 768px) {
             .hamburger {
@@ -876,9 +871,7 @@
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <div class="img-placeholder">🧙‍♂️</div>
-                    <!-- Substitua pelo caminho real da imagem -->
-                    <!-- <img src="images/mestre-reginaldo.jpg" alt="Mestre Reginaldo - Pai de Santo"> -->
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Mestre Reginaldo - Pai de Santo Espiritual">
                 </div>
                 <div class="about-text">
                     <h3>Pai de Santo com mais de 35 anos de experiência</h3>
@@ -900,8 +893,7 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-img">
-                        <div class="img-placeholder">💑</div>
-                        <!-- <img src="images/amarracao-amorosa.jpg" alt="Amarração Amorosa"> -->
+                        <img src="https://images.unsplash.com/photo-1518834107812-67d4d9183d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amarração Amorosa - Trabalhos Espirituais">
                     </div>
                     <div class="service-content">
                         <h3>Amarração Amorosa</h3>
@@ -910,8 +902,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <div class="img-placeholder">✨</div>
-                        <!-- <img src="images/limpeza-espiritual.jpg" alt="Limpeza Espiritual"> -->
+                        <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Limpeza Espiritual - Rituais de Purificação">
                     </div>
                     <div class="service-content">
                         <h3>Limpeza Espiritual</h3>
@@ -920,8 +911,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <div class="img-placeholder">🛡️</div>
-                        <!-- <img src="images/protecao-espiritual.jpg" alt="Proteção Espiritual"> -->
+                        <img src="https://images.unsplash.com/photo-1519415711931-702deacf5be0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Proteção Espiritual - Defesa Energética">
                     </div>
                     <div class="service-content">
                         <h3>Proteção Espiritual</h3>
@@ -930,8 +920,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <div class="img-placeholder">🛣️</div>
-                        <!-- <img src="images/abertura-caminhos.jpg" alt="Abertura de Caminhos"> -->
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Abertura de Caminhos - Remoção de Obstáculos">
                     </div>
                     <div class="service-content">
                         <h3>Abertura de Caminhos</h3>
@@ -940,8 +929,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <div class="img-placeholder">🐚</div>
-                        <!-- <img src="images/jogo-buzios.jpg" alt="Jogo de Búzios"> -->
+                        <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Jogo de Búzios - Consulta Espiritual">
                     </div>
                     <div class="service-content">
                         <h3>Jogo de Búzios</h3>
@@ -950,8 +938,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-img">
-                        <div class="img-placeholder">🙏</div>
-                        <!-- <img src="images/rituais-orixas.jpg" alt="Rituais de Orixás"> -->
+                        <img src="https://images.unsplash.com/photo-1560421683-2586345195e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Rituais de Orixás - Tradições Ancestrais">
                     </div>
                     <div class="service-content">
                         <h3>Rituais de Orixás</h3>
@@ -971,8 +958,7 @@
             <div class="blog-preview">
                 <div class="blog-card">
                     <div class="blog-img">
-                        <div class="img-placeholder">💕</div>
-                        <!-- <img src="images/artigo-amarracao.jpg" alt="Como a Amarração Amorosa Funciona?"> -->
+                        <img src="https://images.unsplash.com/photo-1518834107812-67d4d9183d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Como a Amarração Amorosa Funciona?">
                     </div>
                     <div class="blog-content">
                         <h3>Como a Amarração Amorosa Funciona?</h3>
@@ -986,8 +972,7 @@
                 </div>
                 <div class="blog-card">
                     <div class="blog-img">
-                        <div class="img-placeholder">🔍</div>
-                        <!-- <img src="images/artigo-sinais.jpg" alt="5 Sinais de que Você Precisa de uma Limpeza Espiritual"> -->
+                        <img src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="5 Sinais de que Você Precisa de uma Limpeza Espiritual">
                     </div>
                     <div class="blog-content">
                         <h3>5 Sinais de que Você Precisa de uma Limpeza Espiritual</h3>
@@ -1001,8 +986,7 @@
                 </div>
                 <div class="blog-card">
                     <div class="blog-img">
-                        <div class="img-placeholder">🔮</div>
-                        <!-- <img src="images/artigo-buzios.jpg" alt="O Poder do Jogo de Búzios na Tomada de Decisões"> -->
+                        <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="O Poder do Jogo de Búzios na Tomada de Decisões">
                     </div>
                     <div class="blog-content">
                         <h3>O Poder do Jogo de Búzios na Tomada de Decisões</h3>
@@ -1031,8 +1015,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <div class="img-placeholder">👩</div>
-                            <!-- <img src="images/cliente-maria.jpg" alt="Maria Silva"> -->
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Maria Silva">
                         </div>
                         <div>
                             <h4>Maria Silva</h4>
@@ -1046,8 +1029,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <div class="img-placeholder">👨</div>
-                            <!-- <img src="images/cliente-joao.jpg" alt="João Santos"> -->
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="João Santos">
                         </div>
                         <div>
                             <h4>João Santos</h4>
@@ -1061,8 +1043,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <div class="img-placeholder">👩</div>
-                            <!-- <img src="images/cliente-ana.jpg" alt="Ana Costa"> -->
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ana Costa">
                         </div>
                         <div>
                             <h4>Ana Costa</h4>
