@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - Mestre Reginaldo</title>
+    <meta name="description" content="Termos de Uso do site Mestre Reginaldo. Conheça as condições de uso dos nossos serviços.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+    
+    <style>
+        :root {
+            --primary: #6A4C93;
+            --secondary: #8E6BBF;
+            --accent: #FF9F1C;
+            --light: #F8F9FA;
+            --medium: #E9ECEF;
+            --dark: #343A40;
+            --text: #495057;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--accent);
+        }
+        
+        /* Conteúdo Principal */
+        .main-content {
+            padding: 6rem 0 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .page-meta {
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+        
+        .content-box {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .content-box h2 {
+            color: var(--primary);
+            margin: 2.5rem 0 1.2rem;
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+        
+        .content-box h3 {
+            color: var(--secondary);
+            margin: 2rem 0 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .content-box p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        
+        .content-box ul, .content-box ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .content-box li {
+            margin-bottom: 0.7rem;
+            line-height: 1.6;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            padding: 0.7rem 1.5rem;
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            transition: all 0.3s;
+            background: white;
+        }
+        
+        .back-link:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(106, 76, 147, 0.3);
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-about p {
+            color: #adb5bd;
+            line-height: 1.7;
+        }
+        
+        .footer-links h3, .footer-social h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.7rem;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--accent);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .legal-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        .legal-links a:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .main-content {
+                padding: 5rem 0 2rem;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .content-box {
+                padding: 2rem;
+            }
+            
+            .legal-links {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo-icon">🔮</div>
+                <div class="logo">Mestre Reginaldo</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#services">Serviços</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#testimonials">Depoimentos</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="container main-content">
+        <a href="index.html" class="back-link">← Voltar para o Site</a>
+        
+        <div class="page-header">
+            <h1 class="page-title">Termos de Uso</h1>
+            <div class="page-meta">Última atualização: 05 de Novembro de 2023</div>
+        </div>
+        
+        <div class="content-box">
+            <div class="warning-box">
+                <strong>Aviso Importante:</strong> Ao utilizar este site, você concorda com estes Termos de Uso. Se não concordar, por favor, não utilize nossos serviços.
+            </div>
+            
+            <h2>1. Aceitação dos Termos</h2>
+            <p>Ao acessar e usar o site mestrereginaldo.com.br, você concorda em cumprir e ser vinculado por estes Termos de Uso e todas as leis e regulamentos aplicáveis. Se você não concordar com algum destes termos, está proibido de usar ou acessar este site.</p>
+            
+            <h2>2. Serviços Oferecidos</h2>
+            <p>O site oferece serviços de consultoria espiritual, incluindo:</p>
+            <ul>
+                <li>Amarração amorosa</li>
+                <li>Limpeza espiritual</li>
+                <li>Proteção energética</li>
+                <li>Abertura de caminhos</li>
+                <li>Consultoria espiritual personalizada</li>
+                <li>Rituais personalizados</li>
+            </ul>
+            
+            <h2>3. Limitações de Responsabilidade</h2>
+            <p>Os serviços espirituais oferecidos são baseados em tradições e conhecimentos ancestrais. Resultados podem variar de acordo com cada caso individual. Não garantimos resultados específicos, uma vez que fatores pessoais, energéticos e kármicos influenciam os resultados finais.</p>
+            
+            <p>Mestre Reginaldo atua como consultor espiritual e não substitui tratamento médico, psicológico ou psiquiátrico. Recomendamos que busque ajuda profissional qualificada para questões de saúde.</p>
+            
+            <h2>4. Conduta do Usuário</h2>
+            <p>Você concorda em:</p>
+            <ul>
+                <li>Fornecer informações verdadeiras e precisas</li>
+                <li>Respeitar a privacidade de outros usuários</li>
+                <li>Não usar os serviços para atividades ilegais</li>
+                <li>Manter conduta respeitosa em todas as comunicações</li>
+                <li>Não reproduzir ou distribuir conteúdo do site sem autorização</li>
+                <li>Não utilizar robôs, spiders ou outros dispositivos automatizados</li>
+            </ul>
+            
+            <h2>5. Propriedade Intelectual</h2>
+            <p>Todo o conteúdo do site, incluindo textos, imagens, logotipos, design, código fonte e demais elementos, é propriedade exclusiva de Mestre Reginaldo e protegido por leis de direitos autorais e propriedade intelectual.</p>
+            
+            <p>É expressamente proibida a reprodução, distribuição, modificação ou uso comercial de qualquer conteúdo deste site sem autorização prévia por escrito.</p>
+            
+            <h2>6. Pagamentos e Reembolsos</h2>
+            <p>Os valores dos serviços são definidos conforme o tipo de trabalho espiritual solicitado. Políticas de reembolso são discutidas caso a caso, considerando a natureza dos serviços prestados e o trabalho já realizado.</p>
+            
+            <p>Em caso de desistência após o início do trabalho espiritual, o reembolso será proporcional ao serviço não prestado.</p>
+            
+            <h2>7. Limitações de Idade</h2>
+            <p>Nossos serviços são destinados a maiores de 18 anos. Menores de idade devem ter consentimento parental para utilizar nossos serviços. Ao usar nossos serviços, você declara que é maior de 18 anos ou possui autorização parental.</p>
+            
+            <h2>8. Links para Terceiros</h2>
+            <p>O site pode conter links para sites de terceiros. Não nos responsabilizamos pelo conteúdo, políticas de privacidade ou práticas de sites de terceiros.</p>
+            
+            <h2>9. Modificações nos Termos</h2>
+            <p>Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento. Alterações significativas serão notificadas aos usuários através de aviso em nosso site. O uso continuado do site após tais modificações constitui sua aceitação dos novos termos.</p>
+            
+            <h2>10. Rescisão</h2>
+            <p>Podemos rescindir ou suspender seu acesso ao site imediatamente, sem aviso prévio, por qualquer motivo, incluindo, sem limitação, se você violar estes Termos de Uso.</p>
+            
+            <h2>11. Lei Aplicável</h2>
+            <p>Estes Termos são regidos pelas leis do Brasil. Qualquer disputa será resolvida nos tribunais competentes do país.</p>
+            
+            <h2>12. Contato</h2>
+            <p>Para questões sobre estes Termos de Uso, entre em contato através do formulário disponível no site ou pelo e-mail: contato@mestrereginaldo.com.br</p>
+            
+            <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
+                <p><strong>Última atualização:</strong> 05 de Novembro de 2023</p>
+                <p>Estes termos entram em vigor a partir da data de publicação acima.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Mestre Reginaldo</div>
+                    <p>Pai de Santo e consultor espiritual com mais de 30 anos de experiência, dedicado a ajudar pessoas a transformarem suas vidas através de conhecimentos esotéricos ancestrais e trabalhos espirituais eficazes.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html#home">Início</a></li>
+                        <li><a href="index.html#about">Sobre</a></li>
+                        <li><a href="index.html#services">Serviços</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#testimonials">Depoimentos</a></li>
+                        <li><a href="index.html#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">YT</a>
+                        <a href="#" class="social-icon">WA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Mestre Reginaldo. Todos os direitos reservados.</p>
+                <div class="legal-links">
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                    <a href="termos-uso.html">Termos de Uso</a>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
