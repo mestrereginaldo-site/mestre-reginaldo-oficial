@@ -33,7 +33,7 @@
       "name": "Mestre Reginaldo",
       "description": "Pai de Santo com 35 anos de experiência em trabalhos espirituais",
       "url": "https://mestrereginaldo.com.br",
-      "telephone": "+55-11-99999-9999",
+      "telephone": "+55-71-98648-2241",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "São Paulo",
@@ -769,6 +769,33 @@
             color: var(--accent);
         }
         
+        /* Botão WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+        }
+        
         /* Responsividade */
         @media (max-width: 768px) {
             .hamburger {
@@ -809,6 +836,14 @@
                 flex-direction: column;
                 gap: 0.5rem;
                 text-align: center;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 25px;
             }
             
             /* Ajuste extra para mobile */
@@ -872,7 +907,7 @@
             <div class="about-content">
                 <div class="about-img">
                     <!-- Imagem real de espiritualidade -->
-                    <img src="images/foto_minha.png" alt="Mestre Reginaldo - Pai de Santo Espiritual">
+                    <img src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mestre Reginaldo - Pai de Santo Espiritual">
                 </div>
                 <div class="about-text">
                     <h3>Pai de Santo com mais de 35 anos de experiência</h3>
@@ -935,7 +970,7 @@
                 <div class="service-card">
                     <div class="service-img">
                         <!-- Imagem real para jogo de búzios -->
-                        <img src="https://images.pexels.com/photos/459335/pexels-photo-459335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Jogo de Búzios - Consulta Espiritual">
+                        <img src="images/foto_minha.png" alt="Jogo de Búzios - Consulta Espiritual">
                     </div>
                     <div class="service-content">
                         <h3>Jogo de Búzios</h3>
@@ -1077,7 +1112,7 @@
                         </div>
                         <div>
                             <h4>Telefone/WhatsApp</h4>
-                            <p>(11) 99999-9999</p>
+                            <p>(71) 98648-2241</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1182,6 +1217,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5571986482241?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20agendar%20uma%20consulta" class="whatsapp-float" target="_blank" aria-label="Entre em contato pelo WhatsApp">
+        💬
+    </a>
 
     <script>
         // Smooth scrolling para links de navegação
