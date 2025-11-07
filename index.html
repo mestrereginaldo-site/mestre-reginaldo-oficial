@@ -1245,13 +1245,42 @@
             });
         });
         
-        // Form submission
-        // Form submission
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Obrigado pelo seu contato! Em breve retornarei sua mensagem.');
-    this.reset();
-});
+        // Form submission para WhatsApp - CÓDIGO CORRIGIDO
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Coletar dados do formulário
+            const name = document.getElementById('name').value || 'Não informado';
+            const email = document.getElementById('email').value || 'Não informado';
+            const phone = document.getElementById('phone').value || 'Não informado';
+            const service = document.getElementById('service').value || 'Não informado';
+            const message = document.getElementById('message').value || 'Não informado';
+            
+            // Montar mensagem para WhatsApp
+            const whatsappMessage = `*NOVO CONTATO DO SITE*%0A%0A*Nome:* ${name}%0A*E-mail:* ${email}%0A*Telefone:* ${phone}%0A*Serviço de Interesse:* ${service}%0A*Mensagem:* ${message}`;
+            
+            // URL do WhatsApp
+            const whatsappURL = `https://wa.me/5571983389346?text=${whatsappMessage}`;
+            
+            // Redirecionar para WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Mensagem de confirmação
+            alert('Obrigado! Redirecionando para o WhatsApp...');
+            
+            // Limpar formulário
+            this.reset();
+        });
+        
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if(window.scrollY > 100) {
+                header.style.background = 'var(--primary)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, var(--primary), var(--secondary))';
+            }
+        });
 
         // Menu Hamburguer
         const hamburger = document.querySelector('.hamburger');
@@ -1272,4 +1301,3 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     </script>
 </body>
 </html>
-
