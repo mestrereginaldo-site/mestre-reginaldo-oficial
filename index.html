@@ -1246,21 +1246,12 @@
         });
         
         // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Obrigado pelo seu contato! Em breve retornarei sua mensagem.');
-            this.reset();
-        });
-        
-        // Header background on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if(window.scrollY > 100) {
-                header.style.background = 'var(--primary)';
-            } else {
-                header.style.background = 'linear-gradient(135deg, var(--primary), var(--secondary))';
-            }
-        });
+        // Form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Obrigado pelo seu contato! Em breve retornarei sua mensagem.');
+    this.reset();
+});
 
         // Menu Hamburguer
         const hamburger = document.querySelector('.hamburger');
@@ -1281,3 +1272,4 @@
     </script>
 </body>
 </html>
+
