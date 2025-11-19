@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encantamentos Espirituais Poderosos | Mestre Reginaldo 🔮</title>
-    <meta name="description" content="Descubra 10 encantamentos espirituais poderosos para amor, proteção e prosperidade. Rituais completos passo a passo com Mestre Reginaldo.">
+    <meta name="description" content="Descubra 30 encantamentos espirituais poderosos para amor, proteção e prosperidade. Rituais completos passo a passo com Mestre Reginaldo.">
     <meta name="keywords" content="encantamentos espirituais, rituais de amor, proteção espiritual, amarração amorosa, feitiços, Mestre Reginaldo">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Encantamentos Espirituais Poderosos | Mestre Reginaldo">
-    <meta property="og:description" content="10 encantamentos espirituais completos para transformar sua vida amorosa, profissional e espiritual">
+    <meta property="og:description" content="30 encantamentos espirituais para transformar sua vida amorosa, profissional e espiritual">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mestrereginaldo.com.br/encantamentos.html">
     
@@ -19,11 +22,11 @@
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       "name": "Encantamentos Espirituais - Mestre Reginaldo",
-      "description": "Coleção de 10 encantamentos espirituais poderosos para amor, proteção e prosperidade",
+      "description": "Coleção de 30 encantamentos espirituais poderosos para amor, proteção e prosperidade",
       "url": "https://www.mestrereginaldo.com.br/encantamentos.html",
       "mainEntity": {
         "@type": "ItemList",
-        "numberOfItems": 10,
+        "numberOfItems": 30,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -285,6 +288,15 @@
             font-size: 0.95rem;
         }
         
+        .encantamento-disponivel {
+            border-top: 4px solid var(--accent);
+        }
+        
+        .encantamento-disponivel h3::after {
+            content: " ✅";
+            font-size: 0.9rem;
+        }
+        
         /* Seção de Encantamento Individual */
         .encantamento-individual {
             padding: 4rem 0;
@@ -387,37 +399,6 @@
         .voltar-btn:hover {
             background-color: var(--secondary);
             transform: translateY(-2px);
-        }
-        
-        /* Breadcrumb */
-        .breadcrumb {
-            padding: 1rem 0;
-            background-color: var(--light);
-            margin-top: 60px;
-        }
-        
-        .breadcrumb ol {
-            display: flex;
-            list-style: none;
-        }
-        
-        .breadcrumb li {
-            margin-right: 0.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb li:not(:last-child)::after {
-            content: ">";
-            margin-left: 0.5rem;
-        }
-        
-        .breadcrumb a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-        
-        .breadcrumb a:hover {
-            text-decoration: underline;
         }
         
         /* Footer */
@@ -634,17 +615,6 @@
         </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-        <div class="container">
-            <ol>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="encantamentos.html">Encantamentos</a></li>
-                <li id="breadcrumb-encantamento" style="display: none;"></li>
-            </ol>
-        </div>
-    </div>
-
     <!-- Hero Section Encantamentos -->
     <section class="hero-encantamentos">
         <div class="hero-content-encantamentos">
@@ -659,7 +629,7 @@
             <div class="introducao-content">
                 <h2>O Poder dos Encantamentos</h2>
                 <p>Os encantamentos são práticas espirituais ancestrais que utilizam a energia do universo, elementos da natureza e a força da intenção para criar mudanças positivas em nossas vidas. Cada encantamento é um ritual sagrado que deve ser realizado com respeito, fé e concentração.</p>
-                <p>Nesta página, você encontrará uma seleção de 10 encantamentos poderosos, cuidadosamente selecionados por Mestre Reginaldo após mais de 35 anos de experiência espiritual. Cada encantamento inclui instruções detalhadas passo a passo para que você possa realizar com segurança e eficácia.</p>
+                <p>Nesta página, você encontrará uma seleção de 30 encantamentos poderosos, cuidadosamente selecionados por Mestre Reginaldo após mais de 35 anos de experiência espiritual. Os encantamentos marcados com ✅ possuem instruções completas passo a passo.</p>
                 <p>Lembre-se: a chave para o sucesso de qualquer encantamento está na sua fé, intenção pura e respeito pelas forças espirituais. Utilize estes conhecimentos com sabedoria e sempre para o bem.</p>
             </div>
         </div>
@@ -670,46 +640,126 @@
         <div class="container">
             <h2>Escolha um Encantamento</h2>
             <div class="encantamentos-grid">
-                <!-- Lista de 10 encantamentos -->
-                <div class="encantamento-card" data-encantamento="1">
+                <!-- Lista de 30 encantamentos (10 primeiros com conteúdo completo) -->
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="1">
                     <h3>Encantamento do Amor Verdadeiro</h3>
                     <p>Para atrair um amor sincero e duradouro para sua vida.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="2">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="2">
                     <h3>Proteção Contra Inimigos</h3>
                     <p>Para se proteger de pessoas negativas e más intenções.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="3">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="3">
                     <h3>Abertura de Caminhos Profissionais</h3>
                     <p>Para remover obstáculos e atrair oportunidades de trabalho.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="4">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="4">
                     <h3>Encantamento da Prosperidade</h3>
                     <p>Para atrair abundância financeira e estabilidade.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="5">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="5">
                     <h3>Limpeza Energética do Lar</h3>
                     <p>Para purificar sua casa de energias negativas.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="6">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="6">
                     <h3>Encantamento da Autoestima</h3>
                     <p>Para fortalecer a confiança e amor próprio.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="7">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="7">
                     <h3>Proteção Espiritual Noturna</h3>
                     <p>Para ter sonhos tranquilos e proteção durante o sono.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="8">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="8">
                     <h3>Encantamento da Cura Emocional</h3>
                     <p>Para superar traumas e mágoas do passado.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="9">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="9">
                     <h3>Atrair Boas Amizades</h3>
                     <p>Para encontrar pessoas positivas e leais.</p>
                 </div>
-                <div class="encantamento-card" data-encantamento="10">
+                <div class="encantamento-card encantamento-disponivel" data-encantamento="10">
                     <h3>Encantamento da Intuição</h3>
                     <p>Para desenvolver e fortalecer sua intuição espiritual.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="11">
+                    <h3>Harmonização Familiar</h3>
+                    <p>Para trazer paz e harmonia para sua família.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="12">
+                    <h3>Encantamento da Força Interior</h3>
+                    <p>Para superar momentos difíceis com coragem.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="13">
+                    <h3>Proteção Contra Inveja</h3>
+                    <p>Para se blindar contra olho gordo e energias negativas.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="14">
+                    <h3>Encantamento da Sabedoria</h3>
+                    <p>Para tomar decisões acertadas e com discernimento.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="15">
+                    <h3>Atrair Boas Oportunidades</h3>
+                    <p>Para reconhecer e aproveitar chances que surgem.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="16">
+                    <h3>Encantamento da Fertilidade</h3>
+                    <p>Para auxiliar na concepção e gravidez.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="17">
+                    <h3>Proteção para Viagens</h3>
+                    <p>Para ter viagens seguras e tranquilas.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="18">
+                    <h3>Encantamento da Comunicação</h3>
+                    <p>Para se expressar com clareza e persuasão.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="19">
+                    <h3>Limpeza de Vínculos Negativos</h3>
+                    <p>Para cortar laços energéticos prejudiciais.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="20">
+                    <h3>Encantamento da Paciência</h3>
+                    <p>Para desenvolver serenidade e paciência.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="21">
+                    <h3>Atrair Reconhecimento Profissional</h3>
+                    <p>Para ser valorizado no ambiente de trabalho.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="22">
+                    <h3>Encantamento da Cura Física</h3>
+                    <p>Para auxiliar no processo de recuperação da saúde.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="23">
+                    <h3>Proteção para Crianças</h3>
+                    <p>Para proteger os pequenos de energias negativas.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="24">
+                    <h3>Encantamento da Determinação</h3>
+                    <p>Para manter o foco e perseverança em seus objetivos.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="25">
+                    <h3>Harmonização de Relacionamento</h3>
+                    <p>Para resolver conflitos e fortalecer laços amorosos.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="26">
+                    <h3>Encantamento da Criatividade</h3>
+                    <p>Para desbloquear e expandir sua criatividade.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="27">
+                    <h3>Proteção para o Lar</h3>
+                    <p>Para criar um escudo protetor em sua casa.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="28">
+                    <h3>Encantamento da Gratidão</h3>
+                    <p>Para cultivar a gratidão e atrair mais motivos para agradecer.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="29">
+                    <h3>Atrair Mentores Espirituais</h3>
+                    <p>Para conectar-se com guias e mentores espirituais.</p>
+                </div>
+                <div class="encantamento-card" data-encantamento="30">
+                    <h3>Encantamento do Perdão</h3>
+                    <p>Para liberar mágoas e perdoar a si mesmo e aos outros.</p>
                 </div>
             </div>
         </div>
@@ -775,7 +825,7 @@
     </a>
 
     <script>
-        // Dados dos encantamentos - Expandidos para 10 encantamentos completos
+        // Dados dos encantamentos - 10 primeiros com conteúdo completo
         const encantamentos = {
             1: {
                 titulo: "Encantamento do Amor Verdadeiro",
@@ -1128,7 +1178,6 @@
         const voltarBtn = document.getElementById('voltar-btn');
         const encantamentoCards = document.querySelectorAll('.encantamento-card');
         const introducaoSection = document.getElementById('introducao');
-        const breadcrumbEncantamento = document.getElementById('breadcrumb-encantamento');
 
         // Mostrar encantamento individual
         encantamentoCards.forEach(card => {
@@ -1143,17 +1192,14 @@
             const encantamento = encantamentos[id];
             
             if (!encantamento) {
-                alert('Encantamento não encontrado. Em breve teremos mais informações!');
+                // Se não tem conteúdo, redirecionar para WhatsApp
+                window.open('https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20encantamento%20que%20não%20encontrei%20no%20site', '_blank');
                 return;
             }
             
             // Atualizar título e descrição
             tituloEncantamento.textContent = encantamento.titulo;
             descricaoEncantamento.textContent = encantamento.descricao;
-            
-            // Atualizar breadcrumb
-            breadcrumbEncantamento.textContent = encantamento.titulo;
-            breadcrumbEncantamento.style.display = 'inline';
             
             // Limpar conteúdo anterior
             passoAPasso.innerHTML = '';
@@ -1220,7 +1266,6 @@
             encantamentoIndividual.style.display = 'none';
             menuEncantamentos.style.display = 'block';
             introducaoSection.style.display = 'block';
-            breadcrumbEncantamento.style.display = 'none';
             
             // Restaurar título original
             document.title = "Encantamentos Espirituais Poderosos | Mestre Reginaldo 🔮";
