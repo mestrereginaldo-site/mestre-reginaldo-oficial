@@ -295,6 +295,16 @@
             border-radius: 30px;
             backdrop-filter: blur(10px);
         }
+
+        .badge a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .badge a:hover {
+            color: var(--accent);
+        }
         
         .stars {
             color: var(--accent);
@@ -318,6 +328,16 @@
             background-color: #ffb143;
             transform: translateY(-3px);
             box-shadow: 0 7px 20px rgba(255, 159, 28, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(106, 76, 147, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary);
+            box-shadow: 0 7px 20px rgba(106, 76, 147, 0.4);
         }
         
         /* Seções Gerais */
@@ -391,6 +411,25 @@
         .about-text p {
             margin-bottom: 1.2rem;
         }
+
+        .knowledge-box {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .knowledge-box h4 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .knowledge-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1rem;
+        }
         
         /* Serviços */
         .services {
@@ -446,6 +485,30 @@
         .service-content p {
             color: var(--text);
         }
+
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1rem;
+            transition: color 0.3s;
+        }
+        
+        .read-more:hover {
+            color: var(--secondary);
+        }
+        
+        .read-more::after {
+            content: '→';
+            margin-left: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .read-more:hover::after {
+            transform: translateX(5px);
+        }
         
         /* Blog */
         #blog {
@@ -500,30 +563,6 @@
             margin-bottom: 1rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid var(--medium);
-        }
-        
-        .read-more {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            margin-top: 1rem;
-            transition: color 0.3s;
-        }
-        
-        .read-more:hover {
-            color: var(--secondary);
-        }
-        
-        .read-more::after {
-            content: '→';
-            margin-left: 5px;
-            transition: transform 0.3s;
-        }
-        
-        .read-more:hover::after {
-            transform: translateX(5px);
         }
         
         /* Depoimentos */
@@ -588,6 +627,27 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        /* Seção CTA Encantamentos */
+        .encantamentos-cta {
+            background-color: var(--light);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .encantamentos-cta h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .encantamentos-cta p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         /* Contato */
@@ -894,6 +954,11 @@
                     <span>📞</span>
                     <span>Atendimento 24h</span>
                 </div>
+                <!-- NOVO BADGE - ENCANTAMENTOS -->
+                <div class="badge">
+                    <span>🔮</span>
+                    <span><a href="encantamentos.html">30 Encantamentos Gratuitos</a></span>
+                </div>
             </div>
             
            <a href="https://wa.me/5571983389346?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20uma%20consulta%20." class="btn" target="_blank">FALE COMIGO AGORA</a>
@@ -916,7 +981,13 @@
                     <p>Mestre Reginaldo é um renomado Ocutista e consultor espiritual com mais de três décadas de experiência em diversas tradições esotéricas. Sua jornada começou ainda jovem, quando descobriu seu dom para ajudar pessoas através de conhecimentos ancestrais.</p>
                     <p>Com formação em diversas tradições espirituais e anos de prática, Mestre Reginaldo desenvolveu métodos próprios que combinam sabedoria tradicional com abordagens contemporâneas, sempre focando no bem-estar e evolução de seus clientes.</p>
                     <p>Sua missão é proporcionar orientação espiritual genuína, ajudando pessoas a superarem obstáculos, encontrarem o amor, prosperidade e equilíbrio em suas vidas através de trabalhos espirituais eficazes.</p>
-                    <a href="#contact" class="btn" style="margin-top: 1.5rem;">Fale Comigo</a>
+                    
+                    <!-- NOVA SEÇÃO DE CONHECIMENTO GRATUITO -->
+                    <div class="knowledge-box">
+                        <h4>📖 <strong>Conhecimento Gratuito</strong></h4>
+                        <p>Disponibilizo <strong>30 encantamentos espirituais completos</strong> para você realizar em casa. Rituais testados e aprovados com mais de 35 anos de experiência.</p>
+                        <a href="encantamentos.html" class="btn">Acessar Encantamentos Gratuitos</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -989,6 +1060,17 @@
                         <p>Trabalhos específicos com os Orixás para diversas finalidades, sempre respeitando as tradições ancestrais.</p>
                     </div>
                 </div>
+                <!-- NOVO CARD - ENCANTAMENTOS GRATUITOS -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/encantamentos-gratuitos.jpg" alt="Encantamentos Espirituais Gratuitos - Rituais Poderosos">
+                    </div>
+                    <div class="service-content">
+                        <h3>Encantamentos Gratuitos</h3>
+                        <p>Mais de 30 rituais espirituais completos para amor, proteção e prosperidade. Aprenda passo a passo.</p>
+                        <a href="encantamentos.html" class="read-more">Ver Todos os Encantamentos</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1000,6 +1082,22 @@
             <h2>Artigos e Conhecimento</h2>
         </div>
         <div class="blog-preview">
+            <!-- NOVO ARTIGO DESTACADO - ENCANTAMENTOS -->
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="images/encantamentos-destaque.jpg" alt="Encantamentos Espirituais - 30 Rituais Gratuitos">
+                </div>
+                <div class="blog-content">
+                    <h3>Encantamentos Espirituais: 30 Rituais Gratuitos</h3>
+                    <div class="blog-meta">
+                        <span>20 de Novembro, 2025</span>
+                        <span>Encantamentos</span>
+                    </div>
+                    <p>Descubra 30 encantamentos poderosos para amor, proteção e prosperidade. Rituais completos passo a passo.</p>
+                    <a href="encantamentos.html" class="read-more">Acessar Todos os Encantamentos</a>
+                </div>
+            </div>
+
             <!-- Artigo 1 - NOVO -->
             <div class="blog-card">
                 <div class="blog-img">
@@ -1079,41 +1177,10 @@
                     <a href="artigo-amarracao-amorosa.html" class="read-more">Ler mais</a>
                 </div>
             </div>
-
-            <!-- Artigo 6 - JÁ EXISTIA -->
-            <div class="blog-card">
-                <div class="blog-img">
-                    <img src="images/medo.png" alt="Sinais de limpeza espiritual">                    
-                </div>
-                <div class="blog-content">
-                    <h3>5 Sinais que Precisa de Limpeza Espiritual</h3>
-                    <div class="blog-meta">
-                        <span>2 de Agosto, 2025</span>
-                        <span>Energias</span>
-                    </div>
-                    <p>Identifique sintomas comuns que indicam acúmulo de energias negativas e quando buscar ajuda espiritual.</p>
-                    <a href="artigo-sinais-limpeza-espiritual.html" class="read-more">Ler mais</a>
-                </div>
-            </div>
-
-            <!-- Artigo 7 - JÁ EXISTIA -->
-            <div class="blog-card">
-                <div class="blog-img">
-                    <img src="images/oferenda.png" alt="Rituais com orixás">
-                </div>
-                <div class="blog-content">
-                    <h3>O Poder das Oferendas e Rituais</h3>
-                    <div class="blog-meta">
-                        <span>20 de Junho, 2025</span>
-                        <span>Oráculos</span>
-                    </div>
-                    <p>Descubra como o Mestre Reginaldo pode te ajudar a se proteger das energias e forças negativas que te cercam.</p>
-                    <a href="artigo-protecao-espiritual.html" class="read-more">Ler mais</a>
-                </div>
-            </div>
         </div>
     </div>
 </section>
+
     <!-- Depoimentos -->
     <section class="testimonials" id="testimonials">
         <div class="container">
@@ -1164,6 +1231,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO CTA ENCANTAMENTOS -->
+    <section class="encantamentos-cta">
+        <div class="container">
+            <h3>🔮 Quer Aprender Rituais Poderosos?</h3>
+            <p>Acesse minha coleção de <strong>30 encantamentos espirituais gratuitos</strong> e transforme sua vida com rituais testados de amor, proteção e prosperidade</p>
+            <a href="encantamentos.html" class="btn btn-secondary">Ver Encantamentos Gratuitos</a>
         </div>
     </section>
 
@@ -1237,6 +1313,7 @@
                                 <option value="caminhos">Abertura de Caminhos</option>
                                 <option value="buzios">Jogo de Búzios</option>
                                 <option value="orixas">Rituais de Orixás</option>
+                                <option value="encantamentos">Encantamentos Gratuitos</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -1264,7 +1341,7 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#services">Serviços</a></li>
-                        <li><a href="encantamentos.html">Encantamentos</a></li>
+                        <li><a href="encantamentos.html"><strong>Encantamentos Gratuitos</strong></a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
@@ -1369,4 +1446,3 @@
     </script>
 </body>
 </html>
-
