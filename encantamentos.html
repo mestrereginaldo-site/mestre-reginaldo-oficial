@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encantamentos Espirituais Poderosos | Mestre Reginaldo 🔮</title>
     <meta name="description" content="Descubra 30 encantamentos espirituais poderosos para amor, proteção e prosperidade. Rituais completos passo a passo com Mestre Reginaldo.">
-    <meta name="keywords" content="encantamentos espirituais, rituais de amor, proteção espiritual, amarração amorosa, feitiços, Mestre Reginaldo">
+    <meta name="keywords" content="encantamentos espirituais, rituais de amor, proteção espiritual, amarração amorosa, feitiços, magia, encantamentos, Mestre Reginaldo">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
@@ -270,11 +270,16 @@
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
             border-top: 4px solid var(--primary);
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         
         .encantamento-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: inherit;
         }
         
         .encantamento-card h3 {
@@ -295,110 +300,6 @@
         .encantamento-disponivel h3::after {
             content: " ✅";
             font-size: 0.9rem;
-        }
-        
-        /* Seção de Encantamento Individual */
-        .encantamento-individual {
-            padding: 4rem 0;
-            background-color: white;
-            display: none;
-        }
-        
-        .encantamento-header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-        }
-        
-        .encantamento-header h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        
-        .encantamento-header p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .passo-a-passo {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .passo {
-            margin-bottom: 2.5rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--medium);
-        }
-        
-        .passo:last-child {
-            border-bottom: none;
-        }
-        
-        .passo h3 {
-            font-size: 1.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-        }
-        
-        .passo-numero {
-            background-color: var(--primary);
-            color: white;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-        
-        .passo p {
-            margin-bottom: 1rem;
-        }
-        
-        .materiais {
-            background-color: var(--light);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-top: 1.5rem;
-        }
-        
-        .materiais h4 {
-            color: var(--primary);
-            margin-bottom: 0.8rem;
-        }
-        
-        .materiais ul {
-            list-style-type: disc;
-            margin-left: 1.5rem;
-        }
-        
-        .materiais li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .voltar-btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            margin-top: 2rem;
-        }
-        
-        .voltar-btn:hover {
-            background-color: var(--secondary);
-            transform: translateY(-2px);
         }
         
         /* Footer */
@@ -642,143 +543,129 @@
             <h2>Escolha um Encantamento</h2>
             <div class="encantamentos-grid">
                 <!-- Lista de 30 encantamentos (10 primeiros com conteúdo completo) -->
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="1">
+                <a href="encantamento-do-amor.html" class="encantamento-card encantamento-disponivel">
                     <h3>Encantamento do Amor Verdadeiro</h3>
                     <p>Para atrair um amor sincero e duradouro para sua vida.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="2">
+                </a>
+                <a href="encantamento-da-protecao.html" class="encantamento-card encantamento-disponivel">
                     <h3>Proteção Contra Inimigos</h3>
                     <p>Para se proteger de pessoas negativas e más intenções.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="3">
+                </a>
+                <a href="encantamento-do-sucesso.html" class="encantamento-card encantamento-disponivel">
                     <h3>Abertura de Caminhos Profissionais</h3>
                     <p>Para remover obstáculos e atrair oportunidades de trabalho.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="4">
+                </a>
+                <a href="encantamento-da-prosperidade.html" class="encantamento-card encantamento-disponivel">
                     <h3>Encantamento da Prosperidade</h3>
                     <p>Para atrair abundância financeira e estabilidade.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="5">
+                </a>
+                <a href="encantamento-da-paz-interior.html" class="encantamento-card encantamento-disponivel">
                     <h3>Limpeza Energética do Lar</h3>
                     <p>Para purificar sua casa de energias negativas.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="6">
+                </a>
+                <a href="encantamento-da-autoestima.html" class="encantamento-card encantamento-disponivel">
                     <h3>Encantamento da Autoestima</h3>
                     <p>Para fortalecer a confiança e amor próprio.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="7">
+                </a>
+                <a href="protecao-espiritual-noturna.html" class="encantamento-card encantamento-disponivel">
                     <h3>Proteção Espiritual Noturna</h3>
                     <p>Para ter sonhos tranquilos e proteção durante o sono.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="8">
+                </a>
+                <a href="encantamento-da-cura-emocional.html" class="encantamento-card encantamento-disponivel">
                     <h3>Encantamento da Cura Emocional</h3>
                     <p>Para superar traumas e mágoas do passado.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="9">
+                </a>
+                <a href="atrair-boas-amizades.html" class="encantamento-card encantamento-disponivel">
                     <h3>Atrair Boas Amizades</h3>
                     <p>Para encontrar pessoas positivas e leais.</p>
-                </div>
-                <div class="encantamento-card encantamento-disponivel" data-encantamento="10">
+                </a>
+                <a href="encantamento-da-intuicao.html" class="encantamento-card encantamento-disponivel">
                     <h3>Encantamento da Intuição</h3>
                     <p>Para desenvolver e fortalecer sua intuição espiritual.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="11">
+                </a>
+                
+                <!-- Encantamentos sem páginas individuais (redirecionam para WhatsApp) -->
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20de%20Harmonização%20Familiar" class="encantamento-card" target="_blank">
                     <h3>Harmonização Familiar</h3>
                     <p>Para trazer paz e harmonia para sua família.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="12">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Força%20Interior" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Força Interior</h3>
                     <p>Para superar momentos difíceis com coragem.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="13">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20de%20Proteção%20Contra%20Inveja" class="encantamento-card" target="_blank">
                     <h3>Proteção Contra Inveja</h3>
                     <p>Para se blindar contra olho gordo e energias negativas.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="14">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Sabedoria" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Sabedoria</h3>
                     <p>Para tomar decisões acertadas e com discernimento.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="15">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20para%20Atrair%20Boas%20Oportunidades" class="encantamento-card" target="_blank">
                     <h3>Atrair Boas Oportunidades</h3>
                     <p>Para reconhecer e aproveitar chances que surgem.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="16">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Fertilidade" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Fertilidade</h3>
                     <p>Para auxiliar na concepção e gravidez.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="17">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20de%20Proteção%20para%20Viagens" class="encantamento-card" target="_blank">
                     <h3>Proteção para Viagens</h3>
                     <p>Para ter viagens seguras e tranquilas.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="18">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Comunicação" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Comunicação</h3>
                     <p>Para se expressar com clareza e persuasão.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="19">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20de%20Limpeza%20de%20Vínculos%20Negativos" class="encantamento-card" target="_blank">
                     <h3>Limpeza de Vínculos Negativos</h3>
                     <p>Para cortar laços energéticos prejudiciais.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="20">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Paciência" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Paciência</h3>
                     <p>Para desenvolver serenidade e paciência.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="21">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20para%20Atrair%20Reconhecimento%20Profissional" class="encantamento-card" target="_blank">
                     <h3>Atrair Reconhecimento Profissional</h3>
                     <p>Para ser valorizado no ambiente de trabalho.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="22">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Cura%20Física" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Cura Física</h3>
                     <p>Para auxiliar no processo de recuperação da saúde.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="23">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20de%20Proteção%20para%20Crianças" class="encantamento-card" target="_blank">
                     <h3>Proteção para Crianças</h3>
                     <p>Para proteger os pequenos de energias negativas.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="24">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Determinação" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Determinação</h3>
                     <p>Para manter o foco e perseverança em seus objetivos.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="25">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20de%20Harmonização%20de%20Relacionamento" class="encantamento-card" target="_blank">
                     <h3>Harmonização de Relacionamento</h3>
                     <p>Para resolver conflitos e fortalecer laços amorosos.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="26">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Criatividade" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Criatividade</h3>
                     <p>Para desbloquear e expandir sua criatividade.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="27">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20de%20Proteção%20para%20o%20Lar" class="encantamento-card" target="_blank">
                     <h3>Proteção para o Lar</h3>
                     <p>Para criar um escudo protetor em sua casa.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="28">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20da%20Gratidão" class="encantamento-card" target="_blank">
                     <h3>Encantamento da Gratidão</h3>
                     <p>Para cultivar a gratidão e atrair mais motivos para agradecer.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="29">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20para%20Atrair%20Mentores%20Espirituais" class="encantamento-card" target="_blank">
                     <h3>Atrair Mentores Espirituais</h3>
                     <p>Para conectar-se com guias e mentores espirituais.</p>
-                </div>
-                <div class="encantamento-card" data-encantamento="30">
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20Encantamento%20do%20Perdão" class="encantamento-card" target="_blank">
                     <h3>Encantamento do Perdão</h3>
                     <p>Para liberar mágoas e perdoar a si mesmo e aos outros.</p>
-                </div>
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Seção de Encantamento Individual (inicialmente oculta) -->
-    <section class="encantamento-individual" id="encantamento-individual">
-        <div class="container">
-            <div class="encantamento-header">
-                <h2 id="titulo-encantamento">Encantamento do Amor Verdadeiro</h2>
-                <p id="descricao-encantamento">Para atrair um amor sincero e duradouro para sua vida</p>
-            </div>
-            
-            <div class="passo-a-passo" id="passo-a-passo">
-                <!-- Conteúdo será preenchido dinamicamente via JavaScript -->
-            </div>
-            
-            <button class="voltar-btn" id="voltar-btn">Voltar para a Lista de Encantamentos</button>
         </div>
     </section>
 
@@ -826,458 +713,6 @@
     </a>
 
     <script>
-        // Dados dos encantamentos - 10 primeiros com conteúdo completo
-        const encantamentos = {
-            1: {
-                titulo: "Encantamento do Amor Verdadeiro",
-                descricao: "Para atrair um amor sincero e duradouro para sua vida",
-                passos: [
-                    {
-                        titulo: "Preparação do Ambiente",
-                        descricao: "Escolha um local tranquilo e limpo onde não será interrompido. Limpe o espaço com incenso de sândalo ou lavanda para purificar as energias. Acenda uma vela rosa, que representa o amor incondicional, e coloque ao seu redor pétalas de rosas vermelhas e brancas, simbolizando paixão e pureza."
-                    },
-                    {
-                        titulo: "Estado Mental e Meditação",
-                        descricao: "Sente-se confortavelmente em posição de meditação. Feche os olhos e respire profundamente por 5 minutos, liberando todas as tensões. Visualize-se rodeado(a) por uma luz rosa suave, sentindo amor por si mesmo(a) primeiro. Este autoamor é fundamental para atrair um relacionamento saudável."
-                    },
-                    {
-                        titulo: "Invocações e Afirmações",
-                        descricao: "Com as mãos sobre o coração, pronuncie com convicção: 'Pelos poderes do amor universal, eu [seu nome] convoco as energias do amor verdadeiro. Que venha até mim um amor puro, sincero e duradouro, que me complete e com quem eu possa crescer espiritualmente. Que este amor seja baseado no respeito, confiança e companheirismo.'"
-                    },
-                    {
-                        titulo: "Visualização Criativa",
-                        descricao: "Mantenha os olhos fechados e visualize nitidamente o relacionamento que deseja. Veja-se compartilhando momentos felizes, superando desafios juntos e crescendo espiritualmente. Sinta as emoções positivas que este relacionamento trará para sua vida."
-                    },
-                    {
-                        titulo: "Finalização e Gratidão",
-                        descricao: "Permaneça em estado meditativo por mais 10 minutos, sentindo a energia do amor preencher seu coração. Agradeça ao universo pelas bênçãos que estão a caminho. Deixe a vela queimar completamente em segurança, ou se não for possível, apague soprando suavemente com a intenção de liberar sua energia para o universo."
-                    }
-                ],
-                materiais: [
-                    "1 vela rosa de preferência de 7 dias",
-                    "Incenso de sândalo ou lavanda",
-                    "Pétalas de rosas vermelhas e brancas",
-                    "Local tranquilo e limpo",
-                    "Tempo mínimo: 30 minutos sem interrupções"
-                ],
-                dicas: "Realize este encantamento durante a lua crescente para potencializar seus efeitos. Evite fazer quando estiver emocionalmente abalado(a)."
-            },
-            2: {
-                titulo: "Proteção Contra Inimigos",
-                descricao: "Para se proteger de pessoas negativas e más intenções",
-                passos: [
-                    {
-                        titulo: "Preparação do Espaço Sagrado",
-                        descricao: "Escolha um local privado e limpo. Purifique o ambiente com fumaça de arruda ou alecrim. Acenda uma vela branca, que representa proteção e pureza. Tenha à mão um copo com água filtrada e sal grosso."
-                    },
-                    {
-                        titulo: "Criação do Escudo Protetor",
-                        descricao: "Em pé, com os braços estendidos, visualize uma luz branca saindo do seu coração e envolvendo todo seu corpo. Imagine esta luz formando uma bolha protetora ao seu redor, impenetrável a energias negativas."
-                    },
-                    {
-                        titulo: "Invocações de Proteção",
-                        descricao: "Com voz firme, diga: 'Pelos poderes dos elementais e guias espirituais, eu [seu nome] solicito proteção divina. Que nenhuma energia negativa, inveja ou mau-olhado possa me atingir. Que este escudo de luz me proteja em todos os momentos.'"
-                    },
-                    {
-                        titulo: "Consagração com Água e Sal",
-                        descricao: "Umedeça os dedos na água com sal e faça o sinal da cruz em sua testa, dizendo: 'Protejo minha mente'. No peito: 'Protejo meu coração'. Nos ombros: 'Protejo meu espírito'. Borrife a água ao seu redor, criando um círculo de proteção."
-                    },
-                    {
-                        titulo: "Encerramento e Manutenção",
-                        descricao: "Agradeça às forças protetoras. Este ritual deve ser renovado a cada lua cheia ou sempre que sentir necessidade. Guarde o copo com água e sal em local discreto de sua casa para manter a proteção ativa."
-                    }
-                ],
-                materiais: [
-                    "Vela branca",
-                    "Arruda ou alecrim seco",
-                    "Copo com água filtrada",
-                    "Sal grosso",
-                    "Pires ou recipiente para queima"
-                ],
-                dicas: "Para proteção adicional, carregue consigo uma pedra de turmalina negra ou olho-de-tigre."
-            },
-            3: {
-                titulo: "Abertura de Caminhos Profissionais",
-                descricao: "Para remover obstáculos e atrair oportunidades de trabalho",
-                passos: [
-                    {
-                        titulo: "Preparação do Ritual",
-                        descricao: "Em uma quinta-feira (dia de Júpiter, planeta da expansão), prepare seu espaço com uma toalha amarela. Acenda uma vela amarela e um incenso de canela. Tenha papel e caneta amarelos para escrever seus objetivos."
-                    },
-                    {
-                        titulo: "Definição Clara de Objetivos",
-                        descricao: "Escreva no papel suas metas profissionais de forma clara, positiva e no presente. Exemplo: 'Estou empregado em um trabalho que amo e que valoriza minhas habilidades'. Seja específico sobre salário, ambiente e benefícios desejados."
-                    },
-                    {
-                        titulo: "Visualização da Realização",
-                        descricao: "Feche os olhos e visualize-se trabalhando no emprego dos seus sonhos. Sinta a satisfação, o reconhecimento e a prosperidade que essa posição trará. Imagine colegas harmoniosos e um chefe que valorize seu trabalho."
-                    },
-                    {
-                        titulo: "Ativação com os Elementos",
-                        descricao: "Segure o papel com ambas as mãos e diga: 'Pelos poderes de Oxum e Ogum, que todos os caminhos se abram para meu sucesso profissional. Que as oportunidades certas surjam e eu tenha sabedoria para reconhecê-las. Que meu trabalho seja abençoado e próspero.'"
-                    },
-                    {
-                        titulo: "Finalização e Ação",
-                        descricao: "Dobre o papel três vezes e coloque-o sob a vela. Deixe a vela queimar por pelo menos 30 minutos. Após o ritual, comece a agir: atualize seu currículo, entre em contato com recrutadores, mostre-se aberto a oportunidades."
-                    }
-                ],
-                materiais: [
-                    "Vela amarela",
-                    "Incenso de canela",
-                    "Papel amarelo",
-                    "Caneta amarela ou dourada",
-                    "Toalha amarela (opcional)"
-                ],
-                dicas: "Realize este encantamento durante a lua nova para novos começos ou na lua crescente para crescimento profissional."
-            },
-            4: {
-                titulo: "Encantamento da Prosperidade",
-                descricao: "Para atrair abundância financeira e estabilidade",
-                passos: [
-                    {
-                        titulo: "Preparação do Altar da Prosperidade",
-                        descricao: "Em uma sexta-feira (dia de Vênus, da beleza e prosperidade), limpe seu espaço com incenso de patchouli. Coloque uma toalha verde sobre uma superfície. Acenda uma vela verde e coloque moedas, notas (quanto maior o valor, melhor), um copo com água e um ramo de arruda."
-                    },
-                    {
-                        titulo: "Mentalidade de Abundância",
-                        descricao: "Sente-se confortavelmente e respire profundamente. Libere crenças limitantes sobre dinheiro. Visualize-se cercado(a) por uma luz dourada, sentindo-se merecedor(a) da prosperidade que está por vir."
-                    },
-                    {
-                        titulo: "Afirmações de Riqueza",
-                        descricao: "Segure as moedas em suas mãos e diga com convicção: 'O universo é abundantemente rico e eu mereço minha parte nesta riqueza. O dinheiro flui para mim de forma fácil e constante. Sou um ímã para oportunidades prósperas.'"
-                    },
-                    {
-                        titulo: "Visualização da Prosperidade",
-                        descricao: "Feche os olhos e visualize suas contas sendo pagas com facilidade, dinheiro extra chegando de fontes inesperadas, e você desfrutando de conforto financeiro. Sinta a gratidão por esta abundância."
-                    },
-                    {
-                        titulo: "Finalização e Gratidão",
-                        descricao: "Agradeça ao universo pela prosperidade que já possui e pela que está a caminho. Coloque as moedas em sua carteira para atrair mais dinheiro. Beba a água consagrada, mentalizando que está internalizando a energia da prosperidade."
-                    }
-                ],
-                materiais: [
-                    "Vela verde",
-                    "Incenso de patchouli",
-                    "Moedas (preferencialmente douradas)",
-                    "Notas de dinheiro",
-                    "Copo com água",
-                    "Arruda fresca"
-                ],
-                dicas: "Mantenha um diário de gratidão financeira, anotando diariamente três coisas relacionadas ao dinheiro pelas quais é grato."
-            },
-            5: {
-                titulo: "Limpeza Energética do Lar",
-                descricao: "Para purificar sua casa de energias negativas",
-                passos: [
-                    {
-                        titulo: "Preparação dos Elementos de Purificação",
-                        descricao: "Em um dia de sol, prepare uma solução com 1 litro de água, 3 colheres de sal grosso e o suco de 1 limão. Separe também um ramo de arruda, alecrim e um incenso de sândalo."
-                    },
-                    {
-                        titulo: "Purificação com Fumaça Sagrada",
-                        descricao: "Acenda o incenso e comece pela porta de entrada, percorrendo todos os cômodos no sentido horário. Deixe a fumaça purificar cada cantinho, especialmente espelhos, cantos e atrás das portas."
-                    },
-                    {
-                        titulo: "Aspersão com Água Consagrada",
-                        descricao: "Com as mãos ou um ramo de arruda, borrife a solução de água com sal e limão em todos os ambientes, dizendo: 'Com a força da água e do sal, purifico este lar. Que toda energia negativa se dissolva e apenas o bem aqui permaneça.'"
-                    },
-                    {
-                        titulo: "Visualização da Luz Branca",
-                        descricao: "Em cada cômodo, feche os olhos e visualize uma intensa luz branca preenchendo o espaço, dissolvendo qualquer resíduo energético negativo. Sinta o ambiente ficar mais leve e harmonioso."
-                    },
-                    {
-                        titulo: "Finalização e Proteção Contínua",
-                        descricao: "Coloque um copo com água e sal atrás da porta de entrada para absorver energias negativas (troque a cada 7 dias). Acenda uma vela branca no centro da casa por algumas horas para consolidar a purificação."
-                    }
-                ],
-                materiais: [
-                    "Água mineral",
-                    "Sal grosso",
-                    "Limões",
-                    "Arruda e alecrim frescos",
-                    "Incenso de sândalo",
-                    "Vela branca"
-                ],
-                dicas: "Realize esta limpeza a cada mudança de estação ou sempre que receber muitas visitas em casa."
-            },
-            6: {
-                titulo: "Encantamento da Autoestima",
-                descricao: "Para fortalecer a confiança e amor próprio",
-                passos: [
-                    {
-                        titulo: "Criação do Espaço Sagrado Pessoal",
-                        descricao: "Escolha um momento em que não será interrompido. Arrume um espelho grande em um local tranquilo. Acenda uma vela cor de rosa e coloque flores ao redor. Tenha à mão um óleo essencial de rosas ou lavanda."
-                    },
-                    {
-                        titulo: "Reconhecimento e Aceitação",
-                        descricao: "Fique em frente ao espelho, respire profundamente e olhe nos seus próprios olhos. Diga em voz alta: 'Eu me aceito completamente como sou. Minhas qualidades e meus desafios fazem parte de quem eu sou hoje.'"
-                    },
-                    {
-                        titulo: "Afirmações de Amor Próprio",
-                        descricao: "Coloque as mãos sobre o coração e repita: 'Eu mereço amor e respeito. Minha voz é importante. Minhas necessidades são válidas. Eu me amo e me aceito incondicionalmente.' Sinta cada palavra profundamente."
-                    },
-                    {
-                        titulo: "Visualização do Eu Ideal",
-                        descricao: "Feche os olhos e visualize uma versão confiante e realizada de si mesmo. Veja-se enfrentando desafios com coragem, expressando suas opiniões com segurança e recebendo elogios com gratidão."
-                    },
-                    {
-                        titulo: "Consolidação e Compromisso",
-                        descricao: "Umedeça os dedos no óleo essencial e desenhe um coração sobre seu peito, dizendo: 'Consagro meu coração ao amor próprio. Comprometo-me a me tratar com gentileza e respeito.' Agradeça a si mesmo por dedicar tempo ao seu crescimento."
-                    }
-                ],
-                materiais: [
-                    "Espelho grande",
-                    "Vela cor de rosa",
-                    "Flores frescas",
-                    "Óleo essencial de rosas ou lavanda",
-                    "Local privativo"
-                ],
-                dicas: "Repita este ritual sempre que sentir necessidade de reforçar sua autoestima. Mantenha um diário de conquistas pessoais."
-            },
-            7: {
-                titulo: "Proteção Espiritual Noturna",
-                descricao: "Para ter sonhos tranquilos e proteção durante o sono",
-                passos: [
-                    {
-                        titulo: "Preparação do Ambiente de Sono",
-                        descricao: "Antes de dormir, ventile bem seu quarto. Acenda um incenso de lavanda ou camomila para acalmar o ambiente. Coloque um copo com água ao lado da cama para absorver energias negativas."
-                    },
-                    {
-                        titulo: "Criação do Círculo Protetor",
-                        descricao: "Sentado na cama, visualize uma luz azul saindo de suas mãos e formando um círculo protetor ao redor de sua cama. Imagine esta luz criando uma barreira contra pesadelos e energias indesejadas."
-                    },
-                    {
-                        titulo: "Invocações de Proteção Noturna",
-                        descricao: "Em voz baixa, diga: 'Que meus sonhos sejam tranquilos e reveladores. Que apenas energias positivas e mensagens benéficas possam me alcançar durante o sono. Sob a proteção divina, descanso em paz.'"
-                    },
-                    {
-                        titulo: "Colocação de Elementos Protetores",
-                        descricao: "Coloque um cristal de quartzo sob o travesseiro para purificar energias e promover sonhos lúcidos. Se desejar, coloque também um raminho de arruda ou alecrim na mesa de cabeceira."
-                    },
-                    {
-                        titulo: "Respiração para o Sono Profundo",
-                        descricao: "Deitado, feche os olhos e pratique a respiração 4-7-8: inspire por 4 segundos, segure por 7 e expire por 8. Repita 4 vezes, visualizando-se envolto em uma luz prateada protetora."
-                    }
-                ],
-                materiais: [
-                    "Incenso de lavanda ou camomila",
-                    "Copo com água",
-                    "Cristal de quartzo",
-                    "Arruda ou alecrim (opcional)"
-                ],
-                dicas: "Se acordar com pesadelos, troque a água do copo pela manhã e agradeça por ter absorvido as energias negativas."
-            },
-            8: {
-                titulo: "Encantamento da Cura Emocional",
-                descricao: "Para superar traumas e mágoas do passado",
-                passos: [
-                    {
-                        titulo: "Preparação do Espaço de Cura",
-                        descricao: "Escolha um local onde se sinta seguro(a). Acenda uma vela azul-clara (cor da cura emocional) e um incenso de olíbano. Tenha papel e caneta para escrever."
-                    },
-                    {
-                        titulo: "Reconhecimento das Emoções",
-                        descricao: "Escreva em um papel todas as mágoas, traumas e sentimentos negativos que deseja liberar. Seja específico e honesto. Este é um momento apenas para você, sem julgamentos."
-                    },
-                    {
-                        titulo: "Ritual de Liberação",
-                        descricao: "Segure o papel com ambas as mãos e diga: 'Reconheço estas dores, mas não permito que me definam. Agora, com amor e compreensão, libero estas mágoas para o universo. Que se transformem em sabedoria e compaixão.'"
-                    },
-                    {
-                        titulo: "Queima Simbólica",
-                        descricao: "Com cuidado, queime o papel em um recipiente seguro, visualizando as mágoas se transformando em cinzas. Enquanto queima, diga: 'Assim como este papel se transforma, minha dor se transforma em força. Eu me liberto e me curo.'"
-                    },
-                    {
-                        titulo: "Preenchimento com Luz Curativa",
-                        descricao: "Coloque as mãos sobre o coração e visualize uma luz verde-esmeralda (cor da cura) preenchendo onde antes havia dor. Sinta esta luz restaurando sua paz interior. Respire profundamente, absorvendo esta energia curativa."
-                    }
-                ],
-                materiais: [
-                    "Vela azul-clara",
-                    "Incenso de olíbano",
-                    "Papel e caneta",
-                    "Recipiente à prova de fogo",
-                    "Fósforos ou isqueiro"
-                ],
-                dicas: "Este ritual pode ser emocionalmente intenso. Permita-se chorar se necessário - as lágrimas são purificadoras. Após o ritual, beba bastante água."
-            },
-            9: {
-                titulo: "Atrair Boas Amizades",
-                descricao: "Para encontrar pessoas positivas e leais",
-                passos: [
-                    {
-                        titulo: "Preparação do Ritual de Atração",
-                        descricao: "Em um dia de lua crescente, prepare seu espaço com uma toalha laranja (cor da sociabilidade). Acenda uma vela laranja e um incenso de bergamota. Tenha cristais de citrino ou laranja à mão."
-                    },
-                    {
-                        titulo: "Clarificação do que Procura",
-                        descricao: "Escreva em um papel as qualidades que deseja em suas amizades: lealdade, honestidade, bom humor, apoio mútuo, etc. Seja específico sobre o tipo de conexão que busca."
-                    },
-                    {
-                        titulo: "Visualização das Amizades",
-                        descricao: "Feche os olhos e visualize-se cercado por amigos genuínos. Veja-se compartilhando momentos felizes, apoiando-se mutuamente nos desafios e crescendo juntos. Sinta a alegria destas conexões."
-                    },
-                    {
-                        titulo: "Afirmações de Conexão",
-                        descricao: "Segure os cristais e diga: 'Atraio para minha vida amizades verdadeiras e benéficas. Sou um ímã para pessoas positivas, leais e de bom coração. Mereço relacionamentos baseados no respeito e apoio mútuo.'"
-                    },
-                    {
-                        titulo: "Ação e Abertura",
-                        descricao: "Dobre o papel e guarde-o com os cristais. Comprometa-se a ser a amizade que busca - seja mais aberto, participe de atividades que gosta, inicie conversas. O universo responde à ação aliada à intenção."
-                    }
-                ],
-                materiais: [
-                    "Vela laranja",
-                    "Incenso de bergamota",
-                    "Cristais de citrino ou laranja",
-                    "Papel e caneta",
-                    "Toalha laranja (opcional)"
-                ],
-                dicas: "Coloque os cristais carregados em sua bolsa ou local de trabalho para continuar atraindo amizades positivas."
-            },
-            10: {
-                titulo: "Encantamento da Intuição",
-                descricao: "Para desenvolver e fortalecer sua intuição espiritual",
-                passos: [
-                    {
-                        titulo: "Preparação do Espaço Meditativo",
-                        descricao: "Escolha um local silencioso onde não será interrompido. Acenda uma vela roxa (cor da intuição) e um incenso de jasmim ou lótus. Sente-se em posição confortável com as costas retas."
-                    },
-                    {
-                        titulo: "Centramento e Respiração",
-                        descricao: "Feche os olhos e concentre-se em sua respiração por 5 minutos. Conte suas respirações de 1 a 10, depois recomece. Este exercício acalma a mente consciente e abre espaço para a intuição."
-                    },
-                    {
-                        titulo: "Ativação do Terceiro Olho",
-                        descricao: "Coloque a ponta do dedo indicador no ponto entre as sobrancelhas (terceiro olho). Visualize uma luz índigo girando neste ponto, ativando sua visão interior. Sinta uma leve pressão ou formigamento."
-                    },
-                    {
-                        titulo: "Diálogo com a Intuição",
-                        descricao: "Em voz baixa, diga: 'Minha intuição é meu guia seguro. Confio em meus insights e pressentimentos. Minha conexão com o divino se fortalece a cada dia. Estou aberto(a) a receber sabedoria interior.'"
-                    },
-                    {
-                        titulo: "Prática de Percepção Sutil",
-                        descricao: "Permaneça em silêncio por 10-15 minutos, apenas observando quaisquer imagens, sensações ou pensamentos que surjam. Não os julgue, apenas observe. Anote depois qualquer insight recebido."
-                    }
-                ],
-                materiais: [
-                    "Vela roxa",
-                    "Incenso de jasmim ou lótus",
-                    "Local silencioso",
-                    "Caderno para anotações (opcional)"
-                ],
-                dicas: "Pratique este exercício diariamente por 21 dias para desenvolver significativamente sua intuição. Preste atenção aos sonhos - eles são uma via importante de comunicação intuitiva."
-            }
-        };
-
-        // Elementos DOM
-        const menuEncantamentos = document.getElementById('menu-encantamentos');
-        const encantamentoIndividual = document.getElementById('encantamento-individual');
-        const tituloEncantamento = document.getElementById('titulo-encantamento');
-        const descricaoEncantamento = document.getElementById('descricao-encantamento');
-        const passoAPasso = document.getElementById('passo-a-passo');
-        const voltarBtn = document.getElementById('voltar-btn');
-        const encantamentoCards = document.querySelectorAll('.encantamento-card');
-        const introducaoSection = document.getElementById('introducao');
-
-        // Mostrar encantamento individual
-        encantamentoCards.forEach(card => {
-            card.addEventListener('click', function() {
-                const encantamentoId = this.getAttribute('data-encantamento');
-                mostrarEncantamento(encantamentoId);
-            });
-        });
-
-        // Função para mostrar o encantamento selecionado
-        function mostrarEncantamento(id) {
-            const encantamento = encantamentos[id];
-            
-            if (!encantamento) {
-                // Se não tem conteúdo, redirecionar para WhatsApp
-                window.open('https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20o%20encantamento%20que%20não%20encontrei%20no%20site', '_blank');
-                return;
-            }
-            
-            // Atualizar título e descrição
-            tituloEncantamento.textContent = encantamento.titulo;
-            descricaoEncantamento.textContent = encantamento.descricao;
-            
-            // Limpar conteúdo anterior
-            passoAPasso.innerHTML = '';
-            
-            // Adicionar passos
-            encantamento.passos.forEach((passo, index) => {
-                const passoElement = document.createElement('div');
-                passoElement.className = 'passo';
-                
-                passoElement.innerHTML = `
-                    <h3><span class="passo-numero">${index + 1}</span>${passo.titulo}</h3>
-                    <p>${passo.descricao}</p>
-                `;
-                
-                passoAPasso.appendChild(passoElement);
-            });
-            
-            // Adicionar materiais necessários
-            if (encantamento.materiais && encantamento.materiais.length > 0) {
-                const materiaisElement = document.createElement('div');
-                materiaisElement.className = 'materiais';
-                
-                materiaisElement.innerHTML = `
-                    <h4>Materiais Necessários</h4>
-                    <ul>
-                        ${encantamento.materiais.map(material => `<li>${material}</li>`).join('')}
-                    </ul>
-                `;
-                
-                passoAPasso.appendChild(materiaisElement);
-            }
-            
-            // Adicionar dicas se existirem
-            if (encantamento.dicas) {
-                const dicasElement = document.createElement('div');
-                dicasElement.className = 'materiais';
-                dicasElement.style.backgroundColor = 'var(--medium)';
-                
-                dicasElement.innerHTML = `
-                    <h4>💡 Dicas Importantes</h4>
-                    <p>${encantamento.dicas}</p>
-                `;
-                
-                passoAPasso.appendChild(dicasElement);
-            }
-            
-            // Mostrar seção individual e ocultar menu e introdução
-            menuEncantamentos.style.display = 'none';
-            introducaoSection.style.display = 'none';
-            encantamentoIndividual.style.display = 'block';
-            
-            // Atualizar URL sem recarregar a página (para SEO)
-            history.pushState(null, null, `#${encantamento.titulo.toLowerCase().replace(/\s+/g, '-')}`);
-            
-            // Rolar para o topo da página
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            
-            // Atualizar título da página para SEO
-            document.title = `${encantamento.titulo} | Mestre Reginaldo 🔮`;
-        }
-
-        // Voltar para a lista de encantamentos
-        voltarBtn.addEventListener('click', function() {
-            encantamentoIndividual.style.display = 'none';
-            menuEncantamentos.style.display = 'block';
-            introducaoSection.style.display = 'block';
-            
-            // Restaurar título original
-            document.title = "Encantamentos Espirituais Poderosos | Mestre Reginaldo 🔮";
-            
-            // Rolar para a seção de menu
-            document.getElementById('menu-encantamentos').scrollIntoView({ behavior: 'smooth' });
-            
-            // Limpar hash da URL
-            history.pushState(null, null, 'encantamentos.html');
-        });
-
         // Menu Hamburguer
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
