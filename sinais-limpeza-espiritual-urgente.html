@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Saber se Preciso de uma Limpeza Espiritual Urgente - 10 Sinais | Mestre Reginaldo</title>
+    <meta name="description" content="Descubra os 10 sinais que indicam necessidade urgente de limpeza espiritual. Aprenda a identificar energias negativas e quando buscar ajuda profissional com Mestre Reginaldo.">
+    <meta name="keywords" content="limpeza espiritual urgente, sinais limpeza espiritual, quando fazer limpeza espiritual, energias negativas, proteção espiritual, Mestre Reginaldo">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+    
+    <style>
+        :root {
+            --primary: #6A4C93;
+            --secondary: #8E6BBF;
+            --accent: #FF9F1C;
+            --light: #F8F9FA;
+            --medium: #E9ECEF;
+            --dark: #343A40;
+            --text: #495057;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--accent);
+        }
+        
+        /* Artigo */
+        .article-header {
+            padding: 6rem 0 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        .article-title {
+            font-size: 2.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .article-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .article-content h2 {
+            color: var(--primary);
+            margin: 2.5rem 0 1.2rem;
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+        
+        .article-content h3 {
+            color: var(--secondary);
+            margin: 2rem 0 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+        
+        .signal-item {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .signal-number {
+            background: var(--accent);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .urgency-level {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        
+        .high-urgency {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .medium-urgency {
+            background: #ffc107;
+            color: black;
+        }
+        
+        .low-urgency {
+            background: #28a745;
+            color: white;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .emergency-box {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .solution-steps {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .conclusion-box {
+            background: linear-gradient(135deg, #8E6BBF, #A98CD4);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            margin: 3rem 0 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .conclusion-box h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+            border-left: none;
+            padding-left: 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.9rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 159, 28, 0.3);
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: #ffb143;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 159, 28, 0.4);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            padding: 0.7rem 1.5rem;
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            transition: all 0.3s;
+            background: white;
+        }
+        
+        .back-link:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(106, 76, 147, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-about p {
+            color: #adb5bd;
+            line-height: 1.7;
+        }
+        
+        .footer-links h3, .footer-social h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.7rem;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--accent);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .legal-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        .legal-links a:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .article-header {
+                padding: 5rem 0 2rem;
+            }
+            
+            .article-title {
+                font-size: 1.8rem;
+            }
+            
+            .article-content {
+                padding: 2rem;
+            }
+            
+            .article-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .urgency-level {
+                display: block;
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+            
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .legal-links {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo-icon">🔮</div>
+                <div class="logo">Mestre Reginaldo</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#services">Serviços</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#testimonials">Depoimentos</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Artigo -->
+    <div class="container">
+        <a href="index.html#blog" class="back-link">← Voltar para o Blog</a>
+        
+        <article>
+            <div class="article-header">
+                <h1 class="article-title">Como Saber se Preciso de uma Limpeza Espiritual Urgente - 10 Sinais</h1>
+                <div class="article-meta">
+                    <span>Publicado em: 17 de Novembro, 2025</span>
+                    <span>Categoria: Energias e Proteção</span>
+                    <span>Tempo de leitura: 12 minutos</span>
+                </div>
+            </div>
+            
+            <div class="article-content">
+                <p>Muitas pessoas passam por fases difíceis sem perceber que podem estar sob influência de energias negativas. Como especialista com 35 anos de experiência, vou compartilhar os 10 sinais mais comuns que indicam a necessidade urgente de uma limpeza espiritual. Reconhecer esses sinais pode ser o primeiro passo para restaurar seu equilíbrio e bem-estar.</p>
+                
+                <h2>O Que é uma Limpeza Espiritual?</h2>
+                <p>Antes de identificar os sinais, é importante entender que a limpeza espiritual é um processo de purificação energética que remove influências negativas, energias densas e bloqueios que impedem seu fluxo natural de energia vital. Não se trata apenas de "tirar mau-olhado", mas de restaurar seu equilíbrio energético completo.</p>
+                
+                <div class="warning-box">
+                    <strong>⚠️ Atenção:</strong> Se você identificar 3 ou mais destes sinais, é altamente recomendável buscar ajuda profissional para uma avaliação energética.
+                </div>
+                
+                <h2>Os 10 Sinais que Indicam Necessidade de Limpeza Espiritual Urgente</h2>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">1</span> Cansaço Excessivo sem Causa Aparente <span class="urgency-level high-urgency">ALTA URGÊNCIA</span></h3>
+                    <p>Você acorda cansado, mesmo após uma noite inteira de sono? Sente que sua energia "vaza" constantemente? Esse é um dos sinais mais comuns de vampirismo energético ou acúmulo de energias densas. Diferente do cansaço físico, essa fadiga não melhora com repouso.</p>
+                    <p><strong>Como diferenciar:</strong> Cansaço físico melhora com descanso; cansaço espiritual persiste mesmo após dormir 8-10 horas.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">2</span> Pesadelos Recorrentes e Sono Perturbado <span class="urgency-level high-urgency">ALTA URGÊNCIA</span></h3>
+                    <p>Sonhos com mortos, perseguições, quedas ou sensação de sufocamento podem indicar influências espirituais negativas. Quando seu campo energético está vulnerável, você fica mais suscetível a interferências durante o sono, que é quando estamos mais abertos energeticamente.</p>
+                    <p><strong>Padrão preocupante:</strong> Pesadelos que se repetem ou acordar sempre no mesmo horário da madrugada (entre 3h e 4h).</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">3</span> Azar Persistente em Todas as Áreas <span class="urgency-level medium-urgency">MÉDIA URGÊNCIA</span></h3>
+                    <p>Quando tudo parece dar errado ao mesmo tempo - trabalho, relacionamentos, saúde, finanças - pode ser sinal de fechamento de caminhos por energias negativas. Não se trata de "má fase", mas de um padrão consistente de obstáculos inexplicáveis.</p>
+                    <p><strong>Exemplos:</strong> Projetos que sempre fracassam na reta final, oportunidades que somem, objetos que quebram constantemente.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">4</span> Sensação de Ser Observado <span class="urgency-level high-urgency">ALTA URGÊNCIA</span></h3>
+                    <p>A constante sensação de que há "alguém" ou "algo" observando você, especialmente em ambientes vazios, é um forte indicativo de presenças espirituais indesejadas. Arrepios frequentes, mudanças bruscas de temperatura e eletrônicos que funcionam mal também são sinais associados.</p>
+                    <p><strong>Ambientes de risco:</strong> Essa sensação é mais comum em casa, local de trabalho ou durante a noite.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">5</span> Relacionamentos que Sempre Dão Errado <span class="urgency-level medium-urgency">MÉDIA URGÊNCIA</span></h3>
+                    <p>Padrão repetitivo de brigas, desentendimentos e términos sem motivos aparentes pode indicar trabalhos espiritual para separação ou inveja direcionada à sua vida amorosa. Quando todas as relações seguem o mesmo caminho negativo, é hora de investigar causas energéticas.</p>
+                    <p><strong>Padrão típico:</strong> Relacionamentos que começam bem e deterioram rapidamente sem motivo concreto.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">6</span> Problemas de Saúde sem Diagnóstico <span class="urgency-level medium-urgency">MÉDIA URGÊNCIA</span></h3>
+                    <p>Dores inexplicáveis, mal-estar constante, doenças que os médicos não conseguem diagnosticar ou tratar podem ter origem energética. É importante descartar causas físicas primeiro, mas quando a medicina não encontra respostas, vale investigar o aspecto espiritual.</p>
+                    <p><strong>Sintomas comuns:</strong> Dores migratórias, enxaquecas, problemas digestivos, insônia resistente a tratamento.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">7</span> Aversão a Lugares Sagrados <span class="urgency-level low-urgency">BAIXA URGÊNCIA</span></h3>
+                    <p>Sentir desconforto, ansiedade ou mal-estar ao entrar em igrejas, centros espíritas ou templos pode indicar a presença de energias incompatíveis com esses ambientes. Esses locais têm vibrações elevadas que podem causar reação em quem está com energias densas.</p>
+                    <p><strong>Observação:</strong> O desconforto é específico a ambientes espiritualizados, não a lugares comuns.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">8</span> Pensamentos Negativos e Autodestrutivos <span class="urgency-level high-urgency">ALTA URGÊNCIA</span></h3>
+                    <p>Ideias fixas de que "nada vai dar certo", sentimentos de impotência ou pensamentos de auto-sabotagem que surgem do nada podem ser influências externas. É crucial diferenciar depressão clínica (que requer ajuda médica) de influências espirituais.</p>
+                    <p><strong>Diferenciação:</strong> Pensamentos que surgem repentinamente e não condizem com sua personalidade usual.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">9</span> Sensibilidade Extrema a Ambientes e Pessoas <span class="urgency-level medium-urgency">MÉDIA URGÊNCIA</span></h3>
+                    <p>Sentir-se extremamente cansado após encontrar certas pessoas, ou ter reações físicas (dor de cabeça, enjoo) em ambientes específicos indica que você está absorvendo energias negativas do entorno. Pessoas sensíveis energeticamente são mais vulneráveis a esse tipo de influência.</p>
+                    <p><strong>Como identificar:</strong> Mal-estar que começa durante ou logo após contato com determinadas pessoas/lugares.</p>
+                </div>
+                
+                <div class="signal-item">
+                    <h3><span class="signal-number">10</span> Problemas Financeiros Repentinos <span class="urgency-level medium-urgency">MÉDIA URGÊNCIA</span></h3>
+                    <p>Quando suas finanças vão de estáveis para críticas sem explicação lógica, pode ser sinal de fechamento de caminhos ou inveja direcionada ao seu sucesso. Dívidas que surgem do nada, clientes que somem, negócios que desandam merecem investigação energética.</p>
+                    <p><strong>Padrão:</strong> Situação financeira que se deteriora rapidamente sem mudanças em seus hábitos ou no mercado.</p>
+                </div>
+                
+                <div class="emergency-box">
+                    <strong>🚨 EMERGÊNCIA ESPIRITUAL:</strong> Se você está experienciando sinais 1, 2, 4 e 8 simultaneamente, busque ajuda profissional IMEDIATA. Essa combinação indica influência espiritual significativa que requer intervenção urgente.
+                </div>
+                
+                <h2>O Que Fazer ao Identificar Esses Sinais</h2>
+                
+                <div class="solution-steps">
+                    <h3>Plano de Ação Imediato</h3>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h4>Avaliação Profissional</h4>
+                            <p>Consulte um espiritualista experiente para diagnóstico preciso. A automedicação espiritual pode piorar a situação.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h4>Limpeza Básica Imediata</h4>
+                            <p>Enquanto aguarda atendimento profissional: banho com sal grosso, oração e evitar lugares/ pessoas que causam mal-estar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h4>Proteção Energética</h4>
+                            <p>Use algum símbolo de proteção (crucifixo, olho grego, etc.) e mentalize uma luz branca envolvendo você ao sair de casa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h4>Ambiente</h4>
+                            <p>Mantenha sua casa limpa e arejada. Queime incenso ou arruda para purificar os ambientes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Quando a Limpeza Espiritual é Realmente Urgente?</h2>
+                <p>Baseado em minha experiência de 35 anos, situações que requerem intervenção imediata incluem:</p>
+                
+                <ul>
+                    <li><strong>Pensamentos suicidas ou autodestrutivos</strong> que surgem do nada</li>
+                    <li><strong>Pesadelos que impedem o sono</strong> por noites consecutivas</li>
+                    <li><strong>Doenças inexplicáveis</strong> que resistem a tratamentos médicos</li>
+                    <li><strong>Acontecimentos negativos</strong> em cadeia sem explicação lógica</li>
+                    <li><strong>Sensação de possessão</strong> ou perda de controle sobre si mesmo</li>
+                </ul>
+                
+                <h2>Prevenção: Como Manter sua Energia Protegida</h2>
+                <p>Mais importante que tratar é prevenir. Algumas práticas simples podem manter seu campo energético protegido:</p>
+                
+                <ul>
+                    <li><strong>Oração ou meditação</strong> diária</li>
+                    <li><strong>Banhos de limpeza</strong> semanais com ervas</li>
+                    <li><strong>Evitar lugares</strong> com energias pesadas</li>
+                    <li><strong>Não compartilhar</strong> objetos pessoais com desconhecidos</li>
+                    <li><strong>Proteção espiritual</strong> antes de dormir</li>
+                </ul>
+                
+                <div class="conclusion-box">
+                    <h2>Não Ignore os Sinais do Seu Corpo e da Sua Alma</h2>
+                    <p>Se você identificou vários desses sinais em sua vida, não os ignore. Assim como cuidamos da saúde física, precisamos cuidar da saúde espiritual. Energias negativas podem afetar todas as áreas da sua vida: amor, trabalho, saúde e paz interior.</p>
+                    <p>Com 35 anos de experiência, posso ajudar a diagnosticar e tratar essas influências negativas. Uma simples limpeza espiritual pode restaurar seu equilíbrio e abrir os caminhos que pareciam fechados.</p>
+                    <p>Lembre-se: buscar ajuda espiritual não é sinal de fraqueza, mas de sabedoria em reconhecer que precisamos de auxílio além do mundo físico.</p>
+                    <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20identifiquei%20vários%20sinais%20e%20preciso%20de%20uma%20avaliação%20espiritual%20urgente" class="btn">Avaliação Espiritual Urgente no WhatsApp</a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Mestre Reginaldo</div>
+                    <p>Especialista em limpeza espiritual e proteção energética com 35 anos de experiência. Ajudo pessoas a restauraram seu equilíbrio espiritual e protegerem suas energias.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html#home">Início</a></li>
+                        <li><a href="index.html#about">Sobre</a></li>
+                        <li><a href="index.html#services">Serviços</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📱</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">👤</a>
+                    </div>
+                </div>
+            </div>
+            <div class="legal-links">
+                <a href="politica-privacidade.html">Política de Privacidade</a>
+                <a href="termos-uso.html">Termos de Uso</a>
+                <a href="cookies.html">Cookies</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Mestre Reginaldo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
