@@ -73,7 +73,6 @@
     }
     </script>
     
-    <!-- O RESTANTE DO SEU CÓDIGO ORIGINAL PERMANECE EXATAMENTE IGUAL -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
     
     <!-- Google Fonts -->
@@ -693,13 +692,13 @@
         .contact-form {
             flex: 1;
             background: white;
-            padding: 2.5rem;
+            padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
         
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
         
         .form-group label {
@@ -711,7 +710,7 @@
         
         .form-control {
             width: 100%;
-            padding: 0.9rem;
+            padding: 0.8rem;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 1rem;
@@ -725,7 +724,7 @@
         }
         
         textarea.form-control {
-            min-height: 150px;
+            min-height: 100px;
             resize: vertical;
         }
         
@@ -1063,7 +1062,7 @@
                 <!-- NOVO CARD - ENCANTAMENTOS GRATUITOS -->
                 <div class="service-card">
                     <div class="service-img">
-                        <img src="images/encantamentos-gratuitos.jpg" alt="Encantamentos Espirituais Gratuitos - Rituais Poderosos">
+                        <img src="images/ritual.png" alt="Encantamentos Espirituais Gratuitos - Rituais Poderosos">
                     </div>
                     <div class="service-content">
                         <h3>Encantamentos Gratuitos</h3>
@@ -1085,7 +1084,7 @@
             <!-- NOVO ARTIGO DESTACADO - ENCANTAMENTOS -->
             <div class="blog-card">
                 <div class="blog-img">
-                    <img src="images/encantamentos-destaque.jpg" alt="Encantamentos Espirituais - 30 Rituais Gratuitos">
+                    <img src="images/ritual.png" alt="Encantamentos Espirituais - 30 Rituais Gratuitos">
                 </div>
                 <div class="blog-content">
                     <h3>Encantamentos Espirituais: 30 Rituais Gratuitos</h3>
@@ -1175,6 +1174,38 @@
                     </div>
                     <p>Entenda os princípios energéticos por trás dos trabalhos de amarração amorosa e como eles influenciam relacionamentos.</p>
                     <a href="artigo-amarracao-amorosa.html" class="read-more">Ler mais</a>
+                </div>
+            </div>
+
+            <!-- Artigo 6 - JÁ EXISTIA -->
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="images/medo.png" alt="Sinais de limpeza espiritual">                    
+                </div>
+                <div class="blog-content">
+                    <h3>5 Sinais que Precisa de Limpeza Espiritual</h3>
+                    <div class="blog-meta">
+                        <span>2 de Agosto, 2025</span>
+                        <span>Energias</span>
+                    </div>
+                    <p>Identifique sintomas comuns que indicam acúmulo de energias negativas e quando buscar ajuda espiritual.</p>
+                    <a href="artigo-sinais-limpeza-espiritual.html" class="read-more">Ler mais</a>
+                </div>
+            </div>
+
+            <!-- Artigo 7 - JÁ EXISTIA -->
+            <div class="blog-card">
+                <div class="blog-img">
+                    <img src="images/oferenda.png" alt="Rituais com orixás">
+                </div>
+                <div class="blog-content">
+                    <h3>O Poder das Oferendas e Rituais</h3>
+                    <div class="blog-meta">
+                        <span>20 de Junho, 2025</span>
+                        <span>Oráculos</span>
+                    </div>
+                    <p>Descubra como o Mestre Reginaldo pode te ajudar a se proteger das energias e forças negativas que te cercam.</p>
+                    <a href="artigo-protecao-espiritual.html" class="read-more">Ler mais</a>
                 </div>
             </div>
         </div>
@@ -1296,11 +1327,7 @@
                             <input type="text" id="name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefone</label>
+                            <label for="phone">Telefone/WhatsApp</label>
                             <input type="tel" id="phone" class="form-control" required>
                         </div>
                         <div class="form-group">
@@ -1396,13 +1423,12 @@
             
             // Coletar dados do formulário
             const name = document.getElementById('name').value || 'Não informado';
-            const email = document.getElementById('email').value || 'Não informado';
             const phone = document.getElementById('phone').value || 'Não informado';
             const service = document.getElementById('service').value || 'Não informado';
             const message = document.getElementById('message').value || 'Não informado';
             
             // Montar mensagem para WhatsApp
-            const whatsappMessage = `*NOVO CONTATO DO SITE*%0A%0A*Nome:* ${name}%0A*E-mail:* ${email}%0A*Telefone:* ${phone}%0A*Serviço de Interesse:* ${service}%0A*Mensagem:* ${message}`;
+            const whatsappMessage = `*NOVO CONTATO DO SITE*%0A%0A*Nome:* ${name}%0A*Telefone:* ${phone}%0A*Serviço de Interesse:* ${service}%0A*Mensagem:* ${message}`;
             
             // URL do WhatsApp
             const whatsappURL = `https://wa.me/5571983389346?text=${whatsappMessage}`;
