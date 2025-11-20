@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔮 Descubra seu Orixá | Mestre Reginaldo</title>
+    <title>🔮 Descubra seu Orixá de Nascimento | Quiz Gratuito | Mestre Reginaldo</title>
     
-    <!-- Meta Tags Otimizadas -->
-    <meta name="description" content="Descubra seu Orixá de forma gratuita! Quiz espiritual interativo com Mestre Reginaldo. Identifique seu Orixá regente e receba orientações personalizadas.">
-    <meta name="keywords" content="descobrir orixá, orixá regente, quiz espiritual, orixá de nascimento, jogo de orixá, Mestre Reginaldo">
+    <!-- Meta Tags Otimizadas para SEO -->
+    <meta name="description" content="Descubra seu Orixá regente em 3 minutos! Quiz espiritual gratuito desenvolvido por Mestre Reginaldo com 35 anos de experiência. Identifique seu Orixá de nascimento e receba orientações personalizadas.">
+    <meta name="keywords" content="descobrir orixá, orixá regente, quiz espiritual, orixá de nascimento, jogo de orixá, Mestre Reginaldo, orixá pessoal, amarração amorosa, espiritualidade">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Descubra seu Orixá de Nascimento | Quiz Gratuito | Mestre Reginaldo">
+    <meta property="og:description" content="Quiz espiritual para descobrir seu Orixá regente. Desenvolvido por Mestre Reginaldo com 35 anos de experiência.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mestrereginaldo.com.br/descubra-seu-orixa">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +46,7 @@
         }
         
         body {
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             line-height: 1.6;
             min-height: 100vh;
@@ -52,6 +58,44 @@
             font-weight: 700;
         }
         
+        /* Header compatível com o site principal */
+        .quiz-header-main {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .back-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover {
+            color: var(--accent);
+        }
+        
         .quiz-container {
             max-width: 800px;
             margin: 0 auto;
@@ -61,18 +105,17 @@
             border-radius: 20px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            margin-top: 2rem;
             margin-bottom: 2rem;
         }
         
         .quiz-header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             position: relative;
         }
         
         .quiz-title {
-            font-size: 3rem;
+            font-size: 2.5rem;
             background: linear-gradient(45deg, var(--gold), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -81,9 +124,28 @@
         }
         
         .quiz-subtitle {
-            font-size: 1.3rem;
-            color: #ccc;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .benefits-list {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
         }
         
         .progress-container {
@@ -97,7 +159,7 @@
         
         .progress-bar {
             height: 100%;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            background: linear-gradient(90deg, var(--accent), var(--gold));
             border-radius: 10px;
             transition: width 0.5s ease;
             width: 0%;
@@ -122,7 +184,7 @@
         }
         
         .question-text {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 2rem;
             color: white;
             line-height: 1.4;
@@ -179,14 +241,97 @@
             font-weight: 500;
         }
         
+        /* Tela de Captura de Leads */
+        .lead-capture-container {
+            text-align: center;
+            animation: fadeIn 0.8s ease;
+            padding: 2rem;
+        }
+        
+        .lead-title {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .lead-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .lead-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255, 159, 28, 0.3);
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .privacy-note {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+        }
+        
+        .privacy-note a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .whatsapp-option {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .whatsapp-option p {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
         .result-container {
             text-align: center;
             animation: fadeIn 0.8s ease;
         }
         
         .orixa-image {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid var(--gold);
@@ -202,17 +347,17 @@
         }
         
         .result-title {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: var(--gold);
             margin-bottom: 1rem;
             text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
         }
         
         .result-description {
-            font-size: 1.2rem;
-            line-height: 1.8;
+            font-size: 1.1rem;
+            line-height: 1.7;
             margin-bottom: 2rem;
-            color: #ddd;
+            color: rgba(255, 255, 255, 0.9);
         }
         
         .orixa-characteristics {
@@ -227,6 +372,7 @@
             color: var(--accent);
             margin-bottom: 1rem;
             font-size: 1.3rem;
+            text-align: center;
         }
         
         .characteristics-list {
@@ -311,45 +457,10 @@
             margin-top: 3rem;
             padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #aaa;
+            color: rgba(255, 255, 255, 0.7);
         }
         
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .quiz-container {
-                margin: 1rem;
-                padding: 1.5rem;
-            }
-            
-            .quiz-title {
-                font-size: 2.2rem;
-            }
-            
-            .question-text {
-                font-size: 1.3rem;
-            }
-            
-            .orixa-image {
-                width: 150px;
-                height: 150px;
-            }
-            
-            .result-title {
-                font-size: 2rem;
-            }
-            
-            .action-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
-        
-        /* Efeitos especiais */
+        /* Elementos flutuantes otimizados */
         .floating-elements {
             position: fixed;
             top: 0;
@@ -362,7 +473,7 @@
         
         .floating-element {
             position: absolute;
-            font-size: 2rem;
+            font-size: 1.5rem;
             opacity: 0.1;
             animation: float 20s infinite linear;
         }
@@ -371,10 +482,51 @@
             0% { transform: translateY(100vh) rotate(0deg); }
             100% { transform: translateY(-100px) rotate(360deg); }
         }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .quiz-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .quiz-title {
+                font-size: 2rem;
+            }
+            
+            .question-text {
+                font-size: 1.3rem;
+            }
+            
+            .orixa-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .result-title {
+                font-size: 1.8rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .benefits-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Elementos flutuantes de fundo -->
+    <!-- Elementos flutuantes de fundo otimizados -->
     <div class="floating-elements">
         <div class="floating-element" style="left: 10%; animation-delay: 0s;">🔮</div>
         <div class="floating-element" style="left: 20%; animation-delay: 2s;">⭐</div>
@@ -384,13 +536,36 @@
         <div class="floating-element" style="left: 60%; animation-delay: 10s;">🔮</div>
         <div class="floating-element" style="left: 70%; animation-delay: 12s;">⭐</div>
         <div class="floating-element" style="left: 80%; animation-delay: 14s;">✨</div>
-        <div class="floating-element" style="left: 90%; animation-delay: 16s;">🌟</div>
+    </div>
+
+    <!-- Header compatível com o site principal -->
+    <div class="quiz-header-main">
+        <div class="logo-container">
+            <div class="logo-icon">🔮</div>
+            <div class="logo">Mestre Reginaldo</div>
+        </div>
+        <a href="https://mestrereginaldo.com.br" class="back-link">← Voltar para o Site Principal</a>
     </div>
 
     <div class="quiz-container">
         <div class="quiz-header">
             <h1 class="quiz-title">Descubra seu Orixá</h1>
-            <p class="quiz-subtitle">Responda as perguntas e descubra qual Orixá rege seu destino</p>
+            <p class="quiz-subtitle">Responda 7 perguntas simples e descubra qual Orixá rege seu destino. Quiz desenvolvido por Mestre Reginaldo com base em 35 anos de experiência espiritual.</p>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <span>🔮</span>
+                    <span>Resultado Personalizado</span>
+                </div>
+                <div class="benefit-item">
+                    <span>⏱️</span>
+                    <span>Apenas 3 minutos</span>
+                </div>
+                <div class="benefit-item">
+                    <span>🎁</span>
+                    <span>Totalmente Gratuito</span>
+                </div>
+            </div>
             
             <div class="progress-container">
                 <div class="progress-bar" id="progressBar"></div>
@@ -406,7 +581,7 @@
                     Este quiz espiritual foi desenvolvido por <strong>Mestre Reginaldo</strong> com base em 35 anos de experiência em tradições ancestrais. 
                     Descubra seu Orixá regente e receba orientações personalizadas para sua vida.
                 </p>
-                <p style="font-size: 1.1rem; margin-bottom: 3rem; color: #ccc;">
+                <p style="font-size: 1.1rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
                     <strong>Como funciona:</strong> Responda 7 perguntas simples sobre sua personalidade e preferências. 
                     Ao final, descubra seu Orixá com descrição completa, características e encantamentos especiais.
                 </p>
@@ -422,6 +597,41 @@
                 
                 <div class="options-grid" id="optionsGrid">
                     <!-- As opções serão inseridas aqui pelo JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Tela de Captura de Leads -->
+        <div id="leadCaptureScreen" class="lead-capture-container" style="display: none;">
+            <h2 class="lead-title">Quase lá!</h2>
+            <p class="lead-description">Para receber seu resultado personalizado e orientações exclusivas, deixe seu contato:</p>
+            
+            <div class="lead-form">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label class="form-label" for="userName">Seu Nome</label>
+                        <input type="text" id="userName" class="form-control" placeholder="Digite seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="userEmail">Seu Melhor E-mail</label>
+                        <input type="email" id="userEmail" class="form-control" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Receber Meu Orixá</button>
+                    
+                    <p class="privacy-note">
+                        Seus dados estão protegidos. Ao informar seus dados, você concorda com nossa 
+                        <a href="politica-privacidade.html" target="_blank">Política de Privacidade</a>.
+                    </p>
+                </form>
+                
+                <div class="whatsapp-option">
+                    <p>Prefere receber por WhatsApp?</p>
+                    <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20descobrir%20meu%20Orixá" 
+                       class="btn btn-secondary" target="_blank">
+                        💬 Receber por WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
@@ -452,7 +662,7 @@
                 </a>
                 <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20descobri%20meu%20Orixá%20e%20gostaria%20de%20uma%20consulta%20personalizada" 
                    class="btn btn-secondary" target="_blank">
-                    💬 Consulta com Mestre Reginaldo
+                    💬 Consulta Personalizada
                 </a>
                 <button class="btn" onclick="restartQuiz()">
                     🔄 Fazer Quiz Novamente
@@ -463,7 +673,7 @@
         <div class="quiz-footer">
             <p>Desenvolvido com sabedoria ancestral por <strong>Mestre Reginaldo</strong> - 35 anos de experiência espiritual</p>
             <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-                <a href="https://mestrereginaldo.com.br" style="color: var(--accent); text-decoration: none;">← Voltar para o Site Principal</a>
+                &copy; 2025 Mestre Reginaldo - Todos os direitos reservados
             </p>
         </div>
     </div>
@@ -634,6 +844,7 @@
 
         let currentQuestion = 0;
         let userAnswers = [];
+        let userData = {};
 
         function startQuiz() {
             document.getElementById('startScreen').style.display = 'none';
@@ -691,12 +902,20 @@
             if (currentQuestion < questions.length) {
                 showQuestion(currentQuestion);
             } else {
-                showResults();
+                showLeadCapture();
             }
         }
 
-        function showResults() {
+        function showLeadCapture() {
             document.getElementById('quizContent').style.display = 'none';
+            document.getElementById('leadCaptureScreen').style.display = 'block';
+            
+            // Rolar para o topo
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showResults() {
+            document.getElementById('leadCaptureScreen').style.display = 'none';
             document.getElementById('loadingSpinner').style.display = 'block';
             
             // Simular processamento
@@ -734,6 +953,12 @@
                     characteristicsList.appendChild(li);
                 });
                 
+                // Enviar dados do usuário (simulação)
+                if (userData.name && userData.email) {
+                    // Aqui você pode implementar o envio para seu sistema de email marketing
+                    console.log('Dados do usuário para captura:', userData);
+                }
+                
                 // Rolar para o topo do resultado
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }, 2000);
@@ -742,10 +967,30 @@
         function restartQuiz() {
             currentQuestion = 0;
             userAnswers = [];
+            userData = {};
             document.getElementById('resultScreen').style.display = 'none';
             document.getElementById('startScreen').style.display = 'block';
             document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('leadForm').reset();
         }
+
+        // Manipular formulário de captura de leads
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Coletar dados do formulário
+            userData.name = document.getElementById('userName').value;
+            userData.email = document.getElementById('userEmail').value;
+            
+            // Validar dados
+            if (!userData.name || !userData.email) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            // Mostrar resultados
+            showResults();
+        });
 
         // Inicializar quiz
         document.addEventListener('DOMContentLoaded', function() {
@@ -759,11 +1004,11 @@
                 if (i < originalText.length) {
                     subtitle.textContent += originalText.charAt(i);
                     i++;
-                    setTimeout(typeWriter, 50);
+                    setTimeout(typeWriter, 30);
                 }
             };
             
-            setTimeout(typeWriter, 1000);
+            setTimeout(typeWriter, 500);
         });
     </script>
 </body>
