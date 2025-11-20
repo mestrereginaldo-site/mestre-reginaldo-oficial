@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2796792312502848"
-     crossorigin="anonymous"></script>
     <title>Diferenças entre Vidência e Ocultismo - Mestre Reginaldo</title>
     <meta name="description" content="Entenda as diferenças entre vidência e ocultismo e como Mestre Reginaldo une essas duas artes espirituais para resultados mais precisos e poderosos.">
     <meta name="keywords" content="vidência, ocultismo, diferenças, vidente, ocultista, Mestre Reginaldo, consulta espiritual, rituais espirituais">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -21,24 +24,33 @@
             --medium: #E9ECEF;
             --dark: #343A40;
             --text: #495057;
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --radius: 12px;
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
             background-color: var(--light);
             color: var(--text);
             line-height: 1.7;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
         }
         
         .container {
             width: 90%;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
@@ -47,11 +59,12 @@
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             padding: 1rem 0;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            transition: all 0.3s ease;
         }
         
         .nav-container {
@@ -63,17 +76,19 @@
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
         
         .logo-icon {
-            font-size: 2rem;
+            font-size: 2.2rem;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
         }
         
         .logo {
             font-size: 1.8rem;
-            font-weight: bold;
+            font-weight: 700;
             color: white;
+            letter-spacing: 0.5px;
         }
         
         .nav-menu {
@@ -82,16 +97,17 @@
         }
         
         .nav-menu li {
-            margin-left: 1.5rem;
+            margin-left: 1.8rem;
         }
         
         .nav-menu a {
             color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: all 0.3s;
             padding: 0.5rem 0;
             position: relative;
+            font-size: 1.05rem;
         }
         
         .nav-menu a::after {
@@ -113,153 +129,169 @@
             color: var(--accent);
         }
         
-        /* Artigo */
-        .article-header {
-            padding: 6rem 0 2rem;
+        /* Hero Section */
+        .hero-article {
+            padding: 10rem 0 4rem;
+            background: linear-gradient(135deg, rgba(106, 76, 147, 0.9), rgba(142, 107, 191, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" opacity="0.1"><path fill="%23ffffff" d="M0,0V800H1200V0ZM600,400C600,267,709.5,160,850,160S1100,267,1100,400,990.5,640,850,640,600,533,600,400Z"/></svg>');
+            background-size: cover;
+            color: white;
             text-align: center;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            margin-bottom: 2rem;
-            border-radius: 0 0 10px 10px;
+            margin-bottom: 3rem;
         }
         
-        .article-title {
-            font-size: 2.3rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            line-height: 1.3;
+        .hero-article h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
         
-        .article-meta {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            color: #6c757d;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
+        .hero-article p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
         }
         
+        /* Artigo */
         .article-content {
             background: white;
-            padding: 3rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            margin-bottom: 2rem;
+            padding: 4rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .article-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: var(--radius) var(--radius) 0 0;
         }
         
         .article-content h2 {
             color: var(--primary);
-            margin: 2.5rem 0 1.2rem;
-            font-size: 1.8rem;
-            border-left: 4px solid var(--accent);
-            padding-left: 1rem;
+            margin: 3rem 0 1.5rem;
+            font-size: 2.2rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .article-content h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            height: 80%;
+            width: 6px;
+            background: var(--accent);
+            border-radius: 3px;
         }
         
         .article-content h3 {
             color: var(--secondary);
-            margin: 2rem 0 1rem;
-            font-size: 1.4rem;
+            margin: 2.5rem 0 1.2rem;
+            font-size: 1.6rem;
         }
         
         .article-content p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-            font-size: 1.05rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
         
         .article-content ul, .article-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
+            margin-bottom: 2rem;
+            padding-left: 2.5rem;
         }
         
         .article-content li {
-            margin-bottom: 0.7rem;
-            line-height: 1.6;
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            position: relative;
         }
         
-        .ad-space {
-            background-color: var(--medium);
-            padding: 2rem;
-            text-align: center;
-            margin: 2.5rem 0;
-            border-radius: 8px;
-            border: 1px dashed var(--primary);
-        }
-        
-        .ad-label {
-            font-size: 0.8rem;
-            color: #6c757d;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .article-content ul li::before {
+            content: '✦';
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: -1.5rem;
         }
         
         .comparison-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
         }
         
         .comparison-card {
-            background: #F8F9FA;
-            padding: 2rem;
-            border-radius: 10px;
-            border-left: 4px solid var(--primary);
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .comparison-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary);
+        }
+        
+        .comparison-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
         }
         
         .comparison-card.highlight {
-            background: var(--primary);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
+            border-top: 5px solid var(--accent);
+        }
+        
+        .comparison-card.highlight::before {
+            background: var(--accent);
         }
         
         .comparison-card.highlight h4 {
             color: white;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
         }
         
         .comparison-card h4 {
             color: var(--primary);
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .conclusion-box {
-            background: linear-gradient(135deg, #8E6BBF, #A98CD4);
-            color: white;
-            padding: 2.5rem;
-            border-radius: 10px;
-            margin: 3rem 0 1rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .conclusion-box h2 {
-            color: white;
+            font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            border-left: none;
-            padding-left: 0;
+            position: relative;
+            padding-bottom: 0.8rem;
         }
         
-        .btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 0.9rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(255, 159, 28, 0.3);
-            margin-top: 1rem;
+        .comparison-card h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
         }
         
-        .btn:hover {
-            background-color: #ffb143;
-            transform: translateY(-3px);
-            box-shadow: 0 7px 20px rgba(255, 159, 28, 0.4);
+        .comparison-card.highlight h4::after {
+            background: white;
         }
         
         .back-link {
@@ -268,51 +300,121 @@
             color: var(--primary);
             text-decoration: none;
             margin-bottom: 2rem;
-            font-weight: bold;
-            padding: 0.7rem 1.5rem;
+            font-weight: 600;
+            padding: 0.9rem 1.8rem;
             border: 2px solid var(--primary);
-            border-radius: 30px;
+            border-radius: 50px;
             transition: all 0.3s;
             background: white;
+            box-shadow: var(--shadow);
         }
         
         .back-link:hover {
             background-color: var(--primary);
             color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(106, 76, 147, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(106, 76, 147, 0.3);
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3.5rem;
+            border-radius: var(--radius);
+            margin: 4rem 0 2rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23ffffff" opacity="0.05"><path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/></svg>');
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-box p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 1.1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 159, 28, 0.4);
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn:hover {
+            background-color: #ffb143;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 159, 28, 0.5);
         }
         
         /* Footer */
         footer {
             background-color: var(--dark);
             color: white;
-            padding: 3rem 0 1.5rem;
-            margin-top: 3rem;
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
         }
         
         .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
+            font-size: 2rem;
+            font-weight: 700;
             color: var(--accent);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
         .footer-about p {
             color: #adb5bd;
-            line-height: 1.7;
+            line-height: 1.8;
+            font-size: 1.05rem;
         }
         
         .footer-links h3, .footer-social h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            margin-bottom: 1.8rem;
             color: var(--accent);
         }
         
@@ -321,63 +423,67 @@
         }
         
         .footer-links li {
-            margin-bottom: 0.7rem;
+            margin-bottom: 0.9rem;
         }
         
         .footer-links a {
             color: #adb5bd;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s;
+            font-size: 1.05rem;
+            display: inline-block;
         }
         
         .footer-links a:hover {
             color: var(--accent);
+            transform: translateX(5px);
         }
         
         .social-icons {
             display: flex;
-            gap: 1rem;
+            gap: 1.2rem;
         }
         
         .social-icon {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             background-color: rgba(255,255,255,0.1);
             border-radius: 50%;
             color: white;
             text-decoration: none;
             transition: all 0.3s;
+            font-size: 1.2rem;
         }
         
         .social-icon:hover {
             background-color: var(--accent);
             color: var(--dark);
-            transform: translateY(-3px);
+            transform: translateY(-5px);
         }
         
         .copyright {
             text-align: center;
-            padding-top: 2rem;
+            padding-top: 2.5rem;
             border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: #6c757d;
         }
         
         .legal-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
+            gap: 2.5rem;
+            margin-top: 1.5rem;
             flex-wrap: wrap;
         }
         
         .legal-links a {
             color: #adb5bd;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             transition: color 0.3s;
         }
         
@@ -385,36 +491,111 @@
             color: var(--accent);
         }
         
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .hero-article h1 {
+                font-size: 2.8rem;
+            }
+            
+            .article-content {
+                padding: 3rem;
+            }
+        }
+        
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
             }
             
-            .article-header {
-                padding: 5rem 0 2rem;
+            .hero-article {
+                padding: 8rem 0 3rem;
             }
             
-            .article-title {
-                font-size: 1.8rem;
+            .hero-article h1 {
+                font-size: 2.3rem;
+            }
+            
+            .hero-article p {
+                font-size: 1.1rem;
             }
             
             .article-content {
-                padding: 2rem;
+                padding: 2.5rem 2rem;
             }
             
-            .article-meta {
-                flex-direction: column;
-                gap: 0.5rem;
+            .article-content h2 {
+                font-size: 1.9rem;
             }
             
             .comparison-grid {
                 grid-template-columns: 1fr;
             }
             
+            .cta-box {
+                padding: 2.5rem 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            
             .legal-links {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 1rem;
                 text-align: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-article h1 {
+                font-size: 2rem;
+            }
+            
+            .article-content {
+                padding: 2rem 1.5rem;
+            }
+            
+            .article-content h2 {
+                font-size: 1.7rem;
+            }
+            
+            .comparison-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .cta-box {
+                padding: 2rem 1.5rem;
+            }
+            
+            .cta-box h3 {
+                font-size: 1.7rem;
             }
         }
     </style>
@@ -438,112 +619,85 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero-article">
+        <div class="container">
+            <h1>Diferenças entre Vidência e Ocultismo</h1>
+            <p>Como Mestre Reginaldo une essas duas artes espirituais para resultados mais precisos e poderosos</p>
+        </div>
+    </section>
+
     <!-- Artigo -->
     <div class="container">
         <a href="index.html#blog" class="back-link">← Voltar para o Blog</a>
         
-        <article>
-            <div class="article-header">
-                <h1 class="article-title">Diferenças entre Vidência e Ocultismo</h1>
-                <div class="article-meta">
-                    <span>Publicado em: 20 de Novembro, 2025</span>
-                    <span>Categoria: Espiritualidade</span>
-                    <span>Tempo de leitura: 7 minutos</span>
+        <div class="article-content">
+            <p>Muitas pessoas confundem vidência com ocultismo, mas essas são duas artes espirituais distintas que, quando unidas, criam uma sinergia poderosa. Como <strong>Ocultista e Vidente</strong> com 35 anos de experiência, vou explicar como essas práticas se complementam no meu trabalho.</p>
+            
+            <h2>O que é Vidência?</h2>
+            <p>A vidência é a arte de <strong>enxergar além do véu espiritual</strong>. Através do dom da clarividência, o vidente:</p>
+            
+            <ul>
+                <li>Vê eventos futuros e passados</li>
+                <li>Identifica energias e influências espirituais</li>
+                <li>Fornece orientação sobre decisões importantes</li>
+                <li>Revela caminhos e oportunidades</li>
+                <li>Alertas sobre desafios próximos</li>
+            </ul>
+            
+            <h2>O que é Ocultismo?</h2>
+            <p>O ocultismo é a prática de <strong>manipular energias espirituais</strong> através de rituais e conhecimentos ancestrais. Como ocultista, eu:</p>
+            
+            <ul>
+                <li>Realizo rituais de amarração amorosa</li>
+                <li>Executo limpezas energéticas profundas</li>
+                <li>Crio proteções espirituais</li>
+                <li>Atraio prosperidade e abundância</li>
+                <li>Afasto energias negativas e inveja</li>
+            </ul>
+            
+            <h2>A União Perfeita: Por que Ter as Duas Habilidades?</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h4>Somente Vidente</h4>
+                    <p>Pode ver o problema e orientar, mas não necessariamente tem as ferramentas práticas para resolvê-lo através de rituais específicos.</p>
+                </div>
+                
+                <div class="comparison-card">
+                    <h4>Somente Ocultista</h4>
+                    <p>Pode realizar o ritual, mas sem a visão espiritual pode não compreender todos os aspectos energéticos envolvidos.</p>
+                </div>
+                
+                <div class="comparison-card highlight">
+                    <h4>Ocultista e Vidente</h4>
+                    <p><strong>Vê o quadro completo</strong> e <strong>age com precisão</strong>. Primeiro entendo profundamente a situação através da vidência, depois aplico o ritual ocultista mais adequado.</p>
                 </div>
             </div>
             
-            <div class="article-content">
-                <p>Muitas pessoas confundem vidência com ocultismo, mas essas são duas artes espirituais distintas que, quando unidas, criam uma sinergia poderosa. Como <strong>Ocultista e Vidente</strong> com 35 anos de experiência, vou explicar como essas práticas se complementam no meu trabalho.</p>
-                
-                <h2>O que é Vidência?</h2>
-                <p>A vidência é a arte de <strong>enxergar além do véu espiritual</strong>. Através do dom da clarividência, o vidente:</p>
-                
-                <ul>
-                    <li>Vê eventos futuros e passados</li>
-                    <li>Identifica energias e influências espirituais</li>
-                    <li>Fornece orientação sobre decisões importantes</li>
-                    <li>Revela caminhos e oportunidades</li>
-                    <li>Alertas sobre desafios próximos</li>
-                </ul>
-                
-                <div class="ad-space">
-                    <div class="ad-label">Anúncio</div>
-                    <!-- Espaço para AdSense -->
-                    <p>Espaço reservado para publicidade</p>
-                </div>
-                
-                <h2>O que é Ocultismo?</h2>
-                <p>O ocultismo é a prática de <strong>manipular energias espirituais</strong> através de rituais e conhecimentos ancestrais. Como ocultista, eu:</p>
-                
-                <ul>
-                    <li>Realizo rituais de amarração amorosa</li>
-                    <li>Executo limpezas energéticas profundas</li>
-                    <li>Crio proteções espirituais</li>
-                    <li>Atraio prosperidade e abundância</li>
-                    <li>Afasto energias negativas e inveja</li>
-                </ul>
-                
-                <div class="ad-space">
-                    <div class="ad-label">Anúncio</div>
-                    <!-- Espaço para AdSense -->
-                    <p>Espaço reservado para publicidade</p>
-                </div>
-                
-                <h2>A União Perfeita: Por que Ter as Duas Habilidades?</h2>
-                
-                <div class="comparison-grid">
-                    <div class="comparison-card">
-                        <h4>Somente Vidente</h4>
-                        <p>Pode ver o problema e orientar, mas não necessariamente tem as ferramentas práticas para resolvê-lo através de rituais específicos.</p>
-                    </div>
-                    
-                    <div class="comparison-card">
-                        <h4>Somente Ocultista</h4>
-                        <p>Pode realizar o ritual, mas sem a visão espiritual pode não compreender todos os aspectos energéticos envolvidos.</p>
-                    </div>
-                    
-                    <div class="comparison-card highlight">
-                        <h4>Ocultista e Vidente</h4>
-                        <p><strong>Vê o quadro completo</strong> e <strong>age com precisão</strong>. Primeiro entendo profundamente a situação através da vidência, depois aplico o ritual ocultista mais adequado.</p>
-                    </div>
-                </div>
-                
-                <div class="ad-space">
-                    <div class="ad-label">Anúncio</div>
-                    <!-- Espaço para AdSense -->
-                    <p>Espaço reservado para publicidade</p>
-                </div>
-                
-                <h2>Exemplo Prático: Amarração Amorosa</h2>
-                <p>Vamos supor que você queira uma amarração amorosa. A diferença na abordagem é significativa:</p>
-                
-                <h3>Como Vidente:</h3>
-                <p>Primeiro, vejo se o relacionamento tem futuro espiritual, identifico os obstáculos energéticos e determino o momento astral ideal para o ritual.</p>
-                
-                <h3>Como Ocultista:</h3>
-                <p>Em seguida, realizo o ritual mais adequado para o seu caso específico, utilizando as energias corretas no momento preciso.</p>
-                
-                <h3>Resultado:</h3>
-                <p>Uma solução completa, desde o diagnóstico espiritual até a execução ritualística com máxima eficácia.</p>
-                
-                <div class="ad-space">
-                    <div class="ad-label">Anúncio</div>
-                    <!-- Espaço para AdSense -->
-                    <p>Espaço reservado para publicidade</p>
-                </div>
-                
-                <h2>Meu Caso: A Jornada Dupla</h2>
-                <p>Minha trajetória de 35 anos me permitiu desenvolver ambas as habilidades de forma complementar. Comecei como ocultista, dominando rituais e encantamentos. Com o tempo, percebi que muitos clientes precisavam não apenas da ação ritualística, mas também da <strong>compreensão espiritual</strong> de suas situações.</p>
-                
-                <p>Foi então que desenvolvi minha vidência, não para substituir o ocultismo, mas para <strong>complementá-lo</strong>. Hoje, não consigo imaginar trabalhar de outra forma. A vidência me dá a clareza, o ocultismo me dá o poder de ação.</p>
-                
-                <div class="conclusion-box">
-                    <h2>Experimente a Diferença da Abordagem Completa</h2>
-                    <p>Se você busca soluções espirituais que combinem <strong>visão clara</strong> com <strong>ação poderosa</strong>, agende uma consulta. Como Ocultista e Vidente, ofereço não apenas respostas, mas transformações reais.</p>
-                    <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20uma%20consulta%20completa%20como%20ocultista%20e%20vidente" class="btn" target="_blank">Agendar Consulta Completa</a>
-                </div>
+            <h2>Exemplo Prático: Amarração Amorosa</h2>
+            <p>Vamos supor que você queira uma amarração amorosa. A diferença na abordagem é significativa:</p>
+            
+            <h3>Como Vidente:</h3>
+            <p>Primeiro, vejo se o relacionamento tem futuro espiritual, identifico os obstáculos energéticos e determino o momento astral ideal para o ritual.</p>
+            
+            <h3>Como Ocultista:</h3>
+            <p>Em seguida, realizo o ritual mais adequado para o seu caso específico, utilizando as energias corretas no momento preciso.</p>
+            
+            <h3>Resultado:</h3>
+            <p>Uma solução completa, desde o diagnóstico espiritual até a execução ritualística com máxima eficácia.</p>
+            
+            <h2>Meu Caso: A Jornada Dupla</h2>
+            <p>Minha trajetória de 35 anos me permitiu desenvolver ambas as habilidades de forma complementar. Comecei como ocultista, dominando rituais e encantamentos. Com o tempo, percebi que muitos clientes precisavam não apenas da ação ritualística, mas também da <strong>compreensão espiritual</strong> de suas situações.</p>
+            
+            <p>Foi então que desenvolvi minha vidência, não para substituir o ocultismo, mas para <strong>complementá-lo</strong>. Hoje, não consigo imaginar trabalhar de outra forma. A vidência me dá a clareza, o ocultismo me dá o poder de ação.</p>
+            
+            <div class="cta-box">
+                <h3>Experimente a Diferença da Abordagem Completa</h3>
+                <p>Se você busca soluções espirituais que combinem <strong>visão clara</strong> com <strong>ação poderosa</strong>, agende uma consulta. Como Ocultista e Vidente, ofereço não apenas respostas, mas transformações reais.</p>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20uma%20consulta%20completa%20como%20ocultista%20e%20vidente" class="btn" target="_blank">Agendar Consulta Completa</a>
             </div>
-        </article>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -551,7 +705,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <div class="footer-logo">Mestre Reginaldo</div>
+                    <div class="footer-logo">
+                        <span>🔮</span> Mestre Reginaldo
+                    </div>
                     <p><strong>Ocultista e Vidente</strong> com mais de 35 anos de experiência em trabalhos espirituais. Atendimento personalizado para resolver problemas amorosos, limpeza energética e proteção espiritual.</p>
                 </div>
                 <div class="footer-links">
@@ -584,6 +740,11 @@
         </div>
     </footer>
 
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20as%20diferenças%20entre%20vidência%20e%20ocultismo" class="whatsapp-float" target="_blank" aria-label="Entre em contato pelo WhatsApp">
+        💬
+    </a>
+
     <script>
         // Smooth scrolling para links de navegação
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -601,6 +762,16 @@
                     });
                 }
             });
+        });
+        
+        // Efeito de sombra no header ao rolar
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.2)';
+            } else {
+                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.15)';
+            }
         });
     </script>
 </body>
