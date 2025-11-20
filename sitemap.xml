@@ -4,273 +4,256 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  
-  <!-- Página Principal - Prioridade Máxima -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+        
+    <!-- Página Principal -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/index.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-  <!-- Página de Lista de Encantamentos -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamentos.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <!-- Página de Encantamentos -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamentos.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
 
-  <!-- ENCANTAMENTOS INDIVIDUAIS - PÁGINAS SEPARADAS -->
+    <!-- ENCANTAMENTOS 1-10 -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-do-amor-verdadeiro.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 1 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-do-amor-verdadeiro.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/protecao-contra-inimigos.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 2 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/protecao-contra-inimigos.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/abertura-de-caminhos-profissionais.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 3 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/abertura-de-caminhos-profissionais.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-prosperidade.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 4 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-prosperidade.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/limpeza-energetica-do-lar.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 5 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/limpeza-energetica-do-lar.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-autoestima.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 6 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-autoestima.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/protecao-espiritual-noturna.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 7 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/protecao-espiritual-noturna.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-cura-emocional.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 8 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-cura-emocional.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/atrair-boas-amizades.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 9 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/atrair-boas-amizades.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-intuicao.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 10 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-intuicao.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <!-- ENCANTAMENTOS 11-20 -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/harmonizacao-familiar.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- NOVOS ENCANTAMENTOS ADICIONADOS -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-forca-interior.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 11 - Harmonização Familiar -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/harmonizacao-familiar.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/protecao-contra-inveja.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 12 - Força Interior -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-forca-interior.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-sabedoria.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 13 - Proteção Contra Inveja -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/protecao-contra-inveja.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/atrair-boas-oportunidades.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 14 - Sabedoria -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-sabedoria.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-fertilidade.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 15 - Boas Oportunidades -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/atrair-boas-oportunidades.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/protecao-para-viagens.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 16 - Fertilidade -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-fertilidade.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-comunicacao.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 17 - Proteção para Viagens -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/protecao-para-viagens.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/limpeza-de-vinculos-negativos.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 18 - Comunicação -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-comunicacao.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-paciencia.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 19 - Limpeza de Vínculos -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/limpeza-de-vinculos-negativos.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <!-- ENCANTAMENTOS 21-30 (OS QUE CRIAMOS AGORA) -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/atrair-reconhecimento-profissional.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Encantamento 20 - Paciência -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/encantamento-da-paciencia.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-cura-fisica.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Página de Obrigado -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/obrigado.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/protecao-para-criancas.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- ARTIGOS DO BLOG - Prioridade Alta -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-determinacao.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Artigo 1 - Mais Recente -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/depoimentos-reais-amarracao.html</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/harmonizacao-de-relacionamento.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Artigo 2 - Mais Recente -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/sinais-limpeza-espiritual-urgente.html</loc>
-    <lastmod>2025-11-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-criatividade.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Artigo 3 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/sinais-amarracao-funcionando.html</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/protecao-para-o-lar.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Artigo 4 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/quanto-tempo-amarracao-amorosa.html</loc>
-    <lastmod>2025-11-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-gratidao.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Artigo 5 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/artigo-amarracao-amorosa.html</loc>
-    <lastmod>2025-05-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/atrair-mentores-espirituais.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Artigo 6 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/artigo-sinais-limpeza-espiritual.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-do-perdao.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <!-- Artigo 7 -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/artigo-protecao-espiritual.html</loc>
-    <lastmod>2025-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+    <!-- PÁGINAS LEGAIS E DE SUPORTE -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/politica-privacidade.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 
-  <!-- PÁGINAS LEGAIS -->
-  <url>
-    <loc>https://mestrereginaldo.com.br/politica-privacidade.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/termos-uso.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 
-  <url>
-    <loc>https://mestrereginaldo.com.br/termos-uso.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://mestrereginaldo.com.br/cookies.html</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/cookies.html</loc>
+        <lastmod>2025-11-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 
 </urlset>
