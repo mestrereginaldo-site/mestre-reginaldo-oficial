@@ -3,98 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ==================== -->
-    <!-- META TAGS OTIMIZADAS -->
-    <!-- ==================== -->
     <title>Descubra seu Orixá de Nascimento 🔮 Quiz Gratuito | Mestre Reginaldo</title>
     
-    <meta name="description" content="Descubra seu Orixá regente em 3 minutos! Quiz espiritual preciso desenvolvido por Mestre Reginaldo com 35 anos de experiência. Identifique seu Orixá de nascimento e receba orientações personalizadas gratuitamente.">
+    <meta name="description" content="Descubra seu Orixá regente em 3 minutos! Quiz espiritual desenvolvido por Mestre Reginaldo com 35 anos de experiência.">
     
-    <meta name="keywords" content="descobrir orixá, orixá regente, quiz espiritual, orixá de nascimento, jogo de orixá, Mestre Reginaldo, orixá pessoal, amarração amorosa, espiritualidade, umbanda, candomblé, orixá quiz, teste orixá, qual meu orixá">
+    <meta name="keywords" content="descobrir orixá, orixá regente, quiz espiritual, orixá de nascimento, jogo de orixá, Mestre Reginaldo">
     
     <meta name="author" content="Mestre Reginaldo">
     <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Descubra seu Orixá de Nascimento 🔮 Quiz Gratuito | Mestre Reginaldo">
-    <meta property="og:description" content="Quiz espiritual preciso para descobrir seu Orixá regente. Desenvolvido por Mestre Reginaldo com 35 anos de experiência.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mestrereginaldo.com.br/descubra-seu-orixa">
-    <meta property="og:image" content="https://mestrereginaldo.com.br/images/quiz-orixa-og.jpg">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="Mestre Reginaldo">
-    
-    <!-- TWITTER CARDS -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mestrereginaldo.com.br/descubra-seu-orixa">
-    <meta property="twitter:title" content="Descubra seu Orixá de Nascimento | Quiz Gratuito">
-    <meta property="twitter:description" content="Descubra qual Orixá rege seu destino. Quiz espiritual desenvolvido por Mestre Reginaldo.">
-    <meta property="twitter:image" content="https://mestrereginaldo.com.br/images/quiz-orixa-twitter.jpg">
-
-    <!-- ==================== -->
-    <!-- SCHEMA MARKUP PARA QUIZ -->
-    <!-- ==================== -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Quiz",
-        "name": "Descubra seu Orixá de Nascimento",
-        "description": "Quiz espiritual interativo para identificar seu Orixá regente baseado em suas características pessoais",
-        "url": "https://mestrereginaldo.com.br/descubra-seu-orixa",
-        "author": {
-            "@type": "Person",
-            "name": "Mestre Reginaldo",
-            "description": "Ocultista e Vidente com 35 anos de experiência em trabalhos espirituais"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Mestre Reginaldo",
-            "url": "https://mestrereginaldo.com.br"
-        },
-        "datePublished": "2025-01-20",
-        "timeRequired": "PT3M",
-        "educationalLevel": "Beginner",
-        "assesses": "Conhecimento sobre Orixás e autoconhecimento espiritual",
-        "numberOfQuestions": 7,
-        "typicalAgeRange": "18-",
-        "hasPart": [
-            {
-                "@type": "Question",
-                "name": "Como você reage em situações de conflito?",
-                "eduQuestionType": "Multiple choice",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Busco a paz e mediação"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Qual ambiente você prefere?",
-                "eduQuestionType": "Multiple choice",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Lugares calmos e organizados"
-                }
-            }
-        ],
-        "learningResourceType": "Quiz",
-        "teaches": "Autoconhecimento espiritual, identificação de Orixás regentes, características dos Orixás",
-        "about": {
-            "@type": "Thing",
-            "name": "Orixás, Espiritualidade, Religiões Afro-brasileiras"
-        }
-    }
-    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
 
     <style>
         :root {
@@ -106,9 +27,6 @@
             --medium: #E9ECEF;
             --dark: #343A40;
             --text: #495057;
-            --success: #28a745;
-            --warning: #ffc107;
-            --danger: #dc3545;
         }
         
         * {
@@ -123,7 +41,6 @@
             color: white;
             line-height: 1.6;
             min-height: 100vh;
-            background-attachment: fixed;
         }
         
         h1, h2, h3, h4 {
@@ -131,7 +48,6 @@
             font-weight: 700;
         }
         
-        /* Header compatível com o site principal */
         .quiz-header-main {
             background: rgba(0, 0, 0, 0.2);
             padding: 1rem 0;
@@ -154,29 +70,6 @@
             font-size: 1.8rem;
             font-weight: bold;
             color: white;
-        }
-        
-        .breadcrumb {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-        
-        .breadcrumb a {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .breadcrumb a:hover {
-            color: var(--accent);
-        }
-        
-        .breadcrumb span {
-            color: var(--accent);
         }
         
         .back-link {
@@ -337,7 +230,6 @@
             font-weight: 500;
         }
         
-        /* Tela de Captura de Leads */
         .lead-capture-container {
             text-align: center;
             animation: fadeIn 0.8s ease;
@@ -556,7 +448,6 @@
             color: rgba(255, 255, 255, 0.7);
         }
         
-        /* Elementos flutuantes otimizados */
         .floating-elements {
             position: fixed;
             top: 0;
@@ -579,7 +470,6 @@
             100% { transform: translateY(-100px) rotate(360deg); }
         }
         
-        /* Seção de Internal Linking Estratégico */
         .internal-links {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
@@ -627,7 +517,6 @@
             color: var(--gold);
         }
         
-        /* Mensagens de status */
         .status-message {
             padding: 1rem;
             border-radius: 8px;
@@ -648,7 +537,6 @@
             color: #f8d7da;
         }
         
-        /* Responsividade */
         @media (max-width: 768px) {
             .quiz-container {
                 margin: 1rem;
@@ -695,7 +583,7 @@
     </style>
 </head>
 <body>
-    <!-- Elementos flutuantes de fundo otimizados -->
+    <!-- Elementos flutuantes de fundo -->
     <div class="floating-elements">
         <div class="floating-element" style="left: 10%; animation-delay: 0s;">🔮</div>
         <div class="floating-element" style="left: 20%; animation-delay: 2s;">⭐</div>
@@ -707,20 +595,11 @@
         <div class="floating-element" style="left: 80%; animation-delay: 14s;">✨</div>
     </div>
 
-    <!-- Header compatível com o site principal -->
+    <!-- Header -->
     <div class="quiz-header-main">
         <div class="logo-container">
             <div class="logo-icon">🔮</div>
             <div class="logo">Mestre Reginaldo</div>
-        </div>
-        
-        <!-- Breadcrumb para SEO -->
-        <div class="breadcrumb">
-            <a href="https://mestrereginaldo.com.br">Início</a> 
-            <span>›</span>
-            <a href="https://mestrereginaldo.com.br#services">Ferramentas Espirituais</a>
-            <span>›</span>
-            <span>Descubra seu Orixá</span>
         </div>
         
         <a href="https://mestrereginaldo.com.br" class="back-link">← Voltar para o Site Principal</a>
@@ -757,7 +636,7 @@
                 <div style="font-size: 4rem; margin-bottom: 2rem;">🔮</div>
                 <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--gold);">Jornada Espiritual</h2>
                 <p style="font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.8;">
-                    Este quiz espiritual foi desenvolvido por <strong>Mestre Reginaldo</strong> com base em 35 anos de experiência em tradições ancestrais. 
+                    Este quiz espiritual foi desenvolvido por <strong>Mestre Reginaldo</strong> com base em 35 anos de experiência em tradições ancestlares. 
                     Descubra seu Orixá regente e receba orientações personalizadas para sua vida.
                 </p>
                 <p style="font-size: 1.1rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
@@ -902,13 +781,8 @@
 
     <script>
         // =============================================
-        // CONFIGURAÇÃO DO SISTEMA DE CAPTURA DE LEADS
+        // CONFIGURAÇÃO DO E-MAIL
         // =============================================
-        
-        // URL do Google Apps Script - VOCÊ PRECISA CRIAR ISSO (instruções abaixo)
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzdoecFfSQI_efMn2I4l7Q-NAAAz1LGg2xzm9l5FX4sw8URtcSqlCv6FUBz_TeWTE9qiQ/exec;
-        
-        // E-mail para fallback - SEU E-MAIL AQUI
         const ADMIN_EMAIL = 'adv.regi.silva@gmail.com';
 
         // =============================================
@@ -1091,11 +965,12 @@
             const img = new Image();
             
             img.onload = function() {
+                // Se a imagem carregar com sucesso
                 imgElement.src = orixa.image;
             };
             
             img.onerror = function() {
-                // Se a imagem não carregar, cria um SVG com a primeira letra do Orixá
+                // Se a imagem NÃO carregar, cria um SVG com a primeira letra do Orixá
                 const svg = `
                     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
                         <defs>
@@ -1111,77 +986,59 @@
                 imgElement.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
             };
             
+            // Tenta carregar a imagem
             img.src = orixa.image;
         }
 
         // =============================================
-        // SISTEMA DE CAPTURA DE LEADS
+        // SISTEMA DE CAPTURA DE LEADS POR E-MAIL
         // =============================================
-        async function saveLead(userData, orixaResult) {
+        function sendEmail(userData, orixaResult) {
             const statusMessage = document.getElementById('statusMessage');
             
             try {
-                // Dados para enviar
-                const leadData = {
-                    nome: userData.name,
-                    email: userData.email,
-                    telefone: userData.phone || 'Não informado',
-                    orixa: orixaResult.name,
-                    data: new Date().toLocaleString('pt-BR'),
-                    source: 'Quiz Orixá'
-                };
+                // Prepara o corpo do e-mail
+                const emailBody = `
+NOVO LEAD DO QUIZ ORIXÁ - MESTRE REGINALDO
 
-                // Tenta enviar para Google Sheets primeiro
-                if (GOOGLE_SCRIPT_URL.includes('SEU_SCRIPT_ID')) {
-                    throw new Error('Google Script não configurado');
-                }
+📋 DADOS DO CLIENTE:
+• Nome: ${userData.name}
+• E-mail: ${userData.email}
+• WhatsApp: ${userData.phone || 'Não informado'}
+• Orixá Identificado: ${orixaResult.name}
 
-                const response = await fetch(GOOGLE_SCRIPT_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(leadData)
-                });
+📊 RESULTADO DO QUIZ:
+${orixaResult.description}
 
-                if (response.ok) {
-                    statusMessage.textContent = '✅ Dados salvos com sucesso! Redirecionando...';
-                    statusMessage.className = 'status-message status-success';
-                    statusMessage.style.display = 'block';
-                    return true;
-                } else {
-                    throw new Error('Erro ao salvar no Google Sheets');
-                }
+⭐ CARACTERÍSTICAS:
+${orixaResult.characteristics.map(char => `• ${char}`).join('\n')}
 
-            } catch (error) {
-                console.log('Erro ao salvar lead:', error);
+📅 DATA: ${new Date().toLocaleString('pt-BR')}
+🌐 ORIGEM: Quiz Orixá - Mestre Reginaldo
+                `.trim();
+
+                // Cria o link de e-mail
+                const subject = `Novo Lead - Quiz Orixá: ${userData.name}`;
+                const mailtoLink = `mailto:${ADMIN_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
                 
-                // Fallback: Envia por e-mail
-                try {
-                    const emailBody = `
-                        NOVO LEAD DO QUIZ ORIXÁ:
-                        
-                        Nome: ${userData.name}
-                        E-mail: ${userData.email}
-                        Telefone: ${userData.phone || 'Não informado'}
-                        Orixá: ${orixaResult.name}
-                        Data: ${new Date().toLocaleString('pt-BR')}
-                    `;
-                    
-                    const mailtoLink = `mailto:${ADMIN_EMAIL}?subject=Novo Lead - Quiz Orixá&body=${encodeURIComponent(emailBody)}`;
-                    window.location.href = mailtoLink;
-                    
-                    statusMessage.textContent = '📧 Abrindo cliente de e-mail...';
-                    statusMessage.className = 'status-message status-success';
-                    statusMessage.style.display = 'block';
-                    
-                    return true;
-                } catch (emailError) {
-                    statusMessage.textContent = '⚠️ Lead salvo localmente. Entre em contato conosco!';
-                    statusMessage.className = 'status-message status-error';
-                    statusMessage.style.display = 'block';
-                    return false;
-                }
+                // Abre o cliente de e-mail
+                window.location.href = mailtoLink;
+                
+                // Mostra mensagem de sucesso
+                statusMessage.textContent = '📧 Abrindo cliente de e-mail... Complete o envio para receber seu Orixá!';
+                statusMessage.className = 'status-message status-success';
+                statusMessage.style.display = 'block';
+                
+                return true;
+                
+            } catch (error) {
+                console.log('Erro ao enviar e-mail:', error);
+                
+                // Fallback: mensagem de erro
+                statusMessage.textContent = '⚠️ Erro ao preparar e-mail. Entre em contato conosco!';
+                statusMessage.className = 'status-message status-error';
+                statusMessage.style.display = 'block';
+                return false;
             }
         }
 
@@ -1207,7 +1064,7 @@
             const optionsGrid = document.getElementById('optionsGrid');
             optionsGrid.innerHTML = '';
             
-            question.options.forEach((option, optionIndex) => {
+            question.options.forEach((option) => {
                 const optionCard = document.createElement('div');
                 optionCard.className = 'option-card';
                 optionCard.innerHTML = `
@@ -1256,7 +1113,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        async function showResults() {
+        function showResults() {
             document.getElementById('leadCaptureScreen').style.display = 'none';
             document.getElementById('loadingSpinner').style.display = 'block';
             
@@ -1290,12 +1147,7 @@
                 characteristicsList.appendChild(li);
             });
             
-            // Salvar lead (se houver dados)
-            if (userData.name && userData.email) {
-                await saveLead(userData, orixa);
-            }
-            
-            // Mostrar resultados
+            // Mostrar resultados após processamento
             setTimeout(() => {
                 document.getElementById('loadingSpinner').style.display = 'none';
                 document.getElementById('resultScreen').style.display = 'block';
@@ -1320,7 +1172,7 @@
         // =============================================
         // MANIPULAR FORMULÁRIO DE CAPTURA DE LEADS
         // =============================================
-        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             // Coletar dados do formulário
@@ -1343,13 +1195,36 @@
             submitSpinner.style.display = 'block';
             submitBtn.disabled = true;
             
-            // Mostrar resultados (que inclui o salvamento do lead)
-            await showResults();
+            // Calcular Orixá predominante
+            const scores = {};
+            userAnswers.forEach(answer => {
+                scores[answer] = (scores[answer] || 0) + 1;
+            });
             
-            // Restaurar botão
-            submitText.style.display = 'block';
-            submitSpinner.style.display = 'none';
-            submitBtn.disabled = false;
+            let maxScore = 0;
+            userOrixa = 'oxala';
+            
+            for (const [orixa, score] of Object.entries(scores)) {
+                if (score > maxScore) {
+                    maxScore = score;
+                    userOrixa = orixa;
+                }
+            }
+            
+            const orixaResult = orixas[userOrixa];
+            
+            // Enviar e-mail
+            sendEmail(userData, orixaResult);
+            
+            // Restaurar botão após 2 segundos
+            setTimeout(() => {
+                submitText.style.display = 'block';
+                submitSpinner.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Mostrar resultados
+                showResults();
+            }, 2000);
         });
 
         // =============================================
