@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://www.mestrereginaldo.com.br/sitemap.xml
+
+# Otimização para motores de busca
+Crawl-delay: 1
