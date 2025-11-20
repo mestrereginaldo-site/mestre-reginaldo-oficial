@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubra seu Orixá | Mestre Reginaldo</title>
-    <meta name="description" content="Descubra seu Orixá de nascimento com nosso quiz espiritual. Conheça seu guia protetor e receba orientações personalizadas.">
+    <title>🔮 Descubra seu Orixá | Mestre Reginaldo</title>
+    
+    <!-- Meta Tags Otimizadas -->
+    <meta name="description" content="Descubra seu Orixá de forma gratuita! Quiz espiritual interativo com Mestre Reginaldo. Identifique seu Orixá regente e receba orientações personalizadas.">
+    <meta name="keywords" content="descobrir orixá, orixá regente, quiz espiritual, orixá de nascimento, jogo de orixá, Mestre Reginaldo">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+
     <style>
-        /* Reutilize o CSS do index.html para manter consistência */
         :root {
             --primary: #6A4C93;
             --secondary: #8E6BBF;
             --accent: #FF9F1C;
+            --gold: #FFD700;
             --light: #F8F9FA;
             --medium: #E9ECEF;
             --dark: #343A40;
             --text: #495057;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
         }
         
         * {
@@ -28,681 +40,731 @@
         }
         
         body {
-            background-color: var(--light);
-            color: var(--text);
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: white;
             line-height: 1.6;
+            min-height: 100vh;
+            background-attachment: fixed;
         }
         
         h1, h2, h3, h4 {
             font-family: 'Merriweather', serif;
             font-weight: 700;
         }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
+        
+        .quiz-container {
+            max-width: 800px;
             margin: 0 auto;
-        }
-
-        /* Header - igual ao index */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
         
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .logo-icon {
-            font-size: 2rem;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: white;
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-menu li {
-            margin-left: 1.5rem;
-        }
-        
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            padding: 0.5rem 0;
+        .quiz-header {
+            text-align: center;
+            margin-bottom: 3rem;
             position: relative;
         }
         
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent);
-            transition: width 0.3s;
-        }
-        
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
-        
-        .nav-menu a:hover {
-            color: var(--accent);
-        }
-
-        /* Conteúdo Principal */
-        .main-content {
-            margin-top: 100px;
-            padding: 2rem 0;
-        }
-
-        .intro-section {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .intro-section h1 {
-            color: var(--primary);
+        .quiz-title {
+            font-size: 3rem;
+            background: linear-gradient(45deg, var(--gold), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             margin-bottom: 1rem;
+            text-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
         }
-
-        .intro-section p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Quiz Section */
-        .quiz-section {
-            background: white;
-            padding: 3rem;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            margin-bottom: 3rem;
-        }
-
-        .quiz-progress {
+        
+        .quiz-subtitle {
+            font-size: 1.3rem;
+            color: #ccc;
             margin-bottom: 2rem;
         }
-
-        .progress-bar {
-            height: 10px;
-            background-color: var(--medium);
-            border-radius: 5px;
+        
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 2rem 0;
             overflow: hidden;
         }
-
-        .progress {
+        
+        .progress-bar {
             height: 100%;
-            background-color: var(--accent);
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            transition: width 0.5s ease;
             width: 0%;
-            transition: width 0.3s;
         }
-
-        .question {
-            display: none;
+        
+        .question-container {
+            margin-bottom: 2rem;
+            animation: fadeIn 0.5s ease;
         }
-
-        .question.active {
-            display: block;
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        .question h3 {
-            margin-bottom: 1.5rem;
-            color: var(--primary);
+        
+        .question-number {
+            color: var(--gold);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-
-        .options {
+        
+        .question-text {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: white;
+            line-height: 1.4;
+        }
+        
+        .options-grid {
             display: grid;
             gap: 1rem;
+            margin-bottom: 2rem;
         }
-
-        .option {
-            padding: 1rem;
-            background: var(--light);
-            border: 2px solid var(--medium);
-            border-radius: 5px;
+        
+        .option-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 1.5rem;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            position: relative;
+            overflow: hidden;
         }
-
-        .option:hover {
-            border-color: var(--primary);
-            background: white;
+        
+        .option-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
         }
-
-        .option.selected {
+        
+        .option-card:hover::before {
+            left: 100%;
+        }
+        
+        .option-card:hover {
+            background: rgba(255, 255, 255, 0.15);
             border-color: var(--accent);
-            background: rgba(255, 159, 28, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
-
-        .quiz-navigation {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
+        
+        .option-card.selected {
+            background: rgba(106, 76, 147, 0.3);
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(106, 76, 147, 0.5);
         }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 0.9rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(255, 159, 28, 0.3);
+        
+        .option-text {
+            font-size: 1.1rem;
+            font-weight: 500;
         }
-
-        .btn:hover {
-            background-color: #ffb143;
-            transform: translateY(-3px);
-            box-shadow: 0 7px 20px rgba(255, 159, 28, 0.4);
-        }
-
-        .btn:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-            transform: none;
-            box-shadow: none;
-        }
-
-        .btn-secondary {
-            background-color: var(--primary);
-            box-shadow: 0 4px 15px rgba(106, 76, 147, 0.3);
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--secondary);
-            box-shadow: 0 7px 20px rgba(106, 76, 147, 0.4);
-        }
-
-        /* Result Section */
-        .result-section {
-            display: none;
+        
+        .result-container {
             text-align: center;
-            padding: 3rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            animation: fadeIn 0.8s ease;
         }
-
-        .result-section h2 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
+        
         .orixa-image {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
+            border: 5px solid var(--gold);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
             margin: 2rem auto;
-            border: 5px solid var(--accent);
+            animation: pulse 2s infinite;
         }
-
-        .orixa-description {
-            max-width: 800px;
-            margin: 0 auto 2rem;
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.8); }
+            100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+        }
+        
+        .result-title {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+        }
+        
+        .result-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #ddd;
+        }
+        
+        .orixa-characteristics {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
             text-align: left;
         }
-
-        .recommendations {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 10px;
-            margin-top: 2rem;
-        }
-
-        /* Footer - igual ao index */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 4rem 0 1.5rem;
-        }
         
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
+        .characteristics-title {
             color: var(--accent);
             margin-bottom: 1rem;
+            font-size: 1.3rem;
         }
         
-        .footer-about p {
-            color: #adb5bd;
-            line-height: 1.7;
-        }
-        
-        .footer-links h3, .footer-social h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent);
-        }
-        
-        .footer-links ul {
+        .characteristics-list {
             list-style: none;
         }
         
-        .footer-links li {
-            margin-bottom: 0.7rem;
+        .characteristics-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
         }
         
-        .footer-links a {
-            color: #adb5bd;
-            text-decoration: none;
-            transition: color 0.3s;
+        .characteristics-list li::before {
+            content: '✦';
+            color: var(--gold);
+            position: absolute;
+            left: 0;
         }
         
-        .footer-links a:hover {
-            color: var(--accent);
-        }
-        
-        .social-icons {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .social-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        
-        .social-icon:hover {
-            background-color: var(--accent);
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent), var(--gold));
             color: var(--dark);
-            transform: translateY(-3px);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 159, 28, 0.3);
+            font-size: 1.1rem;
+            margin: 0.5rem;
         }
         
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            color: #6c757d;
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 159, 28, 0.5);
         }
-
-        .legal-links {
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            box-shadow: 0 5px 15px rgba(106, 76, 147, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: 0 8px 25px rgba(106, 76, 147, 0.5);
+        }
+        
+        .action-buttons {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
+            gap: 1rem;
+            margin-top: 2rem;
             flex-wrap: wrap;
         }
         
-        .legal-links a {
-            color: #adb5bd;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            margin: 2rem 0;
         }
         
-        .legal-links a:hover {
-            color: var(--accent);
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
         }
-
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .quiz-footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+        }
+        
         /* Responsividade */
         @media (max-width: 768px) {
-            .quiz-section, .result-section {
-                padding: 2rem 1.5rem;
+            .quiz-container {
+                margin: 1rem;
+                padding: 1.5rem;
             }
-
-            .quiz-navigation {
+            
+            .quiz-title {
+                font-size: 2.2rem;
+            }
+            
+            .question-text {
+                font-size: 1.3rem;
+            }
+            
+            .orixa-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .result-title {
+                font-size: 2rem;
+            }
+            
+            .action-buttons {
                 flex-direction: column;
-                gap: 1rem;
+                align-items: center;
             }
-
+            
             .btn {
                 width: 100%;
-                text-align: center;
+                max-width: 300px;
             }
+        }
+        
+        /* Efeitos especiais */
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <div class="logo-container">
-                <div class="logo-icon">🔮</div>
-                <div class="logo">Mestre Reginaldo</div>
+    <!-- Elementos flutuantes de fundo -->
+    <div class="floating-elements">
+        <div class="floating-element" style="left: 10%; animation-delay: 0s;">🔮</div>
+        <div class="floating-element" style="left: 20%; animation-delay: 2s;">⭐</div>
+        <div class="floating-element" style="left: 30%; animation-delay: 4s;">✨</div>
+        <div class="floating-element" style="left: 40%; animation-delay: 6s;">🌟</div>
+        <div class="floating-element" style="left: 50%; animation-delay: 8s;">💫</div>
+        <div class="floating-element" style="left: 60%; animation-delay: 10s;">🔮</div>
+        <div class="floating-element" style="left: 70%; animation-delay: 12s;">⭐</div>
+        <div class="floating-element" style="left: 80%; animation-delay: 14s;">✨</div>
+        <div class="floating-element" style="left: 90%; animation-delay: 16s;">🌟</div>
+    </div>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 class="quiz-title">Descubra seu Orixá</h1>
+            <p class="quiz-subtitle">Responda as perguntas e descubra qual Orixá rege seu destino</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="index.html#about">Sobre</a></li>
-                <li><a href="index.html#services">Serviços</a></li>
-                <li><a href="encantamentos.html">Encantamentos</a></li>
-                <li><a href="descubra-seu-orixa.html">Descubra seu Orixá</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="index.html#contact">Contato</a></li>
-            </ul>
         </div>
-    </header>
 
-    <!-- Conteúdo Principal -->
-    <main class="main-content">
-        <div class="container">
-            <!-- Introdução -->
-            <section class="intro-section">
-                <h1>Descubra seu Orixá</h1>
-                <p>Responda ao quiz abaixo e descubra qual é o seu Orixá de nascimento. Conheça seu guia protetor e receba orientações personalizadas para sua vida espiritual.</p>
-            </section>
+        <!-- Tela de Início -->
+        <div id="startScreen" class="question-container">
+            <div style="text-align: center;">
+                <div style="font-size: 4rem; margin-bottom: 2rem;">🔮</div>
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--gold);">Jornada Espiritual</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.8;">
+                    Este quiz espiritual foi desenvolvido por <strong>Mestre Reginaldo</strong> com base em 35 anos de experiência em tradições ancestrais. 
+                    Descubra seu Orixá regente e receba orientações personalizadas para sua vida.
+                </p>
+                <p style="font-size: 1.1rem; margin-bottom: 3rem; color: #ccc;">
+                    <strong>Como funciona:</strong> Responda 7 perguntas simples sobre sua personalidade e preferências. 
+                    Ao final, descubra seu Orixá com descrição completa, características e encantamentos especiais.
+                </p>
+                <button class="btn" onclick="startQuiz()">Começar Jornada Espiritual</button>
+            </div>
+        </div>
 
-            <!-- Quiz -->
-            <section class="quiz-section">
-                <div class="quiz-progress">
-                    <div class="progress-bar">
-                        <div class="progress" id="progressBar"></div>
-                    </div>
-                </div>
-
-                <form id="quizForm">
-                    <!-- Pergunta 1 -->
-                    <div class="question active" id="question1">
-                        <h3>1. Qual elemento você mais se identifica?</h3>
-                        <div class="options">
-                            <div class="option" data-value="ogun">🌲 Terra e Florestas</div>
-                            <div class="option" data-value="yemanja">🌊 Água do Mar</div>
-                            <div class="option" data-value="xango">⚡ Raios e Tempestades</div>
-                            <div class="option" data-value="oxossi">🎯 Caça e Objetivos</div>
-                        </div>
-                    </div>
-
-                    <!-- Pergunta 2 -->
-                    <div class="question" id="question2">
-                        <h3>2. Como você lida com desafios?</h3>
-                        <div class="options">
-                            <div class="option" data-value="ogun">Com força e determinação</div>
-                            <div class="option" data-value="yemanja">Com paciência e fluidez</div>
-                            <div class="option" data-value="xango">Com autoridade e justiça</div>
-                            <div class="option" data-value="oxala">Com sabedoria e paz</div>
-                        </div>
-                    </div>
-
-                    <!-- Pergunta 3 -->
-                    <div class="question" id="question3">
-                        <h3>3. Qual é sua principal característica?</h3>
-                        <div class="options">
-                            <div class="option" data-value="oxossi">Foco e objetividade</div>
-                            <div class="option" data-value="yemanja">Cuidado e proteção</div>
-                            <div class="option" data-value="xango">Liderança e coragem</div>
-                            <div class="option" data-value="oxum">Beleza e harmonia</div>
-                        </div>
-                    </div>
-
-                    <!-- Pergunta 4 -->
-                    <div class="question" id="question4">
-                        <h3>4. Como é sua relação com as emoções?</h3>
-                        <div class="options">
-                            <div class="option" data-value="ogun">Prático, não demonstro muito</div>
-                            <div class="option" data-value="yemanja">Sensível e emotivo</div>
-                            <div class="option" data-value="oxum">Romântico e apaixonado</div>
-                            <div class="option" data-value="oxala">Equilibrado e sereno</div>
-                        </div>
-                    </div>
-
-                    <!-- Pergunta 5 -->
-                    <div class="question" id="question5">
-                        <h3>5. Qual ambiente você prefere?</h3>
-                        <div class="options">
-                            <div class="option" data-value="oxossi">Florestas e natureza</div>
-                            <div class="option" data-value="yemanja">Praia e mar</div>
-                            <div class="option" data-value="xango">Lugares altos e imponentes</div>
-                            <div class="option" data-value="oxum">Lagos e cachoeiras</div>
-                        </div>
-                    </div>
-
-                    <!-- Navegação -->
-                    <div class="quiz-navigation">
-                        <button type="button" class="btn btn-secondary" id="prevBtn" disabled>Anterior</button>
-                        <button type="button" class="btn" id="nextBtn">Próxima</button>
-                        <button type="button" class="btn" id="submitBtn" style="display: none;">Descobrir Orixá</button>
-                    </div>
-                </form>
-            </section>
-
-            <!-- Resultado -->
-            <section class="result-section" id="resultSection">
-                <h2>Seu Orixá é: <span id="orixaName"></span></h2>
-                <img id="orixaImage" class="orixa-image" src="" alt="">
-                <div class="orixa-description" id="orixaDescription"></div>
+        <!-- Container das Perguntas -->
+        <div id="quizContent" style="display: none;">
+            <div class="question-container">
+                <div class="question-number" id="questionNumber">Pergunta 1 de 7</div>
+                <h2 class="question-text" id="questionText"></h2>
                 
-                <div class="recommendations">
-                    <h3>Recomendações Espirituais</h3>
-                    <p id="recommendations"></p>
-                    <a href="https://wa.me/5571983389346?text=Olá,%20descobri%20que%20meu%20orixá%20é%20%5Bcoloque%20aqui%5D%20e%20gostaria%20de%20uma%20consulta%20personalizada" class="btn" target="_blank">Consulta Personalizada</a>
+                <div class="options-grid" id="optionsGrid">
+                    <!-- As opções serão inseridas aqui pelo JavaScript -->
                 </div>
-            </section>
+            </div>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">Mestre Reginaldo</div>
-                    <p>Ocultista e Vidente com mais de 35 anos de experiência em trabalhos espirituais. Atendimento personalizado para resolver problemas amorosos, limpeza energética e proteção espiritual.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="index.html#about">Sobre</a></li>
-                        <li><a href="index.html#services">Serviços</a></li>
-                        <li><a href="encantamentos.html">Encantamentos Gratuitos</a></li>
-                        <li><a href="descubra-seu-orixa.html">Descubra seu Orixá</a></li>
-                        <li><a href="index.html#blog">Blog</a></li>
-                        <li><a href="index.html#contact">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Redes Sociais</h3>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">f</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="WhatsApp">💬</a>
-                    </div>
-                </div>
+        <!-- Tela de Carregamento -->
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner"></div>
+            <p style="margin-top: 1rem; font-size: 1.1rem;">Analisando suas respostas...</p>
+        </div>
+
+        <!-- Tela de Resultado -->
+        <div id="resultScreen" class="result-container" style="display: none;">
+            <h2 class="result-title" id="orixaName"></h2>
+            <img class="orixa-image" id="orixaImage" src="" alt="Orixá">
+            
+            <div class="result-description" id="orixaDescription"></div>
+            
+            <div class="orixa-characteristics">
+                <h3 class="characteristics-title">📋 Características Principais</h3>
+                <ul class="characteristics-list" id="orixaCharacteristics">
+                    <!-- Características serão inseridas aqui -->
+                </ul>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Mestre Reginaldo. Todos os direitos reservados.</p>
-                <div class="legal-links">
-                    <a href="politica-privacidade.html">Política de Privacidade</a>
-                    <a href="termos-uso.html">Termos de Uso</a>
-                    <a href="cookies.html">Cookies</a>
-                </div>
+            
+            <div class="action-buttons">
+                <a href="encantamentos.html" class="btn">
+                    🔮 Ver Encantamentos Relacionados
+                </a>
+                <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20descobri%20meu%20Orixá%20e%20gostaria%20de%20uma%20consulta%20personalizada" 
+                   class="btn btn-secondary" target="_blank">
+                    💬 Consulta com Mestre Reginaldo
+                </a>
+                <button class="btn" onclick="restartQuiz()">
+                    🔄 Fazer Quiz Novamente
+                </button>
             </div>
         </div>
-    </footer>
+
+        <div class="quiz-footer">
+            <p>Desenvolvido com sabedoria ancestral por <strong>Mestre Reginaldo</strong> - 35 anos de experiência espiritual</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="https://mestrereginaldo.com.br" style="color: var(--accent); text-decoration: none;">← Voltar para o Site Principal</a>
+            </p>
+        </div>
+    </div>
 
     <script>
-        // Dados dos Orixás
+        // Base de dados dos Orixás
         const orixas = {
-            ogun: {
-                name: "Ogum",
-                image: "https://example.com/images/ogum.jpg", // Substitua por imagem real
-                description: "Ogum é o Orixá da guerra, do ferro e da tecnologia. É um grande guerreiro, protetor da lei e da ordem. Suas cores são azul marinho e verde. Dia da semana: terça-feira.",
-                recommendations: "Para equilibrar suas energias com Ogum, trabalhe a coragem e a determinação. Evite a impulsividade e cultive a paciência. Ritual recomendado: oferendas com instrumentos de ferro."
+            oxala: {
+                name: "Oxalá",
+                image: "https://images.unsplash.com/photo-1545569341-9c0d4a4a7c7c?w=400&h=400&fit=crop",
+                description: "Oxalá é o Orixá da paz, da pureza e da criação. Como pai de todos os Orixás, representa a sabedoria, a calma e a serenidade. Você é uma pessoa que busca harmonia e justiça em todas as situações.",
+                characteristics: [
+                    "Pacífico e diplomático",
+                    "Busca sempre a justiça",
+                    "Tem grande sabedoria interior",
+                    "Valoriza a família e tradições",
+                    "É calmo mesmo sob pressão"
+                ],
+                points: 0
             },
-            yemanja: {
-                name: "Yemanjá",
-                image: "https://example.com/images/yemanja.jpg", // Substitua por imagem real
-                description: "Yemanjá é a Mãe das Águas, Orixá dos mares e da maternidade. Representa a proteção, o cuidado e a fertilidade. Suas cores são azul claro e branco. Dia da semana: sábado.",
-                recommendations: "Para harmonizar com Yemanjá, trabalhe a emotividade e o cuidado com os outros. Ritual recomendado: oferendas à beira-mar com flores brancas."
+            iemanja: {
+                name: "Iemanjá",
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop",
+                description: "Iemanjá é a rainha do mar, mãe de todos os Orixás. Representa a maternidade, a proteção e a emocionalidade. Você é uma pessoa acolhedora, que cuida dos outros e tem forte intuição.",
+                characteristics: [
+                    "Protetor e acolhedor",
+                    "Forte intuição emocional",
+                    "Ligado à família e amigos",
+                    "Sensível e compreensivo",
+                    "Gosta de cuidar dos outros"
+                ],
+                points: 0
             },
             xango: {
                 name: "Xangô",
-                image: "https://example.com/images/xango.jpg", // Substitua por imagem real
-                description: "Xangô é o Orixá da justiça, dos raios e trovões. É um rei poderoso que combate a injustiça. Suas cores são marrom e vermelho. Dia da semana: quarta-feira.",
-                recommendations: "Para equilibrar com Xangô, trabalhe a justiça e a liderança. Evite o autoritarismo. Ritual recomendado: acender velas marrons e vermelhas pedindo justiça."
-            },
-            oxossi: {
-                name: "Oxóssi",
-                image: "https://example.com/images/oxossi.jpg", // Substitua por imagem real
-                description: "Oxóssi é o Orixá da caça e da fartura. Representa a busca pelo conhecimento e a objetividade. Suas cores são verde e azul claro. Dia da semana: quinta-feira.",
-                recommendations: "Para harmonizar com Oxóssi, cultive o foco e a determinação em seus objetivos. Ritual recomendado: oferendas em florestas ou parques."
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+                description: "Xangô é o Orixá da justiça, do trovão e do fogo. Representa a autoridade, a determinação e a liderança. Você é uma pessoa decidida, que busca justiça e não tem medo de desafios.",
+                characteristics: [
+                    "Líder natural",
+                    "Busca justiça e verdade",
+                    "Corajoso e determinado",
+                    "Gosta de desafios",
+                    "Tem forte senso de honra"
+                ],
+                points: 0
             },
             oxum: {
                 name: "Oxum",
-                image: "https://example.com/images/oxum.jpg", // Substitua por imagem real
-                description: "Oxum é a Orixá do amor, da beleza e da riqueza. Representa a sensualidade e a diplomacia. Suas cores são amarelo e dourado. Dia da semana: sábado.",
-                recommendations: "Para equilibrar com Oxum, trabalhe a autoestima e as relações amorosas. Ritual recomendado: banhos com flores amarelas e mel."
+                image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop",
+                description: "Oxum é a Orixá do amor, da beleza e da riqueza. Representa a fertilidade, a sedução e a diplomacia. Você é uma pessoa charmosa, que valoriza relacionamentos e tem grande sensibilidade artística.",
+                characteristics: [
+                    "Charmoso e diplomático",
+                    "Valoriza beleza e harmonia",
+                    "Boa comunicação",
+                    "Sensível e artístico",
+                    "Gosta de relacionamentos"
+                ],
+                points: 0
             },
-            oxala: {
-                name: "Oxalá",
-                image: "https://example.com/images/oxala.jpg", // Substitua por imagem real
-                description: "Oxalá é o Orixá da paz, da criação e da sabedoria. É o pai de todos os Orixás. Suas cores são branco. Dia da semana: sexta-feira.",
-                recommendations: "Para harmonizar com Oxalá, cultive a paz interior e a sabedoria. Ritual recomendado: usar roupas brancas às sextas-feiras."
+            ogum: {
+                name: "Ogum",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+                description: "Ogum é o Orixá do ferro, da guerra e da tecnologia. Representa a ação, a coragem e a inovação. Você é uma pessoa prática, que resolve problemas e não desiste facilmente.",
+                characteristics: [
+                    "Prático e objetivo",
+                    "Corajoso e determinado",
+                    "Bom resolvedor de problemas",
+                    "Gosta de tecnologia",
+                    "Não desiste facilmente"
+                ],
+                points: 0
+            },
+            oxossi: {
+                name: "Oxóssi",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+                description: "Oxóssi é o Orixá da caça, das florestas e do conhecimento. Representa a liberdade, a sabedoria e a conexão com a natureza. Você é uma pessoa curiosa, que busca conhecimento e valoriza sua liberdade.",
+                characteristics: [
+                    "Curioso e inteligente",
+                    "Valoriza liberdade",
+                    "Conectado com a natureza",
+                    "Buscador de conhecimento",
+                    "Independente"
+                ],
+                points: 0
             }
         };
 
-        // Variáveis do quiz
-        let currentQuestion = 1;
-        const totalQuestions = 5;
-        const answers = {};
+        // Perguntas do quiz
+        const questions = [
+            {
+                text: "Como você reage em situações de conflito?",
+                options: [
+                    { text: "Busco a paz e mediação", orixa: "oxala" },
+                    { text: "Protejo quem precisa de ajuda", orixa: "iemanja" },
+                    { text: "Luto pelo que é justo", orixa: "xango" },
+                    { text: "Uso a diplomacia e persuasão", orixa: "oxum" },
+                    { text: "Ajo rapidamente para resolver", orixa: "ogum" },
+                    { text: "Analiso antes de agir", orixa: "oxossi" }
+                ]
+            },
+            {
+                text: "Qual ambiente você prefere?",
+                options: [
+                    { text: "Lugares calmos e organizados", orixa: "oxala" },
+                    { text: "Praia ou perto da água", orixa: "iemanja" },
+                    { text: "Lugares com energia e movimento", orixa: "xango" },
+                    { text: "Lugares bonitos e harmoniosos", orixa: "oxum" },
+                    { text: "Locais de trabalho e tecnologia", orixa: "ogum" },
+                    { text: "Natureza e florestas", orixa: "oxossi" }
+                ]
+            },
+            {
+                text: "Como é seu estilo de liderança?",
+                options: [
+                    { text: "Sábio e equilibrado", orixa: "oxala" },
+                    { text: "Protetor e acolhedor", orixa: "iemanja" },
+                    { text: "Forte e decidido", orixa: "xango" },
+                    { text: "Persuasivo e charmoso", orixa: "oxum" },
+                    { text: "Prático e eficiente", orixa: "ogum" },
+                    { text: "Inspirador e livre", orixa: "oxossi" }
+                ]
+            },
+            {
+                text: "O que mais valoriza nos relacionamentos?",
+                options: [
+                    { text: "Respeito e tradição", orixa: "oxala" },
+                    { text: "Cuidado e proteção", orixa: "iemanja" },
+                    { text: "Lealdade e honra", orixa: "xango" },
+                    { text: "Beleza e romance", orixa: "oxum" },
+                    { text: "Ação e aventura", orixa: "ogum" },
+                    { text: "Liberdade e crescimento", orixa: "oxossi" }
+                ]
+            },
+            {
+                text: "Como toma decisões importantes?",
+                options: [
+                    { text: "Com calma e reflexão", orixa: "oxala" },
+                    { text: "Sigo minha intuição", orixa: "iemanja" },
+                    { text: "Decido com firmeza", orixa: "xango" },
+                    { text: "Penso no impacto emocional", orixa: "oxum" },
+                    { text: "Ajo rapidamente", orixa: "ogum" },
+                    { text: "Analiso todas as opções", orixa: "oxossi" }
+                ]
+            },
+            {
+                text: "Qual seu maior talento?",
+                options: [
+                    { text: "Sabedoria e conselhos", orixa: "oxala" },
+                    { text: "Cuidar e proteger", orixa: "iemanja" },
+                    { text: "Liderança e justiça", orixa: "xango" },
+                    { text: "Comunicação e arte", orixa: "oxum" },
+                    { text: "Resolver problemas", orixa: "ogum" },
+                    { text: "Conhecimento e curiosidade", orixa: "oxossi" }
+                ]
+            },
+            {
+                text: "Como busca sua felicidade?",
+                options: [
+                    { text: "Através da paz interior", orixa: "oxala" },
+                    { text: "Cuidando da família", orixa: "iemanja" },
+                    { text: "Lutando por meus ideais", orixa: "xango" },
+                    { text: "Vivendo relacionamentos", orixa: "oxum" },
+                    { text: "Superando desafios", orixa: "ogum" },
+                    { text: "Explorando e aprendendo", orixa: "oxossi" }
+                ]
+            }
+        ];
 
-        // Elementos DOM
-        const progressBar = document.getElementById('progressBar');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const submitBtn = document.getElementById('submitBtn');
-        const resultSection = document.getElementById('resultSection');
-        const orixaName = document.getElementById('orixaName');
-        const orixaImage = document.getElementById('orixaImage');
-        const orixaDescription = document.getElementById('orixaDescription');
-        const recommendations = document.getElementById('recommendations');
+        let currentQuestion = 0;
+        let userAnswers = [];
 
-        // Atualizar barra de progresso
-        function updateProgress() {
-            const progress = ((currentQuestion - 1) / totalQuestions) * 100;
-            progressBar.style.width = `${progress}%`;
+        function startQuiz() {
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('quizContent').style.display = 'block';
+            showQuestion(0);
         }
 
-        // Mostrar pergunta
-        function showQuestion(questionNumber) {
-            document.querySelectorAll('.question').forEach(q => q.classList.remove('active'));
-            document.getElementById(`question${questionNumber}`).classList.add('active');
+        function showQuestion(index) {
+            const question = questions[index];
+            document.getElementById('questionNumber').textContent = `Pergunta ${index + 1} de ${questions.length}`;
+            document.getElementById('questionText').textContent = question.text;
             
-            updateProgress();
+            // Atualizar barra de progresso
+            const progress = ((index + 1) / questions.length) * 100;
+            document.getElementById('progressBar').style.width = `${progress}%`;
             
-            // Atualizar botões
-            prevBtn.disabled = questionNumber === 1;
-            nextBtn.style.display = questionNumber === totalQuestions ? 'none' : 'inline-block';
-            submitBtn.style.display = questionNumber === totalQuestions ? 'inline-block' : 'none';
-        }
-
-        // Selecionar opção
-        document.querySelectorAll('.option').forEach(option => {
-            option.addEventListener('click', function() {
-                // Remover seleção de outras opções na mesma pergunta
-                this.parentElement.querySelectorAll('.option').forEach(opt => {
-                    opt.classList.remove('selected');
+            // Criar opções
+            const optionsGrid = document.getElementById('optionsGrid');
+            optionsGrid.innerHTML = '';
+            
+            question.options.forEach((option, optionIndex) => {
+                const optionCard = document.createElement('div');
+                optionCard.className = 'option-card';
+                optionCard.innerHTML = `
+                    <div class="option-text">${option.text}</div>
+                `;
+                
+                optionCard.addEventListener('click', () => {
+                    selectOption(option.orixa, optionCard);
                 });
                 
-                // Selecionar esta opção
-                this.classList.add('selected');
+                optionsGrid.appendChild(optionCard);
+            });
+        }
+
+        function selectOption(orixa, selectedCard) {
+            // Remover seleção anterior
+            document.querySelectorAll('.option-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Selecionar nova opção
+            selectedCard.classList.add('selected');
+            userAnswers[currentQuestion] = orixa;
+            
+            // Avançar automaticamente após 1 segundo
+            setTimeout(() => {
+                nextQuestion();
+            }, 800);
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            
+            if (currentQuestion < questions.length) {
+                showQuestion(currentQuestion);
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quizContent').style.display = 'none';
+            document.getElementById('loadingSpinner').style.display = 'block';
+            
+            // Simular processamento
+            setTimeout(() => {
+                document.getElementById('loadingSpinner').style.display = 'none';
+                document.getElementById('resultScreen').style.display = 'block';
                 
-                // Salvar resposta
-                const questionId = this.closest('.question').id.replace('question', '');
-                answers[questionId] = this.getAttribute('data-value');
-            });
-        });
-
-        // Navegação
-        nextBtn.addEventListener('click', function() {
-            if (currentQuestion < totalQuestions) {
-                currentQuestion++;
-                showQuestion(currentQuestion);
-            }
-        });
-
-        prevBtn.addEventListener('click', function() {
-            if (currentQuestion > 1) {
-                currentQuestion--;
-                showQuestion(currentQuestion);
-            }
-        });
-
-        // Calcular resultado
-        submitBtn.addEventListener('click', function() {
-            // Contar ocorrências de cada orixá
-            const counts = {};
-            Object.values(answers).forEach(orixa => {
-                counts[orixa] = (counts[orixa] || 0) + 1;
-            });
-            
-            // Encontrar orixá com mais votos
-            let maxCount = 0;
-            let resultOrixa = 'oxala'; // padrão
-            for (const [orixa, count] of Object.entries(counts)) {
-                if (count > maxCount) {
-                    maxCount = count;
-                    resultOrixa = orixa;
+                // Calcular Orixá predominante
+                const scores = {};
+                userAnswers.forEach(answer => {
+                    scores[answer] = (scores[answer] || 0) + 1;
+                });
+                
+                let maxScore = 0;
+                let userOrixa = 'oxala';
+                
+                for (const [orixa, score] of Object.entries(scores)) {
+                    if (score > maxScore) {
+                        maxScore = score;
+                        userOrixa = orixa;
+                    }
                 }
-            }
-            
-            // Mostrar resultado
-            const orixaData = orixas[resultOrixa];
-            orixaName.textContent = orixaData.name;
-            orixaImage.src = orixaData.image;
-            orixaImage.alt = `Orixá ${orixaData.name}`;
-            orixaDescription.textContent = orixaData.description;
-            recommendations.textContent = orixaData.recommendations;
-            
-            // Atualizar link do WhatsApp
-            const whatsappBtn = document.querySelector('.recommendations .btn');
-            const whatsappMessage = `Olá, descobri que meu orixá é ${orixaData.name} e gostaria de uma consulta personalizada`;
-            whatsappBtn.href = `https://wa.me/5571983389346?text=${encodeURIComponent(whatsappMessage)}`;
-            
-            // Mostrar seção de resultado
-            document.querySelector('.quiz-section').style.display = 'none';
-            resultSection.style.display = 'block';
-        });
+                
+                // Exibir resultado
+                const orixa = orixas[userOrixa];
+                document.getElementById('orixaName').textContent = orixa.name;
+                document.getElementById('orixaImage').src = orixa.image;
+                document.getElementById('orixaDescription').textContent = orixa.description;
+                
+                const characteristicsList = document.getElementById('orixaCharacteristics');
+                characteristicsList.innerHTML = '';
+                orixa.characteristics.forEach(char => {
+                    const li = document.createElement('li');
+                    li.textContent = char;
+                    characteristicsList.appendChild(li);
+                });
+                
+                // Rolar para o topo do resultado
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 2000);
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            userAnswers = [];
+            document.getElementById('resultScreen').style.display = 'none';
+            document.getElementById('startScreen').style.display = 'block';
+            document.getElementById('progressBar').style.width = '0%';
+        }
 
         // Inicializar quiz
-        showQuestion(1);
+        document.addEventListener('DOMContentLoaded', function() {
+            // Efeito de digitação no subtítulo
+            const subtitle = document.querySelector('.quiz-subtitle');
+            const originalText = subtitle.textContent;
+            subtitle.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    subtitle.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            };
+            
+            setTimeout(typeWriter, 1000);
+        });
     </script>
 </body>
 </html>
