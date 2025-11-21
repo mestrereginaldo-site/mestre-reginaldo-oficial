@@ -305,8 +305,8 @@
             font-weight: 500;
         }
         
-        /* Tela de WhatsApp */
-        .whatsapp-container {
+        /* Tela de Captura WhatsApp */
+        .whatsapp-capture-container {
             text-align: center;
             animation: fadeIn 0.8s ease;
             padding: 2rem;
@@ -324,13 +324,57 @@
             color: rgba(255, 255, 255, 0.9);
         }
         
-        .whatsapp-box {
+        .whatsapp-form {
             max-width: 500px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.1);
             padding: 2rem;
             border-radius: 15px;
             backdrop-filter: blur(10px);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255, 159, 28, 0.3);
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .privacy-note {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+        }
+        
+        .privacy-note a {
+            color: var(--accent);
+            text-decoration: none;
         }
         
         .whatsapp-option {
@@ -687,16 +731,6 @@
         <div class="seo-content" id="seoStaticContent">
             <h2>Descubra seu Orixá de Nascimento - Quiz Espiritual Gratuito</h2>
             <p>Este quiz foi desenvolvido por <strong>Mestre Reginaldo</strong> com base em 35 anos de experiência em tradições ancestrais. Através de 7 perguntas simples, você descobrirá qual Orixá rege seu destino e receberá orientações personalizadas.</p>
-            
-            <h3>Orixás que você pode descobrir:</h3>
-            <ul>
-                <li><strong>Oxalá</strong> - Orixá da paz, pureza e criação</li>
-                <li><strong>Iemanjá</strong> - Orixá da maternidade e proteção</li>
-                <li><strong>Xangô</strong> - Orixá da justiça e liderança</li>
-                <li><strong>Oxum</strong> - Orixá do amor, beleza e riqueza</li>
-                <li><strong>Ogum</strong> - Orixá do ferro, guerra e tecnologia</li>
-                <li><strong>Oxóssi</strong> - Orixá da caça, florestas e conhecimento</li>
-            </ul>
 
             <h3>Como funciona o quiz:</h3>
             <p>Responda 7 perguntas sobre sua personalidade, preferências e comportamentos. Ao final, receba seu Orixá regente com descrição completa, características pessoais e orientações espiritualizadas.</p>
@@ -764,26 +798,32 @@
             </div>
         </div>
 
-        <!-- Tela de WhatsApp -->
-        <div id="whatsappScreen" class="whatsapp-container" style="display: none;">
+        <!-- Tela de Captura WhatsApp -->
+        <div id="whatsappCaptureScreen" class="whatsapp-capture-container" style="display: none;">
             <h2 class="whatsapp-title">Quase lá! 📱</h2>
-            <p class="whatsapp-description">Para receber seu resultado personalizado e orientações exclusivas, clique abaixo para enviar diretamente para seu WhatsApp:</p>
+            <p class="whatsapp-description">Para receber seu resultado personalizado e orientações exclusivas, preencha seus dados abaixo:</p>
             
-            <div class="whatsapp-box">
-                <div class="whatsapp-option">
-                    <p><strong>Receba seu Orixá no WhatsApp</strong></p>
-                    <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.8);">
-                        Clique no botão abaixo para receber seu resultado completo + orientações personalizadas de Mestre Reginaldo
-                    </p>
-                    <button class="btn btn-whatsapp" onclick="sendToWhatsApp()" style="width: 100%;">
+            <div class="whatsapp-form">
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label class="form-label" for="userName">Seu Nome</label>
+                        <input type="text" id="userName" class="form-control" placeholder="Digite seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="userPhone">Seu WhatsApp</label>
+                        <input type="tel" id="userPhone" class="form-control" placeholder="(11) 99999-9999" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
                         💬 Receber Meu Orixá no WhatsApp
                     </button>
                     
-                    <p style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255, 255, 255, 0.7);">
-                        Seus dados estão protegidos. Ao clicar, você concorda com nossa 
-                        <a href="politica-privacidade.html" target="_blank" style="color: var(--accent);">Política de Privacidade</a>.
+                    <p class="privacy-note">
+                        Seus dados estão protegidos. Ao informar seus dados, você concorda com nossa 
+                        <a href="politica-privacidade.html" target="_blank">Política de Privacidade</a>.
                     </p>
-                </div>
+                </form>
             </div>
         </div>
 
@@ -1027,7 +1067,7 @@
 
         let currentQuestion = 0;
         let userAnswers = [];
-        let userOrixa = null;
+        let userData = {};
 
         function startQuiz() {
             document.getElementById('startScreen').style.display = 'none';
@@ -1086,30 +1126,19 @@
             if (currentQuestion < questions.length) {
                 showQuestion(currentQuestion);
             } else {
-                showWhatsAppScreen();
+                showWhatsAppCapture();
             }
         }
 
-        function showWhatsAppScreen() {
+        function showWhatsAppCapture() {
             document.getElementById('quizContent').style.display = 'none';
-            document.getElementById('whatsappScreen').style.display = 'block';
+            document.getElementById('whatsappCaptureScreen').style.display = 'block';
             
             // Rolar para o topo
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function sendToWhatsApp() {
-            document.getElementById('whatsappScreen').style.display = 'none';
-            document.getElementById('loadingSpinner').style.display = 'block';
-            
-            // Simular processamento
-            setTimeout(() => {
-                document.getElementById('loadingSpinner').style.display = 'none';
-                showResults();
-            }, 2000);
-        }
-
-        function showResults() {
+        function sendToWhatsApp(userName, userPhone) {
             // Calcular Orixá predominante
             const scores = {};
             userAnswers.forEach(answer => {
@@ -1117,7 +1146,7 @@
             });
             
             let maxScore = 0;
-            userOrixa = 'oxala';
+            let userOrixa = 'oxala';
             
             for (const [orixa, score] of Object.entries(scores)) {
                 if (score > maxScore) {
@@ -1126,35 +1155,98 @@
                 }
             }
             
-            // Exibir resultado
             const orixa = orixas[userOrixa];
-            document.getElementById('orixaName').textContent = orixa.name;
-            document.getElementById('orixaImage').src = orixa.image;
-            document.getElementById('orixaDescription').textContent = orixa.description;
             
-            const characteristicsList = document.getElementById('orixaCharacteristics');
-            characteristicsList.innerHTML = '';
-            orixa.characteristics.forEach(char => {
-                const li = document.createElement('li');
-                li.textContent = char;
-                characteristicsList.appendChild(li);
-            });
+            // Criar mensagem para WhatsApp
+            const message = `Olá Mestre Reginaldo! Acabei de fazer o quiz Descubra seu Orixá.\n\n*Meus dados:*\nNome: ${userName}\nWhatsApp: ${userPhone}\n\n*Meu resultado:*\nOrixá: ${orixa.name}\n\nGostaria de receber mais orientações sobre meu Orixá e consultas personalizadas.`;
             
-            document.getElementById('resultScreen').style.display = 'block';
+            // Codificar mensagem para URL
+            const encodedMessage = encodeURIComponent(message);
             
-            // Rolar para o topo do resultado
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Abrir WhatsApp com a mensagem
+            window.open(`https://wa.me/5571983389346?text=${encodedMessage}`, '_blank');
+            
+            // Mostrar resultados
+            showResults(orixa);
+        }
+
+        function showResults(orixa) {
+            document.getElementById('whatsappCaptureScreen').style.display = 'none';
+            document.getElementById('loadingSpinner').style.display = 'block';
+            
+            // Simular processamento
+            setTimeout(() => {
+                document.getElementById('loadingSpinner').style.display = 'none';
+                
+                // Exibir resultado
+                document.getElementById('orixaName').textContent = orixa.name;
+                document.getElementById('orixaImage').src = orixa.image;
+                document.getElementById('orixaDescription').textContent = orixa.description;
+                
+                const characteristicsList = document.getElementById('orixaCharacteristics');
+                characteristicsList.innerHTML = '';
+                orixa.characteristics.forEach(char => {
+                    const li = document.createElement('li');
+                    li.textContent = char;
+                    characteristicsList.appendChild(li);
+                });
+                
+                document.getElementById('resultScreen').style.display = 'block';
+                
+                // Rolar para o topo do resultado
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 2000);
         }
 
         function restartQuiz() {
             currentQuestion = 0;
             userAnswers = [];
-            userOrixa = null;
+            userData = {};
             document.getElementById('resultScreen').style.display = 'none';
             document.getElementById('startScreen').style.display = 'block';
             document.getElementById('seoStaticContent').style.display = 'block';
             document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('whatsappForm').reset();
         }
+
+        // Manipular formulário de captura WhatsApp
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Coletar dados do formulário
+            const userName = document.getElementById('userName').value;
+            const userPhone = document.getElementById('userPhone').value;
+            
+            // Validar dados
+            if (!userName || !userPhone) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            // Validar telefone (formato simples)
+            const phoneRegex = /^\(\d{2}\) \d{5}-\d{4}$/;
+            if (!phoneRegex.test(userPhone)) {
+                alert('Por favor, insira um número de WhatsApp válido no formato (11) 99999-9999');
+                return;
+            }
+            
+            // Enviar para WhatsApp
+            sendToWhatsApp(userName, userPhone);
+        });
+
+        // Máscara para telefone
+        document.getElementById('userPhone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) value = value.substring(0, 11);
+            
+            if (value.length > 0) {
+                value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+                if (value.length > 10) {
+                    value = value.replace(/(\d{5})(\d)/, '$1-$2');
+                }
+            }
+            e.target.value = value;
+        });
 
         // Inicializar quiz
         document.addEventListener('DOMContentLoaded', function() {
