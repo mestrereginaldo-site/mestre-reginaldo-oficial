@@ -2,39 +2,20 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
-Disallow: /cgi-bin/
 
-# Sitemap oficial
+# Sitemap correto
 Sitemap: https://www.mestrereginaldo.com.br/sitemap.xml
 
-# Otimização para motores de busca
-Crawl-delay: 1
+# Otimização
+Crawl-delay: 2
 
-# Permitir todas as páginas importantes
+# Permitir páginas importantes
 Allow: /index.html
 Allow: /encantamentos.html
-Allow: /*.html
-
-# Instruções específicas para Google
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-# Instruções para Bing
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
+Allow: /descubra-seu-orixa.html
 
 # Bloquear arquivos desnecessários
+Disallow: /*.php$
 Disallow: /*.pdf$
-Disallow: /*.doc$
-Disallow: /*.xls$
-Disallow: /*.ppt$
 Disallow: /*.zip$
-Disallow: /*.rar$
-
-# Permitir imagens para indexação
-Allow: /*.jpg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.webp$
+Disallow: /*.exe$
