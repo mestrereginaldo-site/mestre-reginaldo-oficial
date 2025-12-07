@@ -1,50 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encantamentos Espirituais Poderosos | Mestre Reginaldo 🔮</title>
-    <meta name="description" content="Descubra 30 encantamentos espirituais poderosos para amor, proteção e prosperidade. Rituais completos passo a passo com Mestre Reginaldo.">
-    <meta name="keywords" content="encantamentos espirituais, rituais de amor, proteção espiritual, amarração amorosa, feitiços, magia, encantamentos, Mestre Reginaldo">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Encantamentos Espirituais Poderosos | Mestre Reginaldo">
-    <meta property="og:description" content="30 encantamentos espirituais para transformar sua vida amorosa, profissional e espiritual">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mestrereginaldo.com.br/encantamentos.html">
-    <!-- Schema Markup para SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Encantamentos Espirituais - Mestre Reginaldo",
-        "description": "Coleção de 30 encantamentos espirituais poderosos para amor, proteção e prosperidade",
-        "url": "https://www.mestrereginaldo.com.br/encantamentos.html",
-        "mainEntity": {
-            "@type": "ItemList",
-            "numberOfItems": 30,
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Encantamento do Amor Verdadeiro"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Proteção Contra Inimigos"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Abertura de Caminhos Profissionais"
-                }
-            ]
-        }
-    }
-    </script>
+    <meta name="description" content="5 encantamentos espirituais poderosos para amor, proteção e prosperidade. Rituais completos passo a passo com Mestre Reginaldo.">
+    
     <style>
         :root {
             --primary: #6A4C93;
@@ -60,22 +21,25 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Open Sans', sans-serif;
+            font-family: sans-serif;
         }
 
         body {
             background-color: var(--light);
             color: var(--text);
             line-height: 1.6;
+            padding-top: 80px;
         }
 
-        h1, h2, h3, h4 {
-            font-family: 'Merriweather', serif;
-            font-weight: 700;
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
         }
 
-        /* Header e Navegação */
-        header {
+        /* Header */
+        .site-header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             padding: 1rem 0;
@@ -86,688 +50,310 @@
             box-shadow: 0 2px 15px rgba(0,0,0,0.1);
         }
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .nav-container {
+        .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo-container {
+        .logo {
             display: flex;
             align-items: center;
             gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
         }
 
-        .logo-icon {
+        .logo span {
             font-size: 2rem;
         }
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: white;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-menu li {
-            margin-left: 1.5rem;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            padding: 0.5rem 0;
-            position: relative;
-        }
-
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent);
-            transition: width 0.3s;
-        }
-
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
-
-        .nav-menu a:hover {
-            color: var(--accent);
-        }
-
-        /* Menu Hamburguer */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 5px;
-        }
-
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background: white;
-            margin: 3px 0;
-            transition: 0.3s;
-            border-radius: 2px;
-        }
-
-        /* Hero Section para Encantamentos */
-        .hero-encantamentos {
-            background: linear-gradient(rgba(106, 76, 147, 0.85), rgba(142, 107, 191, 0.85)), url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            color: white;
+        /* Hero */
+        .hero {
             text-align: center;
-            margin-top: 60px;
-            position: relative;
+            padding: 3rem 0;
+            background: linear-gradient(rgba(106, 76, 147, 0.85), rgba(142, 107, 191, 0.85));
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 3rem;
         }
 
-        .hero-encantamentos::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path fill="rgba(255,255,255,0.03)" d="M50,0 C22.4,0 0,22.4 0,50 C0,77.6 22.4,100 50,100 C77.6,100 100,77.6 100,50 C100,22.4 77.6,0 50,0 Z M50,10 C72.1,10 90,27.9 90,50 C90,72.1 72.1,90 50,90 C27.9,90 10,72.1 10,50 C10,27.9 27.9,10 50,10 Z M50,20 C61,20 70,29 70,40 C70,51 61,60 50,60 C39,60 30,51 30,40 C30,29 39,20 50,20 Z"/></svg>');
-            opacity: 0.5;
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
 
-        .hero-content-encantamentos {
+        .hero p {
+            font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
-            position: relative;
-            z-index: 1;
         }
 
-        .hero-encantamentos h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .hero-encantamentos p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-
-        /* Seção de Introdução */
-        .introducao-encantamentos {
-            padding: 4rem 0;
-            background-color: white;
-        }
-
-        .introducao-content {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .introducao-content h2 {
-            font-size: 2.2rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-        }
-
-        .introducao-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        /* Seção de Menu de Encantamentos */
-        .menu-encantamentos {
-            padding: 4rem 0;
-            background-color: var(--medium);
-        }
-
-        .menu-encantamentos h2 {
-            text-align: center;
-            font-size: 2.2rem;
-            color: var(--primary);
-            margin-bottom: 2rem;
-        }
-
+        /* Encantamentos */
         .encantamentos-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
         }
 
         .encantamento-card {
             background: white;
             border-radius: 10px;
-            padding: 1.5rem;
+            padding: 2rem;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-            border-top: 4px solid var(--primary);
+            transition: transform 0.3s;
             text-decoration: none;
             color: inherit;
-            display: block;
+            border-top: 5px solid var(--primary);
         }
 
         .encantamento-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            text-decoration: none;
-            color: inherit;
         }
 
         .encantamento-card h3 {
-            font-size: 1.3rem;
             color: var(--primary);
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
         }
 
         .encantamento-card p {
-            color: var(--text);
-            font-size: 0.95rem;
-        }
-
-        .encantamento-disponivel {
-            border-top: 4px solid var(--accent);
-        }
-
-        .encantamento-disponivel h3::after {
-            content: " ✅";
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 3rem 0 1.5rem;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--accent);
-            margin-bottom: 1rem;
-        }
-
-        .footer-about p {
-            color: #adb5bd;
-            line-height: 1.7;
-        }
-
-        .footer-links h3, .footer-social h3 {
-            font-size: 1.2rem;
             margin-bottom: 1.5rem;
-            color: var(--accent);
+            color: var(--text);
         }
 
-        .footer-links ul {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.7rem;
-        }
-
-        .footer-links a {
-            color: #adb5bd;
+        .read-more {
+            color: var(--primary);
+            font-weight: bold;
             text-decoration: none;
-            transition: color 0.3s;
+            display: inline-block;
         }
 
-        .footer-links a:hover {
-            color: var(--accent);
+        .read-more:hover {
+            color: var(--secondary);
         }
 
-        .social-icons {
-            display: flex;
-            gap: 1rem;
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            background: var(--medium);
+            border-radius: 10px;
         }
 
-        .social-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 50%;
+        .cta-section h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
             color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
             text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .social-icon:hover {
-            background-color: var(--accent);
-            color: var(--dark);
-            transform: translateY(-3px);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            color: #6c757d;
-        }
-
-        .legal-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
+            font-weight: bold;
             margin-top: 1rem;
-            flex-wrap: wrap;
         }
 
-        .legal-links a {
-            color: #adb5bd;
+        .btn:hover {
+            background: #ffb143;
+        }
+
+        /* Voltar */
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary);
             text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
+            font-weight: bold;
         }
 
-        .legal-links a:hover {
-            color: var(--accent);
+        .back-link:hover {
+            color: var(--secondary);
         }
 
-        /* Botão WhatsApp Flutuante */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .whatsapp-float:hover {
-            background-color: #128C7E;
-            transform: scale(1.1);
-            box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
-        }
-
-        /* Responsividade */
         @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
+            .hero h1 {
+                font-size: 2rem;
             }
-            .nav-menu {
-                display: none;
-            }
-            .hero-encantamentos h1 {
-                font-size: 2.2rem;
-            }
-            .hero-encantamentos p {
-                font-size: 1rem;
-            }
+            
             .encantamentos-grid {
                 grid-template-columns: 1fr;
             }
-            .legal-links {
-                flex-direction: column;
-                gap: 0.5rem;
-                text-align: center;
-            }
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
-                font-size: 25px;
-            }
-        }
-
-        /* Menu ativo */
-        .nav-menu.active {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background: var(--primary);
-            padding: 1rem 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .nav-menu.active li {
-            margin: 0;
-            text-align: center;
-        }
-
-        .nav-menu.active a {
-            display: block;
-            padding: 0.8rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
     </style>
 </head>
 <body>
-    <amp-ad width="100vw" height="320"
-     type="adsense"
-     data-ad-client="ca-pub-2796792312502848"
-     data-ad-slot="7803615196"
-     data-auto-format="rspv"
-     data-full-width="">
-  <div overflow=""></div>
-</amp-ad>
     <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <div class="logo-container">
-                <div class="logo-icon">🔮</div>
-                <div class="logo">Mestre Reginaldo</div>
-            </div>
-            <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="index.html#about">Sobre</a></li>
-                <li><a href="index.html#services">Serviços</a></li>
-                <li><a href="encantamentos.html">Encantamentos</a></li>
-                <li><a href="index.html#blog">Blog</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="index.html#contact">Contato</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span>🔮</span>
+                Mestre Reginaldo
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section Encantamentos -->
-    <section class="hero-encantamentos">
-        <div class="hero-content-encantamentos">
+    <div class="container">
+        <!-- Hero -->
+        <div class="hero">
             <h1>Encantamentos Espirituais</h1>
-            <p>Descubra rituais ancestrais e encantamentos poderosos para transformar sua vida amorosa, profissional e espiritual</p>
+            <p>Descubra 5 encantamentos poderosos testados e aprovados por Mestre Reginaldo após 35 anos de experiência espiritual.</p>
         </div>
-    </section>
 
-    <!-- Seção de Introdução -->
-    <section class="introducao-encantamentos" id="introducao">
-        <div class="container">
-            <div class="introducao-content">
-                <h2>O Poder dos Encantamentos</h2>
-                <p>Os encantamentos são práticas espirituais ancestrais que utilizam a energia do universo, elementos da natureza e a força da intenção para criar mudanças positivas em nossas vidas. Cada encantamento é um ritual sagrado que deve ser realizado com respeito, fé e concentração.</p>
-                <p>Nesta página, você encontrará uma seleção de 30 encantamentos poderosos, cuidadosamente selecionados por Mestre Reginaldo após mais de 35 anos de experiência espiritual. Todos os encantamentos possuem instruções completas passo a passo.</p>
-                <p>Lembre-se: a chave para o sucesso de qualquer encantamento está na sua fé, intenção pura e respeito pelas forças espirituais. Utilize estes conhecimentos com sabedoria e sempre para o bem.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Menu de Encantamentos -->
-    <section class="menu-encantamentos" id="menu-encantamentos">
-        <div class="container">
-            <h2>Todos os 30 Encantamentos Disponíveis</h2>
-            <div class="encantamentos-grid">
-                <!-- Encantamentos 1-20 (já estavam disponíveis) -->
-                <a href="encantamento-do-amor-verdadeiro.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento do Amor Verdadeiro</h3>
-                    <p>Para atrair um amor sincero e duradouro para sua vida.</p>
-                </a>
-
-                <a href="protecao-contra-inimigos.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Proteção Contra Inimigos</h3>
-                    <p>Para se proteger de pessoas negativas e más intenções.</p>
-                </a>
-
-                <a href="abertura-de-caminhos-profissionais.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Abertura de Caminhos Profissionais</h3>
-                    <p>Para remover obstáculos e atrair oportunidades de trabalho.</p>
-                </a>
-
-                <a href="encantamento-da-prosperidade.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Prosperidade</h3>
-                    <p>Para atrair abundância financeira e estabilidade.</p>
-                </a>
-
-                <a href="limpeza-energetica-do-lar.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Limpeza Energética do Lar</h3>
-                    <p>Para purificar sua casa de energias negativas.</p>
-                </a>
-
-                <a href="encantamento-da-autoestima.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Autoestima</h3>
-                    <p>Para fortalecer a confiança e amor próprio.</p>
-                </a>
-
-                <a href="protecao-espiritual-noturna.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Proteção Espiritual Noturna</h3>
-                    <p>Para ter sonhos tranquilos e proteção durante o sono.</p>
-                </a>
-
-                <a href="encantamento-da-cura-emocional.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Cura Emocional</h3>
-                    <p>Para superar traumas e mágoas do passado.</p>
-                </a>
-
-                <a href="atrair-boas-amizades.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Atrair Boas Amizades</h3>
-                    <p>Para encontrar pessoas positivas e leais.</p>
-                </a>
-
-                <a href="encantamento-da-intuicao.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Intuição</h3>
-                    <p>Para desenvolver e fortalecer sua intuição espiritual.</p>
-                </a>
-
-                <a href="harmonizacao-familiar.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Harmonização Familiar</h3>
-                    <p>Para trazer paz e harmonia para sua família.</p>
-                </a>
-
-                <a href="encantamento-da-forca-interior.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Força Interior</h3>
-                    <p>Para superar momentos difíceis com coragem.</p>
-                </a>
-
-                <a href="protecao-contra-inveja.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Proteção Contra Inveja</h3>
-                    <p>Para se blindar contra olho gordo e energias negativas.</p>
-                </a>
-
-                <a href="encantamento-da-sabedoria.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Sabedoria</h3>
-                    <p>Para tomar decisões acertadas e com discernimento.</p>
-                </a>
-
-                <a href="atrair-boas-oportunidades.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Atrair Boas Oportunidades</h3>
-                    <p>Para reconhecer e aproveitar chances que surgem.</p>
-                </a>
-
-                <a href="encantamento-da-fertilidade.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Fertilidade</h3>
-                    <p>Para auxiliar na concepção e gravidez.</p>
-                </a>
-
-                <a href="protecao-para-viagens.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Proteção para Viagens</h3>
-                    <p>Para ter viagens seguras e tranquilas.</p>
-                </a>
-
-                <a href="encantamento-da-comunicacao.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Comunicação</h3>
-                    <p>Para se expressar com clareza e persuasão.</p>
-                </a>
-
-                <a href="limpeza-de-vinculos-negativos.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Limpeza de Vínculos Negativos</h3>
-                    <p>Para cortar laços energéticos prejudiciais.</p>
-                </a>
-
-                <a href="encantamento-da-paciencia.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Paciência</h3>
-                    <p>Para desenvolver serenidade e paciência.</p>
-                </a>
-
-                <!-- ENCANTAMENTOS 21-30 AGORA COM PÁGINAS PRÓPRIAS -->
-                <a href="atrair-reconhecimento-profissional.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Atrair Reconhecimento Profissional</h3>
-                    <p>Para ser valorizado no ambiente de trabalho.</p>
-                </a>
-
-                <a href="encantamento-da-cura-fisica.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Cura Física</h3>
-                    <p>Para auxiliar no processo de recuperação da saúde.</p>
-                </a>
-
-                <a href="protecao-para-criancas.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Proteção para Crianças</h3>
-                    <p>Para proteger os pequenos de energias negativas.</p>
-                </a>
-
-                <a href="encantamento-da-determinacao.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Determinação</h3>
-                    <p>Para manter o foco e perseverança em seus objetivos.</p>
-                </a>
-
-                <a href="harmonizacao-de-relacionamento.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Harmonização de Relacionamento</h3>
-                    <p>Para resolver conflitos e fortalecer laços amorosos.</p>
-                </a>
-
-                <a href="encantamento-da-criatividade.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Criatividade</h3>
-                    <p>Para desbloquear e expandir sua criatividade.</p>
-                </a>
-
-                <a href="protecao-para-o-lar.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Proteção para o Lar</h3>
-                    <p>Para criar um escudo protetor em sua casa.</p>
-                </a>
-
-                <a href="encantamento-da-gratidao.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento da Gratidão</h3>
-                    <p>Para cultivar a gratidão e atrair mais motivos para agradecer.</p>
-                </a>
-
-                <a href="atrair-mentores-espirituais.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Atrair Mentores Espirituais</h3>
-                    <p>Para conectar-se com guias e mentores espirituais.</p>
-                </a>
-
-                <a href="encantamento-do-perdao.html" class="encantamento-card encantamento-disponivel">
-                    <h3>Encantamento do Perdão</h3>
-                    <p>Para liberar mágoas e perdoar a si mesmo e aos outros.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">Mestre Reginaldo</div>
-                    <p>Ocultista com mais de 35 anos de experiência em trabalhos espirituais. Atendimento personalizado para resolver problemas amorosos, limpeza energética e proteção espiritual.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="index.html#about">Sobre</a></li>
-                        <li><a href="index.html#services">Serviços</a></li>
-                        <li><a href="encantamentos.html">Encantamentos</a></li>
-                        <li><a href="index.html#contact">Contato</a></li>
+        <!-- Lista de Encantamentos -->
+        <div class="encantamentos-grid">
+            <!-- Encantamento 1 -->
+            <div class="encantamento-card">
+                <h3>🔮 Encantamento do Amor Verdadeiro</h3>
+                <p>Ritual completo para atrair um amor sincero e duradouro. Passo a passo detalhado com todos os elementos necessários.</p>
+                <a href="#amor-verdadeiro" class="read-more">Ver ritual completo →</a>
+                
+                <div id="amor-verdadeiro" style="margin-top: 1.5rem; display: none;">
+                    <h4>Materiais necessários:</h4>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>2 velas cor de rosa</li>
+                        <li>1 punhado de pétalas de rosa</li>
+                        <li>Mel de abelha</li>
+                        <li>Papel branco</li>
                     </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Redes Sociais</h3>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">f</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="WhatsApp">💬</a>
-                    </div>
+                    <h4>Passo a passo:</h4>
+                    <p>1. Acenda as velas em um lugar tranquilo<br>
+                    2. Escreva seu desejo no papel<br>
+                    3. Coloque as pétalas ao redor<br>
+                    4. Derrame mel sobre o papel<br>
+                    5. Mentalize seu amor por 15 minutos</p>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Mestre Reginaldo. Todos os direitos reservados.</p>
-                <div class="legal-links">
-                    <a href="politica-privacidade.html">Política de Privacidade</a>
-                    <a href="termos-uso.html">Termos de Uso</a>
-                    <a href="cookies.html">Cookies</a>
+
+            <!-- Encantamento 2 -->
+            <div class="encantamento-card">
+                <h3>🛡️ Proteção Contra Inimigos</h3>
+                <p>Ritual de proteção espiritual para se blindar contra energias negativas e pessoas mal-intencionadas.</p>
+                <a href="#protecao" class="read-more">Ver ritual completo →</a>
+                
+                <div id="protecao" style="margin-top: 1.5rem; display: none;">
+                    <h4>Materiais necessários:</h4>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>1 vela branca</li>
+                        <li>Sal grosso</li>
+                        <li>3 dentes de alho</li>
+                        <li>Água corrente</li>
+                    </ul>
+                    <h4>Passo a passo:</h4>
+                    <p>1. Faça um círculo com sal grosso<br>
+                    2. Coloque a vela no centro<br>
+                    3. Posicione os alhos nos pontos cardeais<br>
+                    4. Acenda a vela e mentalize proteção<br>
+                    5. Jogue água nos cantos da casa</p>
+                </div>
+            </div>
+
+            <!-- Encantamento 3 -->
+            <div class="encantamento-card">
+                <h3>💼 Abertura de Caminhos Profissionais</h3>
+                <p>Ritual para remover obstáculos e atrair oportunidades de trabalho e crescimento profissional.</p>
+                <a href="#caminhos" class="read-more">Ver ritual completo →</a>
+                
+                <div id="caminhos" style="margin-top: 1.5rem; display: none;">
+                    <h4>Materiais necessários:</h4>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>1 vela amarela</li>
+                        <li>Canela em pó</li>
+                        <li>Moedas (qualquer valor)</li>
+                        <li>Folha de louro</li>
+                    </ul>
+                    <h4>Passo a passo:</h4>
+                    <p>1. Acenda a vela amarela<br>
+                    2. Polvilhe canela ao redor<br>
+                    3. Coloque as moedas sobre folha de louro<br>
+                    4. Mentalize suas metas profissionais<br>
+                    5. Repita por 7 dias</p>
+                </div>
+            </div>
+
+            <!-- Encantamento 4 -->
+            <div class="encantamento-card">
+                <h3>💰 Encantamento da Prosperidade</h3>
+                <p>Ritual para atrair abundância financeira, estabilidade e oportunidades de ganho.</p>
+                <a href="#prosperidade" class="read-more">Ver ritual completo →</a>
+                
+                <div id="prosperidade" style="margin-top: 1.5rem; display: none;">
+                    <h4>Materiais necessários:</h4>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>1 vela verde</li>
+                        <li>Mel</li>
+                        <li>7 grãos de feijão</li>
+                        <li>Terra fértil</li>
+                    </ul>
+                    <h4>Passo a passo:</h4>
+                    <p>1. Misture mel com terra<br>
+                    2. Plante os grãos de feijão<br>
+                    3. Acenda a vela verde ao lado<br>
+                    4. Mentalize prosperidade por 10 minutos<br>
+                    5. Regue por 7 dias</p>
+                </div>
+            </div>
+
+            <!-- Encantamento 5 -->
+            <div class="encantamento-card">
+                <h3>✨ Limpeza Energética do Lar</h3>
+                <p>Ritual completo para purificar sua casa de energias negativas e renovar as energias do ambiente.</p>
+                <a href="#limpeza" class="read-more">Ver ritual completo →</a>
+                
+                <div id="limpeza" style="margin-top: 1.5rem; display: none;">
+                    <h4>Materiais necessários:</h4>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Sal grosso</li>
+                        <li>Água com alecrim</li>
+                        <li>Incenso de sândalo</li>
+                        <li>Vela branca</li>
+                    </ul>
+                    <h4>Passo a passo:</h4>
+                    <p>1. Aspersione água com alecrim em todos os cômodos<br>
+                    2. Coloque sal grosso nos cantos<br>
+                    3. Acenda incenso e vela branca<br>
+                    4. Deixe queimar completamente<br>
+                    5. Ventile a casa por 2 horas</p>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Botão WhatsApp Flutuante -->
-    <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20encantamentos" class="whatsapp-float" target="_blank" aria-label="Entre em contato pelo WhatsApp">
-        💬
-    </a>
+        <!-- CTA -->
+        <div class="cta-section">
+            <h3>Precisa de ajuda personalizada?</h3>
+            <p>Mestre Reginaldo está disponível para consultas e trabalhos espirituais personalizados.</p>
+            <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20uma%20consulta%20sobre%20encantamentos" class="btn" target="_blank">
+                💬 Falar com Mestre Reginaldo
+            </a>
+        </div>
+
+        <!-- Voltar -->
+        <a href="index.html" class="back-link">← Voltar para página principal</a>
+    </div>
 
     <script>
-        // Menu Hamburguer
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling para links de navegação
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // Mostrar/ocultar detalhes dos encantamentos
+        document.querySelectorAll('.read-more').forEach(link => {
+            link.addEventListener('click', function(e) {
                 e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
+                const targetId = this.getAttribute('href').substring(1);
+                const targetDiv = document.getElementById(targetId);
                 
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
+                if (targetDiv.style.display === 'block') {
+                    targetDiv.style.display = 'none';
+                    this.textContent = 'Ver ritual completo →';
+                } else {
+                    targetDiv.style.display = 'block';
+                    this.textContent = 'Ocultar ritual ↑';
                 }
             });
         });
