@@ -14,6 +14,42 @@
         <loc>https://www.mestrereginaldo.com.br/encantamentos.html</loc>
         <lastmod>2025-12-08</lastmod>
         <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 5 PÁGINAS DE ENCANTAMENTOS -->
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-do-amor-verdadeiro.html</loc>
+        <lastmod>2025-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/protecao-contra-inimigos.html</loc>
+        <lastmod>2025-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/abertura-de-caminhos-profissionais.html</loc>
+        <lastmod>2025-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/encantamento-da-prosperidade.html</loc>
+        <lastmod>2025-12-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.mestrereginaldo.com.br/limpeza-energetica-do-lar.html</loc>
+        <lastmod>2025-12-08</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
