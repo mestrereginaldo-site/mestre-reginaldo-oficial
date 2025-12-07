@@ -3,26 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2796792312502848" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2796792312502848"
+     crossorigin="anonymous"></script>
     
     <!-- ==================== -->
-    <!-- METATAGS OTIMIZADAS -->
+    <!-- META TAGS OTIMIZADAS -->
     <!-- ==================== -->
     <title>Mestre Reginaldo 🔮 Amarração Amorosa em 24h | Limpeza Espiritual | Proteção Energética</title>
-    <meta name="description" content="Mestre Reginaldo - ESPECIALISTA em Amarração Amorosa com Resultado em 24h. Limpeza espiritual urgente, proteção contra inveja e abertura de caminhos. 35 anos de experiência.">
-    <meta name="keywords" content="amarração amorosa, trazer amor de volta, limpeza espiritual urgente, proteção energética, trabalho espiritual, Mestre Reginaldo, consulta espiritual grátis">
+    <meta name="description" content="🔮 Mestre Reginaldo - ESPECIALISTA em Amarração Amorosa com Resultado em 24h. Limpeza espiritual urgente, proteção contra inveja e abertura de caminhos. 35 anos de experiência. Consulta GRATUITA! Atendimento 24h.">
+    <meta name="keywords" content="amarração amorosa, trazer amor de volta, limpeza espiritual urgente, proteção energética, trabalho espiritual, Mestre Reginaldo, espiritualista, consulta espiritual grátis, amor de volta, problemas amorosos">
+    <meta name="author" content="Mestre Reginaldo">
+    <meta name="robots" content="index, follow">
     
-    <!-- ==================== -->
-    <!-- OTIMIZAÇÃO DE VELOCIDADE -->
-    <!-- ==================== -->
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mestrereginaldo.com.br/">
+    <meta property="og:title" content="Mestre Reginaldo 🔮 Amarração Amorosa em 24h - Resultado Garantido">
+    <meta property="og:description" content="Especialista em trazer seu amor de volta em 24h. Amarração amorosa, limpeza espiritual e proteção. 35 anos de experiência. Consulta gratuita!">
+    <meta property="og:image" content="https://mestrereginaldo.com.br/images/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- SCHEMA MARKUP -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mestre Reginaldo - Especialista em Amarração Amorosa",
+      "description": "Amarração amorosa com resultado em 24h, limpeza espiritual e proteção energética",
+      "url": "https://mestrereginaldo.com.br",
+      "telephone": "+55-71-98338-9346",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "openingHours": "Mo-Sa 09:00-18:00",
+      "areaServed": "Brasil",
+      "serviceType": [
+        "Amarração Amorosa",
+        "Limpeza Espiritual", 
+        "Proteção Energética",
+        "Abertura de Caminhos",
+        "Jogo de Búzios"
+      ]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Google Fonts com carregamento otimizado -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
-    </style>
-
     <style>
         :root {
             --primary: #6A4C93;
@@ -113,16 +145,35 @@
             color: var(--accent);
         }
         
-        /* Hero Section OTIMIZADA */
+        /* Menu Hamburguer */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+        }
+        
+        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(106, 76, 147, 0.85), rgba(142, 107, 191, 0.85));
+            background: linear-gradient(rgba(106, 76, 147, 0.85), rgba(142, 107, 191, 0.85)), url('images/fundo-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             height: 100vh;
             display: flex;
             align-items: center;
             color: white;
             text-align: center;
             margin-top: 60px;
-            position: relative;
         }
         
         .hero-content {
@@ -158,6 +209,19 @@
             border-radius: 30px;
         }
         
+        .badge a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .badge a:hover {
+            color: var(--accent);
+        }
+        
+        .stars {
+            color: var(--accent);
+        }
+        
         .btn {
             display: inline-block;
             background-color: var(--accent);
@@ -174,12 +238,87 @@
             transform: translateY(-3px);
         }
         
+        /* Seções Gerais */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        /* Sobre */
+        #about {
+            background-color: white;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.2rem;
+        }
+        
         /* Serviços */
+        .services {
+            background-color: var(--medium);
+        }
+        
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
         }
         
         .service-card {
@@ -188,6 +327,7 @@
             overflow: hidden;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
             transition: transform 0.3s;
+            border-top: 4px solid var(--primary);
         }
         
         .service-card:hover {
@@ -220,7 +360,159 @@
             color: var(--primary);
         }
         
-        /* Botão WhatsApp Flutuante */
+        /* Blog */
+        #blog {
+            background-color: white;
+        }
+        
+        .blog-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border: 1px solid var(--medium);
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-img {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .blog-content {
+            padding: 1.8rem;
+        }
+        
+        .blog-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--medium);
+        }
+        
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .read-more:hover {
+            color: var(--secondary);
+        }
+        
+        /* Depoimentos */
+        .testimonials {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+        
+        .testimonials .section-title h2 {
+            color: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: -20px;
+            left: -15px;
+            opacity: 0.3;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 1rem;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* CTA Encantamentos */
+        .encantamentos-cta {
+            background-color: var(--light);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .encantamentos-cta h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .encantamentos-cta p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Botão WhatsApp */
         .whatsapp-float {
             position: fixed;
             width: 60px;
@@ -248,24 +540,34 @@
         
         /* Responsividade */
         @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-            
             .hamburger {
                 display: flex;
-                flex-direction: column;
-                cursor: pointer;
-                background: none;
-                border: none;
-                padding: 5px;
             }
             
-            .hamburger span {
-                width: 25px;
-                height: 3px;
-                background: white;
-                margin: 3px 0;
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-menu li {
+                margin: 0;
+                text-align: center;
+            }
+            
+            .nav-menu a {
+                display: block;
+                padding: 0.8rem 0;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
             }
             
             .hero h1 {
@@ -274,6 +576,15 @@
             
             .hero p {
                 font-size: 1.1rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .hero-badges {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
@@ -298,6 +609,7 @@
                 <li><a href="encantamentos.html">Encantamentos</a></li>
                 <li><a href="descubra-seu-orixa.html">Descubra seu Orixá</a></li>
                 <li><a href="#blog">Blog</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
@@ -311,7 +623,7 @@
             
             <div class="hero-badges">
                 <div class="badge">
-                    <span style="color: #FF9F1C;">★★★★★</span>
+                    <span class="stars">★★★★★</span>
                     <span>Avaliação Google: 4.9/5</span>
                 </div>
                 <div class="badge">
@@ -320,7 +632,7 @@
                 </div>
                 <div class="badge">
                     <span>🔮</span>
-                    <span><a href="encantamentos.html" style="color: white; text-decoration: none;">5 Encantamentos Poderosos</a></span>
+                    <span><a href="encantamentos.html">5 Encantamentos Poderosos</a></span>
                 </div>
             </div>
             
@@ -328,85 +640,181 @@
         </div>
     </section>
 
-    <!-- Serviços -->
-    <section id="services" style="padding: 5rem 0; background: #E9ECEF;">
+    <!-- Sobre -->
+    <section id="about">
         <div class="container">
-            <h2 style="text-align: center; font-size: 2.5rem; color: #6A4C93; margin-bottom: 3rem;">Serviços Espirituais</h2>
+            <div class="section-title">
+                <h2>Sobre Mestre Reginaldo</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/foto_minha.png" alt="Mestre Reginaldo - Pai de Santo Espiritual" loading="lazy" width="500" height="500">
+                </div>
+                <div class="about-text">
+                    <h3>Ocultista com mais de 35 anos de experiência</h3>
+                    <p>Mestre Reginaldo é um renomado Ocultista e consultor espiritual com mais de três décadas de experiência em diversas tradições esotéricas. Sua jornada começou ainda jovem, quando descobriu seu dom para ajudar pessoas através de conhecimentos ancestrais.</p>
+                    <p>Com formação em diversas tradições espirituais e anos de prática, Mestre Reginaldo desenvolveu métodos próprios que combinam sabedoria tradicional com abordagens contemporâneas, sempre focando no bem-estar e evolução de seus clientes.</p>
+                    <p>Sua missão é proporcionar orientação espiritual genuína, ajudando pessoas a superarem obstáculos, encontrarem o amor, prosperidade e equilíbrio em suas vidas através de trabalhos espirituais eficazes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Serviços Espirituais</h2>
+            </div>
             <div class="services-grid">
-                <!-- Serviço 1 -->
                 <div class="service-card">
                     <div class="service-img">
                         <img src="images/trabalhos.jpg" alt="Amarração Amorosa" loading="lazy" width="400" height="200">
                     </div>
                     <div class="service-content">
                         <h3>Amarração Amorosa</h3>
-                        <p>Trabalhos espirituais para unir casais, resolver problemas relacionais e atrair o amor verdadeiro.</p>
+                        <p>Trabalhos espirituais para unir casais, resolver problemas relacionais e atrair o amor verdadeiro. Resultados comprovados em casos complexos.</p>
                     </div>
                 </div>
-                
-                <!-- Serviço 2 -->
                 <div class="service-card">
                     <div class="service-img">
                         <img src="images/tranquilidade.jpeg" alt="Limpeza Espiritual" loading="lazy" width="400" height="200">
                     </div>
                     <div class="service-content">
                         <h3>Limpeza Espiritual</h3>
-                        <p>Rituais de purificação para eliminar energias negativas, inveja e mau-olhado.</p>
+                        <p>Rituais de purificação para eliminar energias negativas, inveja e mau-olhado, restaurando seu equilíbrio energético e bem-estar.</p>
                     </div>
                 </div>
-                
-                <!-- Serviço 3 -->
                 <div class="service-card">
                     <div class="service-img">
                         <img src="images/homem_chuva.jpg" alt="Proteção Espiritual" loading="lazy" width="400" height="200">
                     </div>
                     <div class="service-content">
                         <h3>Proteção Espiritual</h3>
-                        <p>Trabalhos de defesa energética contra energias negativas e pessoas mal-intencionadas.</p>
+                        <p>Trabalhos de defesa energética para criar escudos de proteção contra energias negativas e pessoas mal-intencionadas.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Blog -->
-    <section id="blog" style="padding: 5rem 0; background: white;">
+    <!-- Blog -->
+    <section id="blog">
         <div class="container">
-            <h2 style="text-align: center; font-size: 2.5rem; color: #6A4C93; margin-bottom: 3rem;">Artigos Recentes</h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="section-title">
+                <h2>Artigos e Conhecimento</h2>
+            </div>
+            <div class="blog-preview">
                 <!-- Artigo 1 -->
-                <div style="background: #F8F9FA; border-radius: 10px; padding: 1.5rem;">
-                    <h3 style="color: #6A4C93; margin-bottom: 1rem;">Diferenças entre Vidência e Ocultismo</h3>
-                    <p>Entenda as diferenças entre vidência e ocultismo e como Mestre Reginaldo une essas duas artes espirituais.</p>
-                    <a href="diferencas-videncia-ocultismo.html" style="color: #6A4C93; font-weight: bold; text-decoration: none; margin-top: 1rem; display: inline-block;">Ler artigo →</a>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/diferencas-videncia-ocultismo.jpg" alt="Diferenças entre vidência e ocultismo" loading="lazy" width="400" height="180">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Diferenças entre Vidência e Ocultismo</h3>
+                        <div class="blog-meta">
+                            <span>20 de Novembro, 2025</span>
+                            <span>Espiritualidade</span>
+                        </div>
+                        <p>Entenda as diferenças entre vidência e ocultismo e como Mestre Reginaldo une essas duas artes espirituais para resultados mais precisos e poderosos.</p>
+                        <a href="diferencas-videncia-ocultismo.html" class="read-more">Ler mais</a>
+                    </div>
                 </div>
                 
                 <!-- Artigo 2 -->
-                <div style="background: #F8F9FA; border-radius: 10px; padding: 1.5rem;">
-                    <h3 style="color: #6A4C93; margin-bottom: 1rem;">Encantamentos Espirituais</h3>
-                    <p>Descubra 5 encantamentos poderosos para amor, proteção e prosperidade. Rituais completos passo a passo.</p>
-                    <a href="encantamentos.html" style="color: #6A4C93; font-weight: bold; text-decoration: none; margin-top: 1rem; display: inline-block;">Ver encantamentos →</a>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/ritual.png" alt="Encantamentos Espirituais" loading="lazy" width="400" height="180">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Encantamentos Espirituais</h3>
+                        <div class="blog-meta">
+                            <span>20 de Novembro, 2025</span>
+                            <span>Encantamentos</span>
+                        </div>
+                        <p>Descubra 5 encantamentos poderosos para amor, proteção e prosperidade. Rituais completos passo a passo.</p>
+                        <a href="encantamentos.html" class="read-more">Acessar Encantamentos</a>
+                    </div>
                 </div>
                 
                 <!-- Artigo 3 -->
-                <div style="background: #F8F9FA; border-radius: 10px; padding: 1.5rem;">
-                    <h3 style="color: #6A4C93; margin-bottom: 1rem;">Depoimentos Reais</h3>
-                    <p>Leia depoimentos reais de clientes que tiveram sucesso com amarração amorosa.</p>
-                    <a href="depoimentos-reais-amarracao-amorosa.html" style="color: #6A4C93; font-weight: bold; text-decoration: none; margin-top: 1rem; display: inline-block;">Ler depoimentos →</a>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/depoimentos.jpg" alt="Depoimentos reais" loading="lazy" width="400" height="180">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Depoimentos Reais de Amarração Amorosa</h3>
+                        <div class="blog-meta">
+                            <span>17 de Novembro, 2025</span>
+                            <span>Depoimentos</span>
+                        </div>
+                        <p>Leia depoimentos reais de clientes que tiveram sucesso com amarração amorosa. Casos comprovados de relacionamentos restaurados.</p>
+                        <a href="depoimentos-reais-amarracao-amorosa.html" class="read-more">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Depoimentos de Clientes</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Após a amarração amorosa realizada pelo Mestre Reginaldo, meu relacionamento se transformou completamente. Meu parceiro voltou e hoje somos mais felizes do que nunca. Recomendo de coração!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/depoimento1.jpg" alt="Maria Silva" loading="lazy" width="60" height="60">
+                        </div>
+                        <div>
+                            <h4>Maria Silva</h4>
+                            <p>São Paulo, SP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "A limpeza espiritual feita pelo Mestre Reginaldo mudou minha vida. Eu estava com muitos problemas e negatividade, e após o trabalho, tudo se resolveu. Sinto-me renovado e com energia positiva."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/depoimento2.jpg" alt="João Santos" loading="lazy" width="60" height="60">
+                        </div>
+                        <div>
+                            <h4>João Santos</h4>
+                            <p>Rio de Janeiro, RJ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Estava desempregado há meses. Fiz um trabalho de abertura de caminhos com o Mestre e em menos de duas semanas consegui um ótimo emprego. Recomendo! O Mestre é sério e realmente entrega resultados."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="images/depoimento3.jpg" alt="Ana Costa" loading="lazy" width="60" height="60">
+                        </div>
+                        <div>
+                            <h4>Ana Costa</h4>
+                            <p>Belo Horizonte, MG</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Encantamentos -->
-    <section style="padding: 3rem 0; background: linear-gradient(135deg, #6A4C93, #8E6BBF); color: white; text-align: center;">
+    <section class="encantamentos-cta">
         <div class="container">
-            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">🔮 Quer Aprender Rituais Poderosos?</h3>
-            <p style="margin-bottom: 2rem; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Acesse minha coleção de <strong>5 encantamentos espirais gratuitos</strong> e transforme sua vida com rituais testados
-            </p>
-            <a href="encantamentos.html" class="btn" style="background: #FF9F1C;">Ver Encantamentos Gratuitos</a>
+            <h3>🔮 Quer Aprender Rituais Poderosos?</h3>
+            <p>Acesse minha coleção de <strong>5 encantamentos espirituais gratuitos</strong> e transforme sua vida com rituais testados de amor, proteção e prosperidade</p>
+            <a href="encantamentos.html" class="btn">Ver Encantamentos Gratuitos</a>
         </div>
     </section>
 
@@ -416,10 +824,34 @@
     </a>
 
     <script>
-        // Menu Mobile Simples
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('.nav-menu').style.display = 
-                document.querySelector('.nav-menu').style.display === 'flex' ? 'none' : 'flex';
+        // Menu Mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Fechar menu mobile
+                    if(navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                    }
+                }
+            });
         });
     </script>
 </body>
