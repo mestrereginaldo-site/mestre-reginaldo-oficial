@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encantamentos Espirituais Poderosos | Mestre Reginaldo 🔮</title>
-    <meta name="description" content="5 encantamentos espirituais poderosos para amor, proteção e prosperidade. Rituais completos passo a passo com Mestre Reginaldo.">
+    <title>5 Encantamentos Espirituais Poderosos | Mestre Reginaldo 🔮</title>
+    <meta name="description" content="5 encantamentos espirituais poderosos para amor, proteção e prosperidade. Rituais completos passo a passo com Mestre Reginaldo. 35 anos de experiência.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -21,7 +26,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: sans-serif;
+            font-family: 'Open Sans', sans-serif;
         }
 
         body {
@@ -70,6 +75,22 @@
             font-size: 2rem;
         }
 
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent);
+        }
+
         /* Hero */
         .hero {
             text-align: center;
@@ -83,6 +104,7 @@
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            font-family: 'Merriweather', serif;
         }
 
         .hero p {
@@ -108,17 +130,21 @@
             text-decoration: none;
             color: inherit;
             border-top: 5px solid var(--primary);
+            display: block;
         }
 
         .encantamento-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: inherit;
         }
 
         .encantamento-card h3 {
             color: var(--primary);
             margin-bottom: 1rem;
             font-size: 1.4rem;
+            font-family: 'Merriweather', serif;
         }
 
         .encantamento-card p {
@@ -126,15 +152,20 @@
             color: var(--text);
         }
 
-        .read-more {
-            color: var(--primary);
-            font-weight: bold;
-            text-decoration: none;
+        .btn {
             display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
         }
 
-        .read-more:hover {
-            color: var(--secondary);
+        .btn:hover {
+            background: #ffb143;
         }
 
         /* CTA */
@@ -150,21 +181,22 @@
             color: var(--primary);
             margin-bottom: 1rem;
             font-size: 1.8rem;
+            font-family: 'Merriweather', serif;
         }
 
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
+        .cta-section p {
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .btn:hover {
-            background: #ffb143;
+        .whatsapp-btn {
+            background: #25d366;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
         }
 
         /* Voltar */
@@ -181,12 +213,20 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
             .hero h1 {
                 font-size: 2rem;
             }
             
             .encantamentos-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .nav-menu {
+                display: none;
             }
         }
     </style>
@@ -199,6 +239,11 @@
                 <span>🔮</span>
                 Mestre Reginaldo
             </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="encantamentos.html">Encantamentos</a></li>
+                <li><a href="descubra-seu-orixa.html">Descubra seu Orixá</a></li>
+            </ul>
         </div>
     </header>
 
@@ -212,126 +257,46 @@
         <!-- Lista de Encantamentos -->
         <div class="encantamentos-grid">
             <!-- Encantamento 1 -->
-            <div class="encantamento-card">
+            <a href="encantamento-do-amor-verdadeiro.html" class="encantamento-card">
                 <h3>🔮 Encantamento do Amor Verdadeiro</h3>
                 <p>Ritual completo para atrair um amor sincero e duradouro. Passo a passo detalhado com todos os elementos necessários.</p>
-                <a href="#amor-verdadeiro" class="read-more">Ver ritual completo →</a>
-                
-                <div id="amor-verdadeiro" style="margin-top: 1.5rem; display: none;">
-                    <h4>Materiais necessários:</h4>
-                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                        <li>2 velas cor de rosa</li>
-                        <li>1 punhado de pétalas de rosa</li>
-                        <li>Mel de abelha</li>
-                        <li>Papel branco</li>
-                    </ul>
-                    <h4>Passo a passo:</h4>
-                    <p>1. Acenda as velas em um lugar tranquilo<br>
-                    2. Escreva seu desejo no papel<br>
-                    3. Coloque as pétalas ao redor<br>
-                    4. Derrame mel sobre o papel<br>
-                    5. Mentalize seu amor por 15 minutos</p>
-                </div>
-            </div>
+                <span class="btn">Ver Ritual Completo</span>
+            </a>
 
             <!-- Encantamento 2 -->
-            <div class="encantamento-card">
+            <a href="protecao-contra-inimigos.html" class="encantamento-card">
                 <h3>🛡️ Proteção Contra Inimigos</h3>
                 <p>Ritual de proteção espiritual para se blindar contra energias negativas e pessoas mal-intencionadas.</p>
-                <a href="#protecao" class="read-more">Ver ritual completo →</a>
-                
-                <div id="protecao" style="margin-top: 1.5rem; display: none;">
-                    <h4>Materiais necessários:</h4>
-                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                        <li>1 vela branca</li>
-                        <li>Sal grosso</li>
-                        <li>3 dentes de alho</li>
-                        <li>Água corrente</li>
-                    </ul>
-                    <h4>Passo a passo:</h4>
-                    <p>1. Faça um círculo com sal grosso<br>
-                    2. Coloque a vela no centro<br>
-                    3. Posicione os alhos nos pontos cardeais<br>
-                    4. Acenda a vela e mentalize proteção<br>
-                    5. Jogue água nos cantos da casa</p>
-                </div>
-            </div>
+                <span class="btn">Ver Ritual Completo</span>
+            </a>
 
             <!-- Encantamento 3 -->
-            <div class="encantamento-card">
+            <a href="abertura-de-caminhos-profissionais.html" class="encantamento-card">
                 <h3>💼 Abertura de Caminhos Profissionais</h3>
                 <p>Ritual para remover obstáculos e atrair oportunidades de trabalho e crescimento profissional.</p>
-                <a href="#caminhos" class="read-more">Ver ritual completo →</a>
-                
-                <div id="caminhos" style="margin-top: 1.5rem; display: none;">
-                    <h4>Materiais necessários:</h4>
-                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                        <li>1 vela amarela</li>
-                        <li>Canela em pó</li>
-                        <li>Moedas (qualquer valor)</li>
-                        <li>Folha de louro</li>
-                    </ul>
-                    <h4>Passo a passo:</h4>
-                    <p>1. Acenda a vela amarela<br>
-                    2. Polvilhe canela ao redor<br>
-                    3. Coloque as moedas sobre folha de louro<br>
-                    4. Mentalize suas metas profissionais<br>
-                    5. Repita por 7 dias</p>
-                </div>
-            </div>
+                <span class="btn">Ver Ritual Completo</span>
+            </a>
 
             <!-- Encantamento 4 -->
-            <div class="encantamento-card">
+            <a href="encantamento-da-prosperidade.html" class="encantamento-card">
                 <h3>💰 Encantamento da Prosperidade</h3>
                 <p>Ritual para atrair abundância financeira, estabilidade e oportunidades de ganho.</p>
-                <a href="#prosperidade" class="read-more">Ver ritual completo →</a>
-                
-                <div id="prosperidade" style="margin-top: 1.5rem; display: none;">
-                    <h4>Materiais necessários:</h4>
-                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                        <li>1 vela verde</li>
-                        <li>Mel</li>
-                        <li>7 grãos de feijão</li>
-                        <li>Terra fértil</li>
-                    </ul>
-                    <h4>Passo a passo:</h4>
-                    <p>1. Misture mel com terra<br>
-                    2. Plante os grãos de feijão<br>
-                    3. Acenda a vela verde ao lado<br>
-                    4. Mentalize prosperidade por 10 minutos<br>
-                    5. Regue por 7 dias</p>
-                </div>
-            </div>
+                <span class="btn">Ver Ritual Completo</span>
+            </a>
 
             <!-- Encantamento 5 -->
-            <div class="encantamento-card">
+            <a href="limpeza-energetica-do-lar.html" class="encantamento-card">
                 <h3>✨ Limpeza Energética do Lar</h3>
                 <p>Ritual completo para purificar sua casa de energias negativas e renovar as energias do ambiente.</p>
-                <a href="#limpeza" class="read-more">Ver ritual completo →</a>
-                
-                <div id="limpeza" style="margin-top: 1.5rem; display: none;">
-                    <h4>Materiais necessários:</h4>
-                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                        <li>Sal grosso</li>
-                        <li>Água com alecrim</li>
-                        <li>Incenso de sândalo</li>
-                        <li>Vela branca</li>
-                    </ul>
-                    <h4>Passo a passo:</h4>
-                    <p>1. Aspersione água com alecrim em todos os cômodos<br>
-                    2. Coloque sal grosso nos cantos<br>
-                    3. Acenda incenso e vela branca<br>
-                    4. Deixe queimar completamente<br>
-                    5. Ventile a casa por 2 horas</p>
-                </div>
-            </div>
+                <span class="btn">Ver Ritual Completo</span>
+            </a>
         </div>
 
         <!-- CTA -->
         <div class="cta-section">
             <h3>Precisa de ajuda personalizada?</h3>
             <p>Mestre Reginaldo está disponível para consultas e trabalhos espirituais personalizados.</p>
-            <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20uma%20consulta%20sobre%20encantamentos" class="btn" target="_blank">
+            <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20uma%20consulta%20sobre%20encantamentos" class="btn whatsapp-btn" target="_blank">
                 💬 Falar com Mestre Reginaldo
             </a>
         </div>
@@ -340,23 +305,11 @@
         <a href="index.html" class="back-link">← Voltar para página principal</a>
     </div>
 
-    <script>
-        // Mostrar/ocultar detalhes dos encantamentos
-        document.querySelectorAll('.read-more').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetDiv = document.getElementById(targetId);
-                
-                if (targetDiv.style.display === 'block') {
-                    targetDiv.style.display = 'none';
-                    this.textContent = 'Ver ritual completo →';
-                } else {
-                    targetDiv.style.display = 'block';
-                    this.textContent = 'Ocultar ritual ↑';
-                }
-            });
-        });
-    </script>
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5571983389346?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20saber%20mais%20sobre%20encantamentos" 
+       style="position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s;"
+       target="_blank" aria-label="WhatsApp">
+        💬
+    </a>
 </body>
 </html>
