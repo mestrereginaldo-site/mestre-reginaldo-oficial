@@ -3,19 +3,15 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-# Sitemap correto
 Sitemap: https://www.mestrereginaldo.com.br/sitemap.xml
 
-# Otimização
 Crawl-delay: 2
 
-# Permitir páginas importantes
 Allow: /index.html
 Allow: /encantamentos.html
 Allow: /descubra-seu-orixa.html
+Allow: /*.html
 
-# Bloquear arquivos desnecessários
 Disallow: /*.php$
 Disallow: /*.pdf$
 Disallow: /*.zip$
-Disallow: /*.exe$
