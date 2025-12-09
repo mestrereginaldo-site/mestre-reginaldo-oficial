@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="max-age=604800, public">
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-27KXC3LKPT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-27KXC3LKPT');
+      
+      // Rastreamento de cliques no WhatsApp
+      document.addEventListener('DOMContentLoaded', function() {
+        // Rastreia todos os links do WhatsApp
+        document.querySelectorAll('a[href*="whatsapp"], a[href*="wa.me"]').forEach(link => {
+          link.addEventListener('click', function() {
+            gtag('event', 'whatsapp_click', {
+              'event_category': 'contato',
+              'event_label': 'Clique no WhatsApp - ' + this.textContent
+            });
+          });
+        });
+        
+        // Rastreia cliques no botão principal
+        document.querySelectorAll('.btn').forEach(button => {
+          if (button.textContent.includes('WhatsApp') || button.href.includes('whatsapp')) {
+            button.addEventListener('click', function() {
+              gtag('event', 'whatsapp_cta', {
+                'event_category': 'conversao',
+                'event_label': 'Botão principal WhatsApp'
+              });
+            });
+          }
+        });
+      });
+    </script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2796792312502848"
      crossorigin="anonymous"></script>
     
@@ -864,6 +897,7 @@
     </script>
 </body>
 </html>
+
 
 
 
