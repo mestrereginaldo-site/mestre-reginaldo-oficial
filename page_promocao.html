@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔮 Mestre Reginaldo - Amarração Amorosa em 24h | Consulta Grátis</title>
-    <meta name="description" content="Traga seu amor de volta em 24h! Amarração amorosa urgente com Mestre Reginaldo. 35 anos de experiência. Resultados garantidos. CONSULTA GRATUITA!">
+    <title>Consulta Espiritual com Mestre Reginaldo | Orientações para Relacionamentos</title>
+    <meta name="description" content="Orientações espirituais para questões amorosas e relacionamentos. Consulta espiritual com Mestre Reginaldo, experiente conselheiro espiritual com 35 anos de experiência.">
     
-    <!-- Meta Tags para Redes Sociais -->
-    <meta property="og:title" content="Mestre Reginaldo - Amarração Amorosa em 24h">
-    <meta property="og:description" content="Traga seu amor de volta em 24h! Consulta gratuita com Mestre Reginaldo. 35 anos de experiência.">
-    <meta property="og:image" content="https://mestrereginaldo.com.br/images/og-image.jpg">
-    <meta property="og:url" content="https://mestrereginaldo.com.br/landing">
+    <!-- Meta Tags Otimizadas e Seguras -->
+    <meta property="og:title" content="Mestre Reginaldo - Orientação Espiritual para Relacionamentos">
+    <meta property="og:description" content="Consulta espiritual personalizada para questões amorosas e equilíbrio energético. Experiência de 35 anos em tradições espirituais.">
+    <meta property="og:image" content="https://mestrereginaldo.com.br/images/og-image-safe.jpg">
+    <meta property="og:url" content="https://mestrereginaldo.com.br/consulta">
     <meta property="og:type" content="website">
     
     <!-- Google Analytics -->
@@ -22,7 +22,7 @@
       gtag('config', 'G-27KXC3LKPT');
     </script>
     
-    <!-- Facebook Pixel Code -->
+    <!-- Facebook Pixel (Substitua pelo seu ID) -->
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -32,13 +32,9 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', 'YOUR_FACEBOOK_PIXEL_ID'); <!-- Substitua pelo seu Pixel ID -->
+      fbq('init', 'YOUR_FACEBOOK_PIXEL_ID');
       fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=YOUR_FACEBOOK_PIXEL_ID&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
     
     <style>
         /* Reset e Variáveis */
@@ -49,23 +45,22 @@
         }
         
         :root {
-            --primary: #6A4C93;
-            --secondary: #8E6BBF;
-            --accent: #FF9F1C;
-            --dark: #2A1B3D;
+            --primary: #5D417A;
+            --secondary: #7A5D9C;
+            --accent: #F39C12;
+            --dark: #2C3E50;
             --light: #F8F9FA;
-            --success: #25D366;
-            --danger: #E63946;
-            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --success: #27AE60;
+            --text: #34495E;
+            --shadow: 0 5px 15px rgba(0,0,0,0.08);
             --transition: all 0.3s ease;
         }
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text);
             background-color: var(--light);
-            overflow-x: hidden;
         }
         
         .container {
@@ -77,13 +72,12 @@
         
         /* Header */
         .header {
-            background: linear-gradient(135deg, var(--primary), var(--dark));
-            color: white;
-            padding: 15px 0;
+            background-color: white;
+            box-shadow: var(--shadow);
+            padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         }
         
         .header-content {
@@ -95,311 +89,177 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.8rem;
-            font-weight: bold;
+            gap: 12px;
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 600;
         }
         
         .logo-icon {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
         }
         
-        .contact-info {
-            text-align: right;
-            font-size: 0.9rem;
+        .contact-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
         
-        .whatsapp-header {
+        .whatsapp-btn {
             background-color: var(--success);
             color: white;
-            padding: 8px 15px;
+            padding: 10px 20px;
             border-radius: 50px;
             text-decoration: none;
-            font-weight: bold;
-            display: inline-flex;
+            font-weight: 600;
+            display: flex;
             align-items: center;
             gap: 8px;
-            margin-top: 5px;
             transition: var(--transition);
         }
         
-        .whatsapp-header:hover {
-            background-color: #128C7E;
+        .whatsapp-btn:hover {
+            background-color: #219653;
             transform: translateY(-2px);
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(42, 27, 61, 0.9), rgba(106, 76, 147, 0.9)), url('https://images.unsplash.com/photo-1518834103328-4dbb0d8400de?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            padding: 100px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 100px 0 80px;
             text-align: center;
         }
         
         .hero-content {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
         }
         
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 2.8rem;
+            color: var(--dark);
             margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
             line-height: 1.2;
         }
         
         .hero-subtitle {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            color: var(--text);
             margin-bottom: 30px;
-            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-highlight {
+            color: var(--primary);
+            font-weight: 600;
         }
         
         .hero-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px 25px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            padding: 12px 25px;
             border-radius: 50px;
-            margin: 20px 0;
-            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            margin: 25px 0;
         }
         
         .stars {
             color: var(--accent);
-            font-size: 1.2rem;
-            margin-right: 8px;
         }
         
         /* CTA Principal */
         .main-cta {
-            background: linear-gradient(to right, var(--accent), #FFB143);
+            background: linear-gradient(to right, var(--primary), var(--secondary));
             color: white;
-            padding: 18px 40px;
-            font-size: 1.5rem;
-            font-weight: bold;
+            padding: 18px 35px;
+            font-size: 1.3rem;
+            font-weight: 600;
             border: none;
             border-radius: 50px;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
             transition: var(--transition);
-            margin: 30px 0;
-            box-shadow: 0 10px 25px rgba(255, 159, 28, 0.3);
+            margin: 20px 0;
+            box-shadow: 0 8px 20px rgba(93, 65, 122, 0.2);
         }
         
         .main-cta:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 30px rgba(255, 159, 28, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(93, 65, 122, 0.3);
         }
         
-        .whatsapp-icon {
-            font-size: 2rem;
-        }
-        
-        .guarantee-badge {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .badge-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 8px 15px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-        }
-        
-        /* Problemas Section */
-        .problems {
+        /* Benefícios */
+        .benefits {
             padding: 80px 0;
             background-color: white;
         }
         
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             color: var(--primary);
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background-color: var(--accent);
+            margin-bottom: 15px;
         }
         
         .section-subtitle {
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #666;
             max-width: 700px;
             margin: 0 auto 50px;
         }
         
-        .problems-grid {
+        .benefits-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-top: 50px;
+            margin-top: 40px;
         }
         
-        .problem-card {
+        .benefit-card {
             background: var(--light);
             padding: 30px;
             border-radius: 10px;
             box-shadow: var(--shadow);
             transition: var(--transition);
-            border-left: 5px solid var(--primary);
             text-align: center;
+            border-top: 4px solid var(--primary);
         }
         
-        .problem-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        .benefit-card:hover {
+            transform: translateY(-5px);
         }
         
-        .problem-icon {
-            font-size: 3rem;
+        .benefit-icon {
+            font-size: 2.5rem;
             margin-bottom: 20px;
             color: var(--primary);
         }
         
-        .problem-card h3 {
-            font-size: 1.5rem;
+        .benefit-card h3 {
+            font-size: 1.4rem;
             margin-bottom: 15px;
             color: var(--dark);
-        }
-        
-        /* Solução Section */
-        .solution {
-            padding: 80px 0;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .solution .section-title {
-            color: white;
-        }
-        
-        .solution-box {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 50px;
-            border-radius: 15px;
-            margin-top: 40px;
-            box-shadow: var(--shadow);
-        }
-        
-        .solution-list {
-            list-style: none;
-            margin: 30px 0;
-        }
-        
-        .solution-list li {
-            margin-bottom: 20px;
-            padding-left: 40px;
-            position: relative;
-            font-size: 1.1rem;
-        }
-        
-        .solution-list li:before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 30px;
-            height: 30px;
-            background-color: var(--accent);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-        
-        /* Depoimentos */
-        .testimonials {
-            padding: 80px 0;
-            background-color: white;
-        }
-        
-        .testimonial-slider {
-            max-width: 800px;
-            margin: 50px auto 0;
-            position: relative;
-        }
-        
-        .testimonial-card {
-            background: var(--light);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            margin: 20px;
-            position: relative;
-        }
-        
-        .testimonial-card:before {
-            content: '"';
-            font-size: 6rem;
-            color: var(--primary);
-            opacity: 0.2;
-            position: absolute;
-            top: -20px;
-            left: 20px;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .author-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: var(--secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
         }
         
         /* Sobre */
         .about {
             padding: 80px 0;
-            background-color: var(--light);
+            background-color: #f8f9fa;
         }
         
         .about-content {
             display: flex;
             align-items: center;
             gap: 50px;
-            margin-top: 50px;
+            margin-top: 40px;
         }
         
         .about-image {
@@ -409,10 +269,14 @@
             box-shadow: var(--shadow);
         }
         
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .about-image-placeholder {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
         }
         
         .about-text {
@@ -420,7 +284,7 @@
         }
         
         .about-text h3 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--primary);
             margin-bottom: 20px;
         }
@@ -428,102 +292,177 @@
         .experience-badge {
             background-color: var(--accent);
             color: white;
-            padding: 10px 20px;
+            padding: 8px 16px;
             border-radius: 50px;
             display: inline-block;
-            font-weight: bold;
-            margin: 20px 0;
+            font-weight: 600;
+            margin: 15px 0;
+            font-size: 0.9rem;
         }
         
-        /* Garantia */
-        .guarantee {
+        /* Como Funciona */
+        .process {
             padding: 80px 0;
-            background: linear-gradient(135deg, var(--dark), var(--primary));
-            color: white;
+            background-color: white;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
             text-align: center;
+            padding: 30px;
+            position: relative;
         }
         
-        .guarantee-box {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 50px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* Depoimentos */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .testimonial-slider {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 50px auto 0;
         }
         
-        .guarantee-icon {
-            font-size: 4rem;
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin: 20px;
+            position: relative;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
             margin-bottom: 20px;
+            color: var(--text);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-initials {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Perguntas Frequentes */
+        .faq {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background-color: var(--light);
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            padding: 20px;
+            background-color: white;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
         }
         
         /* CTA Final */
         .final-cta {
-            padding: 100px 0;
-            background: linear-gradient(rgba(42, 27, 61, 0.95), rgba(106, 76, 147, 0.95)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             text-align: center;
         }
         
         .final-cta h2 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
         
         .final-cta p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             max-width: 700px;
             margin: 0 auto 40px;
             opacity: 0.9;
         }
         
-        .urgency-badge {
-            background-color: var(--danger);
-            color: white;
-            padding: 10px 25px;
-            border-radius: 50px;
-            display: inline-block;
-            font-weight: bold;
-            margin-bottom: 30px;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
+        /* WhatsApp Flutuante */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             background-color: var(--success);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-decoration: none;
-            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
             z-index: 1000;
             transition: var(--transition);
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
         }
         
         .whatsapp-float:hover {
-            background-color: #128C7E;
+            background-color: #219653;
             transform: scale(1.1);
         }
         
@@ -531,20 +470,32 @@
         .footer {
             background-color: var(--dark);
             color: white;
-            padding: 50px 0 20px;
-            text-align: center;
+            padding: 50px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: white;
         }
         
         .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
-            flex-wrap: wrap;
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
         }
         
         .footer-links a {
-            color: #aaa;
+            color: #bbb;
             text-decoration: none;
             transition: var(--transition);
         }
@@ -554,17 +505,17 @@
         }
         
         .copyright {
-            margin-top: 30px;
-            padding-top: 20px;
+            text-align: center;
+            padding-top: 30px;
             border-top: 1px solid rgba(255,255,255,0.1);
             font-size: 0.9rem;
-            color: #aaa;
+            color: #999;
         }
         
         /* Responsividade */
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.3rem;
             }
             
             .about-content {
@@ -579,17 +530,26 @@
                 text-align: center;
             }
             
+            .contact-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .hero {
+                padding: 80px 0 60px;
+            }
+            
             .hero h1 {
                 font-size: 2rem;
             }
             
             .hero-subtitle {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
             
             .main-cta {
-                font-size: 1.2rem;
-                padding: 15px 30px;
+                font-size: 1.1rem;
+                padding: 15px 25px;
             }
             
             .section-title {
@@ -597,19 +557,15 @@
             }
             
             .whatsapp-float {
-                width: 60px;
-                height: 60px;
-                font-size: 2rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1.7rem;
                 bottom: 20px;
                 right: 20px;
             }
         }
         
         @media (max-width: 480px) {
-            .hero {
-                padding: 70px 0;
-            }
-            
             .hero h1 {
                 font-size: 1.8rem;
             }
@@ -618,7 +574,7 @@
                 font-size: 1.8rem;
             }
             
-            .problem-card, .solution-box, .testimonial-card {
+            .benefit-card, .testimonial-card {
                 padding: 20px;
             }
         }
@@ -630,13 +586,13 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">🔮</span>
+                    <span class="logo-icon">🌿</span>
                     <span>Mestre Reginaldo</span>
                 </div>
-                <div class="contact-info">
-                    <div>Atendimento 24h</div>
-                    <a href="https://wa.me/5571986482241?text=Olá,%20vim%20da%20landing%20page%20e%20gostaria%20de%20uma%20consulta%20urgente!" class="whatsapp-header" target="_blank">
-                        📱 Fale no WhatsApp
+                <div class="contact-header">
+                    <div style="font-weight: 600; color: var(--primary);">Atendimento Personalizado</div>
+                    <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20espiritual" class="whatsapp-btn" target="_blank">
+                        <span>💬</span> Fale via WhatsApp
                     </a>
                 </div>
             </div>
@@ -647,100 +603,130 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Traga Seu Amor de Volta em <span style="color: var(--accent);">24 Horas</span></h1>
-                <p class="hero-subtitle">Amarração Amorosa Urgente com Mestre Reginaldo - 35 Anos de Experiência</p>
+                <h1>Orientação Espiritual para <span class="hero-highlight">Relacionamentos e Equilíbrio Pessoal</span></h1>
+                <p class="hero-subtitle">
+                    Conselhos espirituais baseados em tradições ancestrais combinadas com abordagem contemporânea. 
+                    Experiência de 35 anos ajudando pessoas a encontrarem harmonia em suas vidas amorosas e pessoais.
+                </p>
                 
                 <div class="hero-badge">
-                    <span class="stars">★★★★★</span> Avaliação 4.9/5 • +2.500 Casos Resolvidos
+                    <span class="stars">★★★★★</span>
+                    <span>Avaliação 4.8/5 • Atendimento Humanizado</span>
                 </div>
                 
-                <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Preciso%20urgentemente%20da%20sua%20ajuda%20para%20trazer%20meu%20amor%20de%20volta." class="main-cta" target="_blank" id="main-cta">
-                    <span class="whatsapp-icon">💬</span>
-                    FALE DIRETAMENTE COM O MESTRE
+                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20espiritual%20com%20o%20Mestre%20Reginaldo" class="main-cta" target="_blank">
+                    <span>📅</span> Agendar Consulta Espiritual
                 </a>
                 
-                <div class="guarantee-badge">
-                    <div class="badge-item">✅ Consulta 100% Gratuita</div>
-                    <div class="badge-item">✅ Resultado em 24h</div>
-                    <div class="badge-item">✅ Atendimento Imediato</div>
-                    <div class="badge-item">✅ 35 Anos de Experiência</div>
+                <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+                    Consulta inicial sem compromisso • Respeito total à sua individualidade
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Como a Orientação Espiritual Pode Ajudar Você</h2>
+            <p class="section-subtitle">
+                Uma abordagem espiritual cuidadosa pode trazer novos insights e perspectivas para questões pessoais
+            </p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💑</div>
+                    <h3>Clareza em Relacionamentos</h3>
+                    <p>Novas perspectivas sobre dinâmicas relacionais e caminhos para melhorar a comunicação e conexão emocional.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌀</div>
+                    <h3>Equilíbrio Energético</h3>
+                    <p>Orientações para harmonizar sua energia pessoal e criar um ambiente mais positivo ao seu redor.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Autoconhecimento</h3>
+                    <p>Ferramentas para melhor compreensão de si mesmo e desenvolvimento pessoal contínuo.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌅</div>
+                    <h3>Novos Começos</h3>
+                    <p>Apoio espiritual para transições de vida e abertura de novos caminhos pessoais e profissionais.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problemas Section -->
-    <section class="problems" id="problems">
+    <!-- Sobre -->
+    <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">Você Está Passando Por Isso?</h2>
-            <p class="section-subtitle">Identifique se algum desses problemas está afetando sua vida amorosa:</p>
+            <h2 class="section-title">Sobre Mestre Reginaldo</h2>
             
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">💔</div>
-                    <h3>Seu Amor Te Deixou</h3>
-                    <p>Seu relacionamento acabou e você não consegue superar. Sente que ainda há esperança.</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        Mestre Reginaldo<br>35 anos de experiência
+                    </div>
                 </div>
                 
-                <div class="problem-card">
-                    <div class="problem-icon">😔</div>
-                    <h3>Falta de Interesse</h3>
-                    <p>Seu parceiro(a) perdeu o interesse, está distante e frio(a). O amor está esfriando.</p>
+                <div class="about-text">
+                    <h3>Conselheiro Espiritual com Três Décadas de Experiência</h3>
+                    
+                    <div class="experience-badge">Experiência desde 1990</div>
+                    
+                    <p>Mestre Reginaldo dedica-se há mais de 35 anos ao estudo e prática de tradições espirituais, com foco no desenvolvimento pessoal e equilíbrio emocional.</p>
+                    
+                    <p>Sua abordagem combina conhecimentos de diversas tradições com uma visão contemporânea, sempre respeitando a individualidade e crenças de cada pessoa.</p>
+                    
+                    <p>Atende centenas de pessoas anualmente, oferecendo orientação espiritual personalizada para questões relacionais, equilíbrio energético e desenvolvimento pessoal.</p>
+                    
+                    <p style="margin-top: 20px; font-style: italic; color: var(--primary);">
+                        "Cada pessoa tem um caminho único. Minha função é ajudar a iluminar esse caminho, não caminhar por você."
+                    </p>
+                    
+                    <div style="margin-top: 30px;">
+                        <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20conhecer%20melhor%20o%20trabalho%20do%20Mestre%20Reginaldo" class="main-cta" target="_blank" style="font-size: 1.1rem; padding: 12px 25px;">
+                            Conhecer Mais Sobre o Trabalho
+                        </a>
+                    </div>
                 </div>
-                
-                <div class="problem-card">
-                    <div class="problem-icon">👥</div>
-                    <h3>Terceira Pessoa</h3>
-                    <p>Há uma outra pessoa entre vocês. Ciúmes, traição ou interferência familiar.</p>
-                </div>
-                
-                <div class="problem-card">
-                    <div class="problem-icon">😡</div>
-                    <h3>Brigas Constantes</h3>
-                    <p>Discussões frequentes, mágoas acumuladas, falta de diálogo e compreensão.</p>
-                </div>
-                
-                <div class="problem-card">
-                    <div class="problem-icon">🚫</div>
-                    <h3>Bloqueio Amoroso</h3>
-                    <p>Não consegue encontrar o amor verdadeiro. Relacionamentos nunca dão certo.</p>
-                </div>
-                
-                <div class="problem-card">
-                    <div class="problem-icon">🌀</div>
-                    <h3>Inveja e Energias Negativas</h3>
-                    <p>Sente que há inveja, mau-olhado ou trabalhos espirituais contra seu relacionamento.</p>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Estou%20passando%20por%20um%20desses%20problemas%20e%20preciso%20de%20ajuda%20urgente." class="main-cta" target="_blank" style="font-size: 1.3rem;">
-                    RESOLVER MEU PROBLEMA AGORA
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Solução Section -->
-    <section class="solution" id="solution">
+    <!-- Como Funciona -->
+    <section class="process" id="process">
         <div class="container">
-            <h2 class="section-title">A Solução Definitiva Para Seu Amor</h2>
-            <p class="section-subtitle">Com a amarração amorosa do Mestre Reginaldo, você terá:</p>
+            <h2 class="section-title">Como Funciona a Consulta</h2>
+            <p class="section-subtitle">Um processo respeitoso e personalizado em etapas claras</p>
             
-            <div class="solution-box">
-                <ul class="solution-list">
-                    <li><strong>Seu amor de volta em 24 horas</strong> - Resultados rápidos e comprovados</li>
-                    <li><strong>Fim das brigas e discussões</strong> - Harmonia e compreensão no relacionamento</li>
-                    <li><strong>Eliminação de rivais e interferências</strong> - Apenas vocês dois, sem terceiras pessoas</li>
-                    <li><strong>Renovação da paixão e do desejo</strong> - O amor voltará mais forte do que antes</li>
-                    <li><strong>Proteção espiritual contra inveja</strong> - Escudo energético para seu relacionamento</li>
-                    <li><strong>Comprometimento e fidelidade</strong> - Seu parceiro(a) terá olhos apenas para você</li>
-                </ul>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Primeiro Contato</h3>
+                    <p>Conversa inicial via WhatsApp para entendermos suas necessidades e agendarmos um horário conveniente.</p>
+                </div>
                 
-                <div style="text-align: center; margin-top: 40px;">
-                    <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Quero%20essa%20solução%20para%20meu% relacionamento.%20Como%20funciona?" class="main-cta" target="_blank">
-                        QUERO ESSA SOLUÇÃO PARA MIM
-                    </a>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Consulta Inicial</h3>
+                    <p>Sessão detalhada para compreensão profunda da sua situação e objetivos pessoais.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Orientação Personalizada</h3>
+                    <p>Conselhos e insights específicos para sua situação, com respeito total às suas crenças e valores.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Acompanhamento</h3>
+                    <p>Suporte contínuo conforme necessário para seu processo de desenvolvimento e equilíbrio.</p>
                 </div>
             </div>
         </div>
@@ -749,111 +735,96 @@
     <!-- Depoimentos -->
     <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2 class="section-title">Depoimentos Reais</h2>
-            <p class="section-subtitle">Veja o que nossos clientes estão falando:</p>
+            <h2 class="section-title">O Que Dizem as Pessoas</h2>
+            <p class="section-subtitle">Relatos de pessoas que buscaram orientação espiritual</p>
             
             <div class="testimonial-slider">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Meu marido tinha me deixado por outra mulher. Estava desesperada. Fiz a amarração com Mestre Reginaldo e em 2 dias ele voltou chorando, pedindo perdão. Hoje estamos mais felizes do que nunca. Obrigada, Mestre!"
+                        "A orientação do Mestre Reginaldo me ajudou a ver minha relação de forma diferente. Consegui melhorar a comunicação com meu parceiro e hoje estamos em um momento muito melhor. A abordagem respeitosa fez toda diferença."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">A</div>
+                        <div class="author-initials">MC</div>
                         <div>
-                            <h4>Ana Carolina, 34 anos</h4>
-                            <p>Casada há 12 anos - São Paulo/SP</p>
+                            <h4>Maria C., 38 anos</h4>
+                            <p>Consultora - São Paulo</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Meu namorado estava distante, sempre brigávamos. Fiz a amarração e foi milagroso! Ele mudou completamente, voltou a ser carinhoso, atencioso. Agora estamos noivos! Mestre Reginaldo é incrível, recomendo!"
+                        "Estava passando por um período difícil de decisões profissionais. As sessões com Mestre Reginaldo me deram clareza e confiança para fazer mudanças importantes. O processo todo foi muito respeitoso."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">M</div>
+                        <div class="author-initials">RS</div>
                         <div>
-                            <h4>Mariana, 28 anos</h4>
-                            <p>Noiva - Rio de Janeiro/RJ</p>
+                            <h4>Roberto S., 45 anos</h4>
+                            <p>Empresário - Rio de Janeiro</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Havia uma mulher interessada no meu marido. Ele estava sendo influenciado. Fiz o trabalho de proteção e amarração com Mestre Reginaldo. A mulher sumiu da vida dele e meu casamento foi salvo. Gratidão eterna!"
+                        "Busquei orientação para questões familiares. A paciência e sabedoria do Mestre Reginaldo foram fundamentais para encontrar um novo equilíbrio em casa. Recomendo muito seu trabalho sério e ético."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">C</div>
+                        <div class="author-initials">AF</div>
                         <div>
-                            <h4>Carla, 42 anos</h4>
-                            <p>Casada há 18 anos - Belo Horizonte/MG</p>
+                            <h4>Ana F., 52 anos</h4>
+                            <p>Professora - Minas Gerais</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Quero%20ter%20um%20resultado%20como%20esses%20depoimentos." class="main-cta" target="_blank" style="font-size: 1.3rem;">
-                    QUERO MEU DEPOIMENTO DE SUCESSO
-                </a>
-            </div>
         </div>
     </section>
 
-    <!-- Sobre -->
-    <section class="about" id="about">
+    <!-- Perguntas Frequentes -->
+    <section class="faq" id="faq">
         <div class="container">
-            <h2 class="section-title">Quem é Mestre Reginaldo</h2>
+            <h2 class="section-title">Perguntas Frequentes</h2>
             
-            <div class="about-content">
-                <div class="about-image">
-                    <!-- Substitua pela imagem real do Mestre Reginaldo -->
-                    <div style="background: linear-gradient(135deg, var(--primary), var(--secondary)); height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-                        IMAGEM DO MESTRE REGINALDO
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como funciona a consulta inicial?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A consulta inicial é uma conversa onde você compartilha sua situação e objetivos. É um momento para nos conhecermos e entender como posso ajudar. Não há compromisso nesta etapa.</p>
                     </div>
                 </div>
                 
-                <div class="about-text">
-                    <h3>Ocultista com 35 Anos de Experiência</h3>
-                    
-                    <div class="experience-badge">+35 Anos de Experiência Espiritual</div>
-                    
-                    <p>Mestre Reginaldo é um renomado especialista em amarração amorosa, com mais de três décadas dedicadas ao estudo e prática das artes espirituais.</p>
-                    
-                    <p>Sua técnica exclusiva combina conhecimentos ancestrais com métodos contemporâneos, garantindo resultados rápidos e eficazes.</p>
-                    
-                    <p>Já ajudou mais de <strong>2.500 pessoas</strong> a reconquistarem seus amores e restauraram a felicidade em seus relacionamentos.</p>
-                    
-                    <p>Trabalha com ética, respeito e discrição, sempre priorizando o bem-estar e a felicidade de seus clientes.</p>
-                    
-                    <div style="margin-top: 30px;">
-                        <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Gostaria%20de%20conhecer%20melhor%20seu%20trabalho%20e%20saber%20como%20você%20pode%20me%20ajudar." class="main-cta" target="_blank" style="font-size: 1.2rem; padding: 12px 25px;">
-                            FALAR COM O MESTRE AGORA
-                        </a>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>É necessário ter alguma crença específica?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não. Respeito todas as crenças e abordagens. Trabalho com os valores e perspectiva de cada pessoa, adaptando a orientação à sua visão de mundo.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Garantia -->
-    <section class="guarantee" id="guarantee">
-        <div class="container">
-            <div class="guarantee-box">
-                <div class="guarantee-icon">✅</div>
-                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Consulta 100% Gratuita</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                    Você não paga nada pela consulta inicial. Converse com Mestre Reginaldo, explique sua situação e receba orientação espiritual sem custo algum.
-                </p>
-                <p style="font-size: 1.2rem; font-weight: bold;">
-                    Só haverá investimento se você decidir realizar o trabalho espiritual, após entender completamente como funciona.
-                </p>
                 
-                <div style="margin-top: 40px;">
-                    <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Quero%20minha%20consulta%20gratuita%20para%20entender%20como%20posso%20trazer%20meu%20amor%20de%20volta." class="main-cta" target="_blank">
-                        QUERO MINHA CONSULTA GRATUITA
-                    </a>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quanto tempo dura o processo?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cada pessoa tem um ritmo diferente. Algumas encontram clareza em poucas sessões, outras preferem um acompanhamento mais prolongado. Definimos juntos o que faz sentido para você.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Os valores são acessíveis?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, trabalhamos com valores justos e transparentes. A consulta inicial é sem custo, e os valores das sessões seguintes são discutidos abertamente antes de qualquer compromisso.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -862,117 +833,110 @@
     <!-- CTA Final -->
     <section class="final-cta" id="final-cta">
         <div class="container">
-            <h2>Não Deixe Seu Amor Escapar</h2>
-            <p>Cada minuto que passa é uma oportunidade perdida. Seu amor pode estar se afastando mais a cada dia que você espera.</p>
+            <h2>Pronto para Novos Insights?</h2>
+            <p>Agende uma conversa inicial sem compromisso e descubra como a orientação espiritual pode trazer nova perspectiva para sua situação.</p>
             
-            <div class="urgency-badge">ATENÇÃO: Vagas limitadas para atendimento urgente</div>
+            <div style="margin: 40px 0;">
+                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20agendar%20uma%20conversa%20inicial%20sem%20compromisso%20com%20o%20Mestre%20Reginaldo" class="main-cta" target="_blank" style="font-size: 1.4rem; padding: 18px 40px;">
+                    <span>💬</span> Iniciar Conversa Inicial
+                </a>
+            </div>
             
-            <p style="font-size: 1.4rem; font-weight: bold; margin-bottom: 10px;">Fale agora com Mestre Reginaldo</p>
-            <p style="margin-bottom: 40px; font-size: 1.2rem;">Clique no botão abaixo para iniciar sua consulta gratuita via WhatsApp</p>
-            
-            <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Preciso%20urgentemente%20da%20sua%20ajuda%20para%20trazer%20meu%20amor%20de%20volta.%20Não%20quero%20perder%20mais%20tempo." class="main-cta" target="_blank" style="font-size: 1.8rem; padding: 20px 50px;">
-                🕒 FALAR COM O MESTRE AGORA MESMO
-            </a>
-            
-            <p style="margin-top: 30px; font-size: 1.1rem; opacity: 0.8;">
-                Atendimento imediato • Respostas em segundos • 100% gratuito
+            <p style="font-size: 1rem; opacity: 0.8;">
+                Respeito total à sua privacidade • Sem pressão ou compromisso • Atendimento humanizado
             </p>
         </div>
     </section>
 
-    <!-- Botão WhatsApp Flutuante -->
-    <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!%20Vim%20da%20landing%20page%20e%20preciso%20de%20ajuda%20urgente." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5571986482241?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20mais%20informações" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         💬
     </a>
 
     <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
-            <div class="logo" style="justify-content: center; margin-bottom: 20px;">
-                <span class="logo-icon">🔮</span>
-                <span>Mestre Reginaldo</span>
-            </div>
-            
-            <p style="max-width: 600px; margin: 0 auto 30px; color: #aaa;">
-                Especialista em amarração amorosa, limpeza espiritual e proteção energética. Atendimento 24 horas por dia, 7 dias por semana.
-            </p>
-            
-            <div class="footer-links">
-                <a href="https://mestrereginaldo.com.br">Site Principal</a>
-                <a href="#about">Sobre</a>
-                <a href="#testimonials">Depoimentos</a>
-                <a href="#guarantee">Garantia</a>
-                <a href="politica-privacidade.html">Política de Privacidade</a>
-            </div>
-            
-            <div style="margin: 30px 0;">
-                <a href="https://wa.me/5571986482241?text=Olá,%20Mestre%20Reginaldo!" class="whatsapp-header" target="_blank" style="font-size: 1.1rem;">
-                    📞 +55 (71) 98648-2241
-                </a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mestre Reginaldo</h3>
+                    <p>Orientação espiritual personalizada com mais de 35 anos de experiência em tradições espirituais diversas.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/5571986482241">WhatsApp: (71) 98648-2241</a></li>
+                        <li>Atendimento por agendamento</li>
+                        <li>Horários flexíveis</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://mestrereginaldo.com.br">Site Principal</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#process">Como Funciona</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#faq">Perguntas Frequentes</a></li>
+                    </ul>
+                </div>
             </div>
             
             <div class="copyright">
-                © 2025 Mestre Reginaldo - Todos os direitos reservados.<br>
-                Este site é apenas para maiores de 18 anos. Os resultados podem variar de pessoa para pessoa.
+                <p>© 2025 Mestre Reginaldo - Todos os direitos reservados.</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">
+                    Este site oferece orientação espiritual. Os resultados podem variar conforme cada indivíduo.<br>
+                    Não fazemos promessas de resultados específicos ou garantias de qualquer natureza.
+                </p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Rastreamento de Cliques
+        // FAQ Accordion
         document.addEventListener('DOMContentLoaded', function() {
-            // Rastrear todos os CTAs principais
-            document.querySelectorAll('.main-cta, .whatsapp-header, .whatsapp-float').forEach(button => {
-                button.addEventListener('click', function() {
-                    // Google Analytics
-                    gtag('event', 'whatsapp_click', {
-                        'event_category': 'conversao',
-                        'event_label': 'Landing Page WhatsApp Click'
-                    });
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentElement;
+                    item.classList.toggle('active');
                     
-                    // Facebook Pixel
-                    fbq('track', 'Lead');
+                    // Trocar o ícone
+                    const icon = question.querySelector('span:last-child');
+                    icon.textContent = item.classList.contains('active') ? '−' : '+';
                 });
             });
             
-            // Rastrear scroll (engajamento)
-            let scrollEventsSent = [];
-            window.addEventListener('scroll', function() {
-                const scrollPosition = window.scrollY + window.innerHeight;
-                const docHeight = document.documentElement.scrollHeight;
-                const scrollPercent = (scrollPosition / docHeight) * 100;
-                
-                // Enviar eventos a cada 25% de scroll
-                [25, 50, 75, 95].forEach(percent => {
-                    if (scrollPercent >= percent && !scrollEventsSent.includes(percent)) {
-                        scrollEventsSent.push(percent);
-                        gtag('event', 'scroll', {
-                            'event_category': 'engajamento',
-                            'event_label': `Scroll ${percent}%`
+            // Rastreamento de cliques
+            document.querySelectorAll('.main-cta, .whatsapp-btn, .whatsapp-float').forEach(button => {
+                button.addEventListener('click', function() {
+                    gtag('event', 'conversion_click', {
+                        'event_category': 'conversao',
+                        'event_label': 'Landing Page Click'
+                    });
+                    
+                    fbq('track', 'Contact');
+                });
+            });
+            
+            // Suavizar scroll para âncoras
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
                         });
                     }
                 });
             });
-            
-            // Timer de urgência
-            function updateUrgencyTimer() {
-                const now = new Date();
-                const endOfDay = new Date();
-                endOfDay.setHours(23, 59, 59, 999);
-                
-                const timeLeft = endOfDay - now;
-                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                
-                const timerElement = document.getElementById('urgency-timer');
-                if (timerElement) {
-                    timerElement.innerHTML = `⏰ OFERTA TERMINA EM: ${hours}h ${minutes}m`;
-                }
-            }
-            
-            // Atualizar timer a cada minuto
-            updateUrgencyTimer();
-            setInterval(updateUrgencyTimer, 60000);
         });
     </script>
 </body>
