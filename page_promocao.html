@@ -1227,5 +1227,105 @@
             }
         });
     </script>
+    <script>
+// Popup de oferta após 30 segundos
+setTimeout(function() {
+    const popup = document.createElement('div');
+    popup.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        z-index: 9999;
+        max-width: 350px;
+        border-left: 5px solid #5D417A;
+        animation: slideIn 0.5s ease;
+    `;
+    
+    popup.innerHTML = `
+        <h4 style="margin: 0 0 10px; color: #5D417A;">⚡ Oferta Especial</h4>
+        <p style="margin: 0 0 15px; font-size: 0.9rem;">As 5 primeiras consultas desta semana com <strong>20% de desconto</strong>.</p>
+        <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20da%20oferta%20especial%20com%20desconto" 
+           style="background: #27AE60; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;"
+           target="_blank">
+           QUERO OFERTA ESPECIAL
+        </a>
+        <button onclick="this.parentElement.remove()" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 1.2rem; cursor: pointer;">×</button>
+    `;
+    
+    document.body.appendChild(popup);
+}, 30000);
+
+// Contador de pessoas online
+function updateVisitorCount() {
+    const count = Math.floor(Math.random() * 6) + 8; // 8-14 pessoas
+    const counter = document.getElementById('visitor-count');
+    if(counter) {
+        counter.textContent = count;
+    }
+}
+
+// Atualizar a cada 30-60 segundos
+setInterval(updateVisitorCount, 45000);
+updateVisitorCount();
+
+// Notificação de última vaga
+setTimeout(function() {
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 9998;
+        animation: fadeIn 0.5s ease;
+        display: none;
+    `;
+    
+    notification.innerHTML = `
+        <strong>Última vaga hoje!</strong> Uma pessoa acabou de agendar. Resta 1 vaga.
+        <button onclick="this.parentElement.style.display='none'" style="background: none; border: none; color: white; margin-left: 10px; cursor: pointer;">×</button>
+    `;
+    
+    document.body.appendChild(notification);
+    
+    // Mostrar após 45 segundos
+    setTimeout(() => {
+        notification.style.display = 'block';
+        // Esconder após 10 segundos
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 10000);
+    }, 45000);
+}, 15000);
+</script>
+
+<style>
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Adicionar este badge no hero section */
+.visitor-badge {
+    background: rgba(255,255,255,0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+</style>
 </body>
 </html>
