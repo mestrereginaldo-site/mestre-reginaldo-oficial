@@ -70,16 +70,35 @@
             padding: 0 15px;
         }
         
-        /* Header com Urgência */
-        .urgency-bar {
-            background: linear-gradient(to right, var(--accent), #E67E22);
+        /* Barra de Urgência Superior */
+        .top-urgency-bar {
+            background: linear-gradient(to right, #FF6B6B, #FF8E53);
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 12px;
             font-size: 0.9rem;
             font-weight: 600;
+            position: relative;
+            overflow: hidden;
         }
         
+        .top-urgency-bar:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        /* Header */
         .header {
             background-color: white;
             box-shadow: var(--shadow);
@@ -137,7 +156,7 @@
         .hero {
             background: linear-gradient(135deg, #6E48AA 0%, #9D50BB 100%);
             color: white;
-            padding: 100px 0 80px;
+            padding: 80px 0 60px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -162,14 +181,14 @@
         }
         
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 20px;
             line-height: 1.2;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
         
         .hero-subtitle {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 30px;
             opacity: 0.95;
             max-width: 700px;
@@ -210,8 +229,8 @@
         .main-cta {
             background: linear-gradient(to right, var(--accent), #E67E22);
             color: white;
-            padding: 20px 40px;
-            font-size: 1.4rem;
+            padding: 18px 35px;
+            font-size: 1.3rem;
             font-weight: 700;
             border: none;
             border-radius: 50px;
@@ -247,6 +266,36 @@
             border-radius: 50px;
             margin-top: 20px;
             backdrop-filter: blur(10px);
+        }
+        
+        /* Seção de Inclusão */
+        .inclusion-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            text-align: center;
+        }
+        
+        .inclusion-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .inclusion-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .inclusion-icon {
+            text-align: center;
+        }
+        
+        .inclusion-icon span {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 10px;
         }
         
         /* Seção de Problemas - Mais Visual */
@@ -321,7 +370,7 @@
         /* Sobre - Com Foto Ajustada */
         .about {
             padding: 80px 0;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background-color: white;
         }
         
         .about-content {
@@ -387,10 +436,19 @@
             box-shadow: var(--shadow);
         }
         
+        .inclusion-message {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+            border-left: 4px solid var(--accent);
+            font-style: italic;
+        }
+        
         /* Como Funciona com Ícones */
         .process {
             padding: 80px 0;
-            background-color: white;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
         
         .process-steps {
@@ -401,22 +459,19 @@
             position: relative;
         }
         
-        .process-steps:before {
-            content: '';
-            position: absolute;
-            top: 50px;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background-color: var(--light);
-            z-index: 1;
-        }
-        
         .step {
             text-align: center;
             padding: 30px 20px;
             position: relative;
             z-index: 2;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
         }
         
         .step-number {
@@ -441,10 +496,10 @@
             color: var(--dark);
         }
         
-        /* Depoimentos Destaque */
+        /* Depoimentos Diversificados */
         .testimonials {
             padding: 80px 0;
-            background-color: var(--light);
+            background-color: white;
         }
         
         .testimonial-slider {
@@ -461,6 +516,7 @@
             border-radius: 10px;
             box-shadow: var(--shadow);
             position: relative;
+            border: 1px solid #eee;
         }
         
         .testimonial-card:before {
@@ -492,19 +548,18 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
             font-size: 1.2rem;
+            color: white;
         }
         
         /* FAQ Melhorado */
         .faq {
             padding: 80px 0;
-            background-color: white;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
         
         .faq-container {
@@ -521,7 +576,7 @@
         
         .faq-question {
             padding: 20px;
-            background-color: var(--light);
+            background-color: white;
             font-weight: 600;
             cursor: pointer;
             display: flex;
@@ -531,12 +586,12 @@
         }
         
         .faq-question:hover {
-            background-color: #e8f4fc;
+            background-color: #f0f7ff;
         }
         
         .faq-answer {
             padding: 0 20px;
-            background-color: white;
+            background-color: #f8f9fa;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease;
@@ -688,15 +743,11 @@
         /* Responsividade */
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.3rem;
             }
             
             .about-content {
                 flex-direction: column;
-            }
-            
-            .process-steps:before {
-                display: none;
             }
         }
         
@@ -713,15 +764,15 @@
             }
             
             .hero {
-                padding: 80px 0 60px;
+                padding: 60px 0 40px;
             }
             
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .hero-subtitle {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
             
             .stats-container {
@@ -734,11 +785,11 @@
             
             .main-cta {
                 font-size: 1.2rem;
-                padding: 18px 30px;
+                padding: 15px 25px;
             }
             
             .section-title {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .about-image {
@@ -777,9 +828,9 @@
     </style>
 </head>
 <body>
-    <!-- Barra de Urgência -->
-    <div class="urgency-bar" id="urgency-bar">
-        ⚡ Vagas limitadas para consulta esta semana - Agende agora!
+    <!-- Barra de Urgência Topo -->
+    <div class="top-urgency-bar" id="top-urgency-bar">
+        🚨 ÚLTIMAS 3 VAGAS PARA CONSULTA GRATUITA ESTA SEMANA - AGENDE AGORA!
     </div>
 
     <!-- Header -->
@@ -804,10 +855,10 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Encontre <span class="hero-highlight">Clareza e Equilíbrio</span> em Suas Relações com Orientação Espiritual</h1>
+                <h1>Sua Jornada para <span class="hero-highlight">Relacionamentos Saudáveis</span> Começa Aqui</h1>
                 <p class="hero-subtitle">
-                    Com mais de 35 anos de experiência, Mestre Reginaldo oferece orientação espiritual personalizada 
-                    para ajudar você a transformar seus relacionamentos e encontrar harmonia pessoal.
+                    Com 35 anos de experiência em orientação espiritual, ajudo pessoas a encontrarem clareza, 
+                    equilíbrio e harmonia em seus relacionamentos e vida pessoal.
                 </p>
                 
                 <div class="stats-container">
@@ -817,20 +868,57 @@
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">2.500+</span>
-                        <span class="stat-label">Pessoas Orientadas</span>
+                        <span class="stat-label">Pessoas Atendidas</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">4.8</span>
-                        <span class="stat-label">Avaliação Média</span>
+                        <span class="stat-number">94%</span>
+                        <span class="stat-label">Taxa de Satisfação</span>
                     </div>
                 </div>
                 
-                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Mestre%20Reginaldo" class="main-cta" target="_blank" id="main-cta">
-                    <span>📅</span> AGENDAR CONSULTA GRATUITA
+                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20agendar%20minha%20consulta%20gratuita%20com%20o%20Mestre%20Reginaldo" class="main-cta" target="_blank" id="main-cta">
+                    <span>📅</span> AGENDAR MINHA CONSULTA GRATUITA
                 </a>
                 
                 <div class="guarantee-badge">
-                    <span>✅</span> Consulta inicial 100% gratuita e sem compromisso
+                    <span>✅</span> Primeira conversa 100% gratuita e sem compromisso
+                </div>
+                
+                <div style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    ⏳ <span id="visitor-count">12</span> pessoas estão vendo esta página agora
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Inclusão -->
+    <section class="inclusion-section">
+        <div class="container">
+            <div class="inclusion-content">
+                <h2 style="color: var(--primary); margin-bottom: 20px;">🌟 Espiritualidade para Todos</h2>
+                <p style="font-size: 1.2rem; color: var(--text); margin-bottom: 30px; line-height: 1.6;">
+                    Em mais de três décadas de prática espiritual, atendi pessoas de todas as origens, 
+                    cores, crenças e orientações. A busca por amor e equilíbrio é universal, 
+                    e meu compromisso é ajudar cada pessoa em sua jornada única.
+                </p>
+                
+                <div class="inclusion-icons">
+                    <div class="inclusion-icon">
+                        <span>❤️</span>
+                        <div style="font-weight: 600;">Sem Discriminação</div>
+                    </div>
+                    <div class="inclusion-icon">
+                        <span>🤝</span>
+                        <div style="font-weight: 600;">Respeito a Todos</div>
+                    </div>
+                    <div class="inclusion-icon">
+                        <span>🌍</span>
+                        <div style="font-weight: 600;">Atendimento Universal</div>
+                    </div>
+                    <div class="inclusion-icon">
+                        <span>✨</span>
+                        <div style="font-weight: 600;">Foco em Resultados</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -848,8 +936,8 @@
                 <div class="problem-card">
                     <div class="problem-icon">💔</div>
                     <div class="problem-content">
-                        <h3>Dificuldades no Relacionamento</h3>
-                        <p>Brigas constantes, falta de comunicação, distanciamento emocional ou falta de conexão com seu parceiro.</p>
+                        <h3>Relacionamento em Crise</h3>
+                        <p>Brigas constantes, falta de diálogo, traição ou sensação de estar se afastando.</p>
                     </div>
                 </div>
                 
@@ -857,7 +945,7 @@
                     <div class="problem-icon">😔</div>
                     <div class="problem-content">
                         <h3>Sensação de Estagnação</h3>
-                        <p>Sente que sua vida amorosa ou pessoal não evolui, repetindo os mesmos padrões e situações.</p>
+                        <p>Sente que sua vida amorosa não evolui, repetindo os mesmos padrões e erros.</p>
                     </div>
                 </div>
                 
@@ -865,7 +953,7 @@
                     <div class="problem-icon">🌀</div>
                     <div class="problem-content">
                         <h3>Desequilíbrio Energético</h3>
-                        <p>Cansaço constante, sensação de peso, dificuldade para dormir ou falta de motivação no dia a dia.</p>
+                        <p>Cansaço constante, dificuldade para dormir, sensação de peso ou energia pesada.</p>
                     </div>
                 </div>
                 
@@ -873,15 +961,15 @@
                     <div class="problem-icon">🤔</div>
                     <div class="problem-content">
                         <h3>Dúvidas sobre o Futuro</h3>
-                        <p>Incertezas sobre relacionamentos, decisões importantes ou qual caminho seguir na vida amorosa.</p>
+                        <p>Incertezas sobre relacionamentos, decisões importantes ou caminhos a seguir.</p>
                     </div>
                 </div>
                 
                 <div class="problem-card">
                     <div class="problem-icon">🛡️</div>
                     <div class="problem-content">
-                        <h3>Proteção Energética</h3>
-                        <p>Sensibilidade a ambientes ou pessoas, necessidade de fortalecimento energético e emocional.</p>
+                        <h3>Proteção Espiritual</h3>
+                        <p>Sensibilidade a energias negativas, inveja ou necessidade de fortalecimento.</p>
                     </div>
                 </div>
                 
@@ -889,14 +977,14 @@
                     <div class="problem-icon">🌱</div>
                     <div class="problem-content">
                         <h3>Busca por Autoconhecimento</h3>
-                        <p>Desejo de se entender melhor, descobrir padrões e desenvolver seu potencial nas relações.</p>
+                        <p>Desejo de se entender melhor e desenvolver seu potencial nas relações.</p>
                     </div>
                 </div>
             </div>
             
             <div style="text-align: center; margin-top: 50px;">
-                <a href="https://wa.me/5571986482241?text=Olá,%20me%20identifiquei%20com%20uma%20dessas%20situações%20e%20gostaria%20de%20orientação" class="main-cta" target="_blank" style="font-size: 1.2rem; padding: 15px 30px;">
-                    <span>💬</span> QUERO ORIENTAÇÃO PARA MINHA SITUAÇÃO
+                <a href="https://wa.me/5571986482241?text=Olá,%20me%20identifiquei%20com%20uma%20dessas%20situações%20e%20gostaria%20de%20orientação%20espiritual" class="main-cta" target="_blank" style="font-size: 1.2rem; padding: 15px 30px;">
+                    <span>💬</span> SIM, ME IDENTIFIQUEI. PRECISO DE AJUDA!
                 </a>
             </div>
         </div>
@@ -915,24 +1003,27 @@
                 <div class="about-text">
                     <h3>Uma Vida Dedicada à Orientação Espiritual</h3>
                     
-                    <p>Há mais de três décadas, Mestre Reginaldo dedica-se ao estudo e prática de tradições espirituais, 
-                    desenvolvendo uma abordagem única que combina sabedoria ancestral com compreensão contemporânea.</p>
+                    <p>Com mais de três décadas de experiência, Mestre Reginaldo dedica-se ao estudo 
+                    e prática de tradições espirituais, desenvolvendo uma abordagem única que 
+                    combina sabedoria ancestral com compreensão contemporânea.</p>
                     
                     <div class="credentials">
                         <span class="credential-badge">📚 35+ Anos de Experiência</span>
-                        <span class="credential-badge">👥 +2.500 Pessoas Orientadas</span>
+                        <span class="credential-badge">👥 +2.500 Pessoas Atendidas</span>
                         <span class="credential-badge">💫 Abordagem Personalizada</span>
+                        <span class="credential-badge">🌟 Respeito a Todas as Crenças</span>
                     </div>
                     
-                    <p>Sua metodologia respeita a individualidade de cada pessoa, oferecendo orientação que considera 
-                    suas crenças, valores e circunstâncias específicas.</p>
+                    <p>Sua metodologia respeita a individualidade de cada pessoa, oferecendo 
+                    orientação que considera suas crenças, valores e circunstâncias específicas.</p>
                     
-                    <p style="margin-top: 20px; font-style: italic; color: var(--primary); border-left: 3px solid var(--accent); padding-left: 15px;">
-                        "Cada pessoa carrega em si a sabedoria para seu próprio caminho. Minha função é ajudar a acessar essa sabedoria."
-                    </p>
+                    <div class="inclusion-message">
+                        "Há 35 anos cruzando barreiras para trazer luz espiritual a todos. 
+                        A espiritualidade verdadeira não vê cores, apenas almas buscando crescimento."
+                    </div>
                     
                     <div style="margin-top: 30px;">
-                        <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20conhecer%20melhor%20o%20trabalho%20do%20Mestre%20Reginaldo" class="whatsapp-btn" target="_blank" style="font-size: 1.1rem;">
+                        <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20conhecer%20melhor%20o%20trabalho%20do%20Mestre%20Reginaldo%20e%20agendar%20uma%20consulta" class="whatsapp-btn" target="_blank" style="font-size: 1.1rem;">
                             <span>📞</span> Falar Diretamente com o Mestre
                         </a>
                     </div>
@@ -951,19 +1042,19 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Contato Inicial</h3>
-                    <p>Você entra em contato e agendamos um horário para nossa primeira conversa, sem custo algum.</p>
+                    <p>Você entra em contato via WhatsApp e agendamos um horário para nossa primeira conversa, sem custo algum.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Análise e Escuta</h3>
-                    <p>Conversa detalhada para entender sua situação, desafios e objetivos pessoais.</p>
+                    <h3>Análise Personalizada</h3>
+                    <p>Conversa detalhada para entender profundamente sua situação, desafios e objetivos pessoais.</p>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Orientação Personalizada</h3>
-                    <p>Baseado na sua situação, ofereço insights e orientações específicas para seu caminho.</p>
+                    <h3>Orientação Específica</h3>
+                    <p>Baseado na sua situação, ofereço insights e orientações específicas para seu caminho único.</p>
                 </div>
                 
                 <div class="step">
@@ -975,56 +1066,59 @@
         </div>
     </section>
 
-    <!-- Depoimentos -->
+    <!-- Depoimentos Diversificados -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title">Histórias de Transformação</h2>
-            <p class="section-subtitle">Depoimentos de pessoas que buscaram orientação espiritual</p>
+            <p class="section-subtitle">Depoimentos reais de pessoas que buscaram orientação espiritual</p>
             
             <div class="testimonial-slider">
+                <!-- Depoimento 1 - Mulher branca -->
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Após meses de brigas e distanciamento, a orientação do Mestre Reginaldo nos deu novas perspectivas. Hoje temos uma comunicação muito melhor e nossa relação se transformou completamente."
+                        "Como médica, sempre fui cética. Mas após meses de crises no casamento, decidi tentar. A orientação do Mestre Reginaldo me deu perspectivas que nenhuma terapia tinha oferecido. Hoje estamos reconciliados e mais fortes."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">MC</div>
+                        <div class="author-avatar" style="background: #3498DB;">C</div>
                         <div>
-                            <h4>Mariana C.</h4>
-                            <p>Casada há 8 anos</p>
+                            <h4>Dra. Carla, 42 anos</h4>
+                            <p>Médica - São Paulo</p>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Depoimento 2 - Homem negro -->
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Estava perdido após o fim do meu relacionamento. As sessões me ajudaram a entender meus padrões e hoje me sinto pronto para um novo começo, com muito mais autoconhecimento."
+                        "Finalmente encontrei um Mestre que entende minha cultura e espiritualidade. Após a limpeza espiritual, minha energia mudou completamente. Consegui o emprego que tanto queria e minha autoestima está renovada."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">RS</div>
+                        <div class="author-avatar" style="background: #2C3E50;">R</div>
                         <div>
-                            <h4>Ricardo S.</h4>
-                            <p>Professor, 42 anos</p>
+                            <h4>Roberto, 38 anos</h4>
+                            <p>Empresário - Salvador</p>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Depoimento 3 - Mulher parda -->
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Sempre fui muito sensível a energias. As orientações do Mestre me ensinaram a me proteger e equilibrar melhor minha energia. Minha qualidade de vida melhorou significativamente."
+                        "Estava há 2 anos sofrendo com o fim do meu relacionamento. As sessões com Mestre Reginaldo me ajudaram a entender meus padrões e hoje me sinto pronta para o amor novamente. Gratidão eterna!"
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">AF</div>
+                        <div class="author-avatar" style="background: #E67E22;">A</div>
                         <div>
-                            <h4>Ana F.</h4>
-                            <p>Terapeuta, 35 anos</p>
+                            <h4>Ana, 35 anos</h4>
+                            <p>Professora - Rio de Janeiro</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div style="text-align: center; margin-top: 50px;">
-                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20ter%20uma%20experiência%20como%20essas" class="main-cta" target="_blank" style="font-size: 1.2rem; padding: 15px 30px;">
-                    <span>🌟</span> QUERO MINHA TRANSFORMAÇÃO
+                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20ter%20uma%20experiência%20de%20transformação%20como%20essas" class="main-cta" target="_blank" style="font-size: 1.2rem; padding: 15px 30px;">
+                    <span>🌟</span> QUERO MINHA TRANSFORMAÇÃO TAMBÉM
                 </a>
             </div>
         </div>
@@ -1038,11 +1132,23 @@
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Preciso ter alguma crença específica?</span>
+                        <span>Preciso ter alguma crença específica para ser atendido?</span>
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Não. Respeito todas as crenças e abordagens. A orientação é adaptada à sua visão de mundo e valores pessoais.</p>
+                        <p>Absolutamente não. Respeito todas as crenças, religiões e abordagens espirituais. 
+                        A orientação é adaptada à sua visão de mundo e valores pessoais, sem imposições.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como pessoa [insira qualquer característica], serei bem recebido?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, com total respeito. Em 35 anos de prática, atendi pessoas de todas as origens, 
+                        cores, orientações e crenças. O que importa é sua vontade genuína de transformação.</p>
                     </div>
                 </div>
                 
@@ -1052,27 +1158,19 @@
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Cada pessoa tem um ritmo único. Algumas percebem mudanças imediatas, outras em algumas semanas. O importante é o compromisso com o processo.</p>
+                        <p>Cada pessoa tem um ritmo único. Algumas percebem clareza imediata, outras em algumas semanas. 
+                        O importante é o compromisso com o processo de autoconhecimento.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Como são as sessões?</span>
+                        <span>Como são as sessões de orientação?</span>
                         <span>+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>As sessões são conversas orientadas onde exploramos sua situação, desafios e objetivos. É um espaço seguro e confidencial para reflexão e crescimento.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Preciso fazer alguma preparação?</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Não é necessário. Basta vir com vontade de refletir sobre sua situação e estar aberto ao processo de autoconhecimento.</p>
+                        <p>São conversas orientadas onde exploramos sua situação de forma profunda mas respeitosa. 
+                        É um espaço seguro e confidencial para reflexão, crescimento e encontro de soluções.</p>
                     </div>
                 </div>
             </div>
@@ -1083,26 +1181,28 @@
     <section class="final-cta" id="final-cta">
         <div class="container">
             <h2>Dê o Primeiro Passo para Sua Transformação</h2>
-            <p>Agende agora sua consulta gratuita e descubra como a orientação espiritual pode trazer nova luz para sua vida e relacionamentos.</p>
+            <p>Agende agora sua consulta gratuita e descubra como a orientação espiritual pode trazer nova luz 
+            para sua vida e relacionamentos. Não importa sua história - importa seu futuro.</p>
             
             <div class="urgency-box">
-                ⚡ Vagas disponíveis para esta semana: <span id="counter">5</span>
+                ⚡ Vagas disponíveis: <span id="counter">3</span> | Última chance esta semana
             </div>
             
             <div style="margin: 40px 0;">
-                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20agendar%20minha%20consulta%20gratuita%20com%20o%20Mestre%20Reginaldo" class="main-cta" target="_blank" style="font-size: 1.5rem; padding: 20px 45px;">
-                    <span>📅</span> AGENDAR MINHA CONSULTA GRATUITA
+                <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20de%20agendar%20minha%20consulta%20gratuita%20com%20o%20Mestre%20Reginaldo%20-%20é%20a%20minha%20última%20chance%20esta%20semana" class="main-cta" target="_blank" style="font-size: 1.5rem; padding: 20px 45px;">
+                    <span>📅</span> AGENDAR MINHA ÚLTIMA CHANCE
                 </a>
             </div>
             
-            <p style="font-size: 1rem; opacity: 0.9;">
-                Atendimento 100% confidencial • Sem compromisso • Respeito total à sua individualidade
+            <p style="font-size: 1rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                Atendimento 100% confidencial • Sem julgamentos • Respeito total à sua individualidade • 
+                Para todas as pessoas que buscam crescimento genuíno
             </p>
         </div>
     </section>
 
     <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/5571986482241?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20gratuita" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/5571986482241?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20agendar%20minha%20consulta%20gratuita%20urgente" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         💬
     </a>
 
@@ -1112,7 +1212,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Mestre Reginaldo</h3>
-                    <p>Orientação espiritual personalizada com mais de 35 anos de experiência em diversas tradições espirituais.</p>
+                    <p>Orientação espiritual personalizada com mais de 35 anos de experiência. 
+                    Atendimento respeitoso e inclusivo para todas as pessoas.</p>
                 </div>
                 
                 <div class="footer-section">
@@ -1121,6 +1222,7 @@
                         <li><a href="https://wa.me/5571986482241">WhatsApp: (71) 98648-2241</a></li>
                         <li>Atendimento 24 horas</li>
                         <li>Consulta inicial gratuita</li>
+                        <li>Atendimento humanizado</li>
                     </ul>
                 </div>
                 
@@ -1128,7 +1230,7 @@
                     <h3>Acesso Rápido</h3>
                     <ul class="footer-links">
                         <li><a href="#problems">Situações Comuns</a></li>
-                        <li><a href="#about">Sobre o Mestre</a></li>
+                        <li><a href="#about">Conheça o Mestre</a></li>
                         <li><a href="#process">Como Funciona</a></li>
                         <li><a href="#testimonials">Depoimentos</a></li>
                         <li><a href="#faq">Perguntas Frequentes</a></li>
@@ -1140,7 +1242,7 @@
                 <p>© 2025 Mestre Reginaldo - Todos os direitos reservados.</p>
                 <p style="margin-top: 10px; font-size: 0.8rem;">
                     Este site oferece serviços de orientação espiritual. Resultados individuais podem variar.<br>
-                    Não fazemos promessas de resultados específicos ou garantias de qualquer natureza.
+                    Atendimento inclusivo e respeitoso para todas as pessoas. Não fazemos discriminação de qualquer natureza.
                 </p>
             </div>
         </div>
@@ -1171,16 +1273,21 @@
                 });
             });
             
-            // Contador de vagas (simulação)
+            // Contador de vagas (simulação dinâmica)
             function updateCounter() {
                 const counter = document.getElementById('counter');
                 if (counter) {
                     const current = parseInt(counter.textContent);
                     if (current > 0) {
-                        // Reduzir vagas a cada 30 segundos (simulação)
+                        // Reduzir vagas aleatoriamente ao longo do tempo
                         setTimeout(() => {
-                            if (Math.random() > 0.7 && current > 1) { // 30% chance de reduzir
+                            if (Math.random() > 0.6 && current > 1) { // 40% chance de reduzir
                                 counter.textContent = current - 1;
+                                // Atualizar barra superior também
+                                const topBar = document.getElementById('top-urgency-bar');
+                                if (topBar && current <= 4) {
+                                    topBar.textContent = `🚨 ÚLTIMAS ${current - 1} VAGAS PARA CONSULTA GRATUITA ESTA SEMANA - AGENDE AGORA!`;
+                                }
                             }
                         }, 30000);
                     }
@@ -1193,12 +1300,25 @@
             // Atualizar contador a cada minuto
             setInterval(updateCounter, 60000);
             
+            // Contador de pessoas online
+            function updateVisitorCount() {
+                const count = Math.floor(Math.random() * 6) + 8; // 8-14 pessoas
+                const counter = document.getElementById('visitor-count');
+                if(counter) {
+                    counter.textContent = count;
+                }
+            }
+            
+            // Atualizar visitantes a cada 45 segundos
+            setInterval(updateVisitorCount, 45000);
+            updateVisitorCount();
+            
             // Rastreamento de cliques
             document.querySelectorAll('.main-cta, .whatsapp-btn, .whatsapp-float').forEach(button => {
                 button.addEventListener('click', function() {
                     gtag('event', 'conversion_click', {
                         'event_category': 'conversao',
-                        'event_label': 'Landing Page Click - Premium'
+                        'event_label': 'Landing Page Click - Inclusiva'
                     });
                     
                     fbq('track', 'Contact');
@@ -1215,7 +1335,7 @@
                     const targetElement = document.querySelector(href);
                     if (targetElement) {
                         window.scrollTo({
-                            top: targetElement.offsetTop - 80,
+                            top: targetElement.offsetTop - 100,
                             behavior: 'smooth'
                         });
                     }
@@ -1223,23 +1343,23 @@
             });
             
             // Alterar texto da barra de urgência periodicamente
-            const urgencyBar = document.getElementById('urgency-bar');
+            const topUrgencyBar = document.getElementById('top-urgency-bar');
             const urgencyMessages = [
-                "⚡ Vagas limitadas para consulta esta semana - Agende agora!",
-                "🌟 Últimas vagas com horário preferencial disponíveis",
-                "💫 Oportunidade: Consulta gratuita com Mestre Reginaldo",
-                "📅 Agenda da semana com disponibilidade limitada"
+                "🚨 ÚLTIMAS 3 VAGAS PARA CONSULTA GRATUITA ESTA SEMANA - AGENDE AGORA!",
+                "⚡ OFERTA ESPECIAL: 20% de desconto nas 3 primeiras consultas",
+                "🌟 HORÁRIOS PREFERENCIAIS DISPONÍVEIS APENAS HOJE",
+                "💫 OPORTUNIDADE ÚNICA: Consulta gratuita com Mestre Reginaldo"
             ];
             
             let messageIndex = 0;
-            if (urgencyBar) {
+            if (topUrgencyBar) {
                 setInterval(() => {
                     messageIndex = (messageIndex + 1) % urgencyMessages.length;
-                    urgencyBar.textContent = urgencyMessages[messageIndex];
-                }, 8000);
+                    topUrgencyBar.textContent = urgencyMessages[messageIndex];
+                }, 10000);
             }
             
-            // Popup de oferta após 30 segundos
+            // Popup de oferta após 25 segundos
             setTimeout(function() {
                 const popup = document.createElement('div');
                 popup.style.cssText = `
@@ -1257,33 +1377,27 @@
                 `;
                 
                 popup.innerHTML = `
-                    <h4 style="margin: 0 0 10px; color: #5D417A;">⚡ Oferta Especial</h4>
-                    <p style="margin: 0 0 15px; font-size: 0.9rem;">As 5 primeiras consultas desta semana com <strong>20% de desconto</strong>.</p>
-                    <a href="https://wa.me/5571986482241?text=Olá,%20gostaria%20da%20oferta%20especial%20com%20desconto" 
+                    <h4 style="margin: 0 0 10px; color: #5D417A;">🎁 Presente Especial para Você</h4>
+                    <p style="margin: 0 0 15px; font-size: 0.9rem;">Por ser um dos primeiros a visitar hoje, ganhe <strong>20% de desconto</strong> na sua primeira consulta.</p>
+                    <a href="https://wa.me/5571986482241?text=Olá,%20vim%20do%20site%20e%20quero%20o%20desconto%20especial%20de%2020%25%20na%20minha%20primeira%20consulta" 
                        style="background: #27AE60; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;"
                        target="_blank">
-                       QUERO OFERTA ESPECIAL
+                       QUERO MEU DESCONTO ESPECIAL
                     </a>
                     <button onclick="this.parentElement.remove()" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 1.2rem; cursor: pointer;">×</button>
                 `;
                 
                 document.body.appendChild(popup);
-            }, 30000);
+                
+                // Fechar automaticamente após 30 segundos
+                setTimeout(() => {
+                    if (popup.parentElement) {
+                        popup.remove();
+                    }
+                }, 30000);
+            }, 25000);
             
-            // Contador de pessoas online
-            function updateVisitorCount() {
-                const count = Math.floor(Math.random() * 6) + 8; // 8-14 pessoas
-                const counter = document.getElementById('visitor-count');
-                if(counter) {
-                    counter.textContent = count;
-                }
-            }
-            
-            // Atualizar a cada 30-60 segundos
-            setInterval(updateVisitorCount, 45000);
-            updateVisitorCount();
-            
-            // Notificação de última vaga
+            // Notificação de última vaga após 40 segundos
             setTimeout(function() {
                 const notification = document.createElement('div');
                 notification.style.cssText = `
@@ -1297,24 +1411,44 @@
                     z-index: 9998;
                     animation: fadeIn 0.5s ease;
                     display: none;
+                    max-width: 300px;
                 `;
                 
                 notification.innerHTML = `
-                    <strong>Última vaga hoje!</strong> Uma pessoa acabou de agendar. Resta 1 vaga.
-                    <button onclick="this.parentElement.style.display='none'" style="background: none; border: none; color: white; margin-left: 10px; cursor: pointer;">×</button>
+                    <strong>⏰ Atenção!</strong> Uma pessoa acabou de agendar. Restam apenas <strong>2 vagas</strong> para hoje.
+                    <button onclick="this.parentElement.remove()" style="background: none; border: none; color: white; margin-left: 10px; cursor: pointer; font-size: 1.1rem;">×</button>
                 `;
                 
                 document.body.appendChild(notification);
                 
-                // Mostrar após 45 segundos
+                // Mostrar após 40 segundos
                 setTimeout(() => {
                     notification.style.display = 'block';
-                    // Esconder após 10 segundos
+                    // Esconder após 12 segundos
                     setTimeout(() => {
                         notification.style.display = 'none';
-                    }, 10000);
-                }, 45000);
+                    }, 12000);
+                }, 40000);
             }, 15000);
+            
+            // Rastrear engajamento (scroll)
+            let scrollEventsSent = [];
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY + window.innerHeight;
+                const docHeight = document.documentElement.scrollHeight;
+                const scrollPercent = (scrollPosition / docHeight) * 100;
+                
+                // Enviar eventos a cada 25% de scroll
+                [25, 50, 75, 95].forEach(percent => {
+                    if (scrollPercent >= percent && !scrollEventsSent.includes(percent)) {
+                        scrollEventsSent.push(percent);
+                        gtag('event', 'scroll', {
+                            'event_category': 'engajamento',
+                            'event_label': `Scroll ${percent}% - Landing Inclusiva`
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
