@@ -38,18 +38,14 @@
     </script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2796792312502848"
-     crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script>
     
-    <!-- ==================== -->
-    <!-- META TAGS OTIMIZADAS -->
-    <!-- ==================== -->
     <title>Mestre Reginaldo 🔮 Amarração Amorosa em 24h | Limpeza Espiritual | Proteção Energética</title>
     <meta name="description" content="🔮 Mestre Reginaldo - ESPECIALISTA em Amarração Amorosa com Resultado em 24h. Limpeza espiritual urgente, proteção contra inveja e abertura de caminhos. 35 anos de experiência. Consulta GRATUITA! Atendimento 24h.">
     <meta name="keywords" content="amarração amorosa, trazer amor de volta, limpeza espiritual urgente, proteção energética, trabalho espiritual, Mestre Reginaldo, espiritualista, consulta espiritual grátis, amor de volta, problemas amorosos">
     <meta name="author" content="Mestre Reginaldo">
     <meta name="robots" content="index, follow">
     
-    <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mestrereginaldo.com.br/">
     <meta property="og:title" content="Mestre Reginaldo 🔮 Amarração Amorosa em 24h - Resultado Garantido">
@@ -57,7 +53,6 @@
     <meta property="og:image" content="https://mestrereginaldo.com.br/images/og-image.jpg">
     <meta property="og:locale" content="pt_BR">
     
-    <!-- SCHEMA MARKUP -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -84,7 +79,6 @@
     }
     </script>
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -202,28 +196,50 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            height: 100vh;
+            /* Alterado de height: 100vh para min-height e auto para acomodar o vídeo sem cortar */
+            min-height: 100vh;
+            height: auto;
             display: flex;
             align-items: center;
             color: white;
             text-align: center;
             margin-top: 60px;
+            padding: 40px 0; /* Adicionado padding para espaçamento */
         }
         
         .hero-content {
-            max-width: 800px;
+            max-width: 900px; /* Aumentado levemente para o vídeo */
             margin: 0 auto;
             padding: 2rem;
         }
         
         .hero h1 {
             font-size: 3.2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .hero p {
             font-size: 1.3rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* ESTILO DO VÍDEO NO HERO */
+        .hero-video-container {
+            margin: 0 auto 30px;
+            max-width: 100%;
+            width: 700px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            background-color: #000;
+            position: relative;
+        }
+
+        .hero-video-container video {
+            display: block;
+            width: 100%;
+            height: auto;
         }
         
         .hero-badges {
@@ -611,6 +627,10 @@
             .hero p {
                 font-size: 1.1rem;
             }
+
+            .hero-video-container {
+                width: 100%;
+            }
             
             .about-content {
                 flex-direction: column;
@@ -624,7 +644,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container nav-container">
             <div class="logo-container">
@@ -649,12 +668,17 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>O Verdadeiro Axé da Bahia</h1>
             <p>Mestre Espiritual a 35 Anos: A Solução Definitiva para o Seu Amor e Sua Paz. Amarração Amorosa | Limpeza de Urgência | Proteção Contra Inimigos</p>
             
+            <div class="hero-video-container">
+                <video controls autoplay muted loop playsinline>
+                    <source src="videos/Axe_da_bahia.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
             <div class="hero-badges">
                 <div class="badge">
                     <span class="stars">★★★★★</span>
@@ -674,7 +698,6 @@
         </div>
     </section>
 
-    <!-- Sobre -->
     <section id="about">
         <div class="container">
             <div class="section-title">
@@ -694,7 +717,6 @@
         </div>
     </section>
 
-    <!-- Serviços -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-title">
@@ -732,14 +754,12 @@
         </div>
     </section>
 
-   <!-- Blog -->
-<section id="blog">
+   <section id="blog">
     <div class="container">
         <div class="section-title">
             <h2>Artigos e Conhecimento</h2>
         </div>
         <div class="blog-preview">
-            <!-- NOVO ARTIGO - Adicione este card primeiro ou segundo -->
             <div class="blog-card">
                 <div class="blog-img">
                     <img src="images/pai-de-santo-verdadeiro.jpg" alt="Como encontrar um pai de santo verdadeiro" loading="lazy" width="400" height="180">
@@ -755,7 +775,6 @@
                 </div>
             </div>
             
-            <!-- Artigo 1 -->
             <div class="blog-card">
                 <div class="blog-img">
                     <img src="images/diferencas-videncia-ocultismo.jpg" alt="Diferenças entre vidência e ocultismo" loading="lazy" width="400" height="180">
@@ -771,7 +790,6 @@
                 </div>
             </div>
             
-            <!-- Artigo 2 -->
             <div class="blog-card">
                 <div class="blog-img">
                     <img src="images/ritual.png" alt="Encantamentos Espirituais" loading="lazy" width="400" height="180">
@@ -787,7 +805,6 @@
                 </div>
             </div>
             
-            <!-- Artigo 3 -->
             <div class="blog-card">
                 <div class="blog-img">
                     <img src="images/depoimentos.jpg" alt="Depoimentos reais" loading="lazy" width="400" height="180">
@@ -806,7 +823,6 @@
     </div>
 </section>
 
-<!-- Depoimentos -->
 <section class="testimonials" id="testimonials">
     <div class="container">
         <div class="section-title">
@@ -850,7 +866,6 @@
     </div>
 </section>
 
-    <!-- CTA Encantamentos -->
     <section class="encantamentos-cta">
         <div class="container">
             <h3>🔮 Quer Aprender Rituais Poderosos?</h3>
@@ -859,7 +874,6 @@
         </div>
     </section>
 
-    <!-- Botão WhatsApp Flutuante -->
     <a href="https://wa.me/5571986482241?text=Olá%20Mestre%20Reginaldo,%20gostaria%20de%20agendar%20uma%20consulta" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         💬
     </a>
@@ -897,16 +911,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
