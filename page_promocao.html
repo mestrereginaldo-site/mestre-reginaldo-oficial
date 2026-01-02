@@ -6,14 +6,12 @@
     <title>Consulta com Mestre Reginaldo | 35 Anos de Experiência em Orientação Espiritual</title>
     <meta name="description" content="Orientações espirituais personalizadas para relacionamentos e equilíbrio pessoal. Experiência de 35 anos. Consulta inicial sem custo.">
     
-    <!-- Meta Tags Otimizadas -->
     <meta property="og:title" content="Mestre Reginaldo - Orientação Espiritual Especializada">
     <meta property="og:description" content="Mais de 35 anos ajudando pessoas com orientação espiritual personalizada para relacionamentos e equilíbrio pessoal.">
     <meta property="og:image" content="https://mestrereginaldo.com.br/images/og-image.jpg">
     <meta property="og:url" content="https://mestrereginaldo.com.br/consulta">
     <meta property="og:type" content="website">
     
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-27KXC3LKPT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,7 +20,6 @@
       gtag('config', 'G-27KXC3LKPT');
     </script>
     
-    <!-- Facebook Pixel -->
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -137,7 +134,7 @@
         .hero {
             background: linear-gradient(135deg, #6E48AA 0%, #9D50BB 100%);
             color: white;
-            padding: 100px 0 80px;
+            padding: 80px 0 80px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -155,7 +152,7 @@
         }
         
         .hero-content {
-            max-width: 800px;
+            max-width: 900px; /* Aumentado levemente para acomodar o vídeo */
             margin: 0 auto;
             position: relative;
             z-index: 1;
@@ -175,6 +172,25 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+        }
+        
+        /* ESTILO DO VÍDEO NO HERO */
+        .hero-video-container {
+            margin: 30px auto 40px;
+            max-width: 100%;
+            width: 700px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            background-color: #000;
+            position: relative;
+        }
+
+        .hero-video-container video {
+            display: block;
+            width: 100%;
+            height: auto;
         }
         
         .hero-highlight {
@@ -743,6 +759,10 @@
             .hero-subtitle {
                 font-size: 1.2rem;
             }
+
+            .hero-video-container {
+                width: 100%;
+            }
             
             .stats-container {
                 gap: 20px;
@@ -790,12 +810,10 @@
     </style>
 </head>
 <body>
-    <!-- Barra de Urgência -->
     <div class="urgency-bar" id="urgency-bar">
         ⚡ Vagas limitadas para consulta esta semana - Agende agora!
     </div>
 
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -813,7 +831,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -823,6 +840,12 @@
                     para ajudar você a transformar seus relacionamentos e encontrar harmonia pessoal.
                 </p>
                 
+                <div class="hero-video-container">
+                    <video controls autoplay muted loop playsinline>
+                        <source src="videos/Axe_da_bahia.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
                 <div class="stats-container">
                     <div class="stat-item">
                         <span class="stat-number">35+</span>
@@ -849,7 +872,6 @@
         </div>
     </section>
 
-    <!-- Nova Seção de Inclusão -->
     <section class="inclusion-section">
         <div class="container">
             <div class="inclusion-content">
@@ -881,7 +903,6 @@
         </div>
     </section>
 
-    <!-- Problemas -->
     <section class="problems" id="problems">
         <div class="container">
             <h2 class="section-title">Você Se Identifica com Alguma Dessas Situações?</h2>
@@ -947,7 +968,6 @@
         </div>
     </section>
 
-    <!-- Sobre -->
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">Conheça Mestre Reginaldo</h2>
@@ -989,7 +1009,6 @@
         </div>
     </section>
 
-    <!-- Como Funciona -->
     <section class="process" id="process">
         <div class="container">
             <h2 class="section-title">Como Funciona a Orientação</h2>
@@ -1023,14 +1042,12 @@
         </div>
     </section>
 
-    <!-- Depoimentos Diversificados -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title">Histórias de Transformação</h2>
             <p class="section-subtitle">Depoimentos de pessoas que buscaram orientação espiritual</p>
             
             <div class="testimonial-slider">
-                <!-- Depoimento 1 - Diversidade -->
                 <div class="testimonial-card">
                     <div class="testimonial-text">
                         "Como profissional branca de 42 anos, inicialmente hesitei. Mas a orientação do Mestre Reginaldo transcendeu quaisquer preconceitos. Ele me ajudou a ver minha relação de forma completamente nova."
@@ -1044,7 +1061,6 @@
                     </div>
                 </div>
                 
-                <!-- Depoimento 2 - Diversidade -->
                 <div class="testimonial-card">
                     <div class="testimonial-text">
                         "Sendo homem negro, encontrei no Mestre Reginaldo alguém que entende minha espiritualidade e cultura. Sua orientação me deu força para superar uma fase difícil no casamento."
@@ -1058,7 +1074,6 @@
                     </div>
                 </div>
                 
-                <!-- Depoimento 3 - Diversidade -->
                 <div class="testimonial-card">
                     <div class="testimonial-text">
                         "Como mulher de 35 anos, sempre fui muito sensível a energias. As orientações do Mestre me ensinaram a me proteger. Recomendo a todos, independente de quem sejam."
@@ -1081,7 +1096,6 @@
         </div>
     </section>
 
-    <!-- FAQ com Pergunta sobre Inclusão -->
     <section class="faq" id="faq">
         <div class="container">
             <h2 class="section-title">Perguntas Frequentes</h2>
@@ -1131,7 +1145,6 @@
         </div>
     </section>
 
-    <!-- CTA Final -->
     <section class="final-cta" id="final-cta">
         <div class="container">
             <h2>Dê o Primeiro Passo para Sua Transformação</h2>
@@ -1153,12 +1166,10 @@
         </div>
     </section>
 
-    <!-- WhatsApp Flutuante -->
     <a href="https://wa.me/5571986482241?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20mais%20informações" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         💬
     </a>
 
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
